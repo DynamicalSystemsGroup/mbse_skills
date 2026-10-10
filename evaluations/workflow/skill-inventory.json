@@ -1,0 +1,158 @@
+[
+  {
+    "path": "skill-snapshot/mbse-architecture/SKILL.md",
+    "sha256": "687d623fd3f55549a20a1693fe8b31d943e48c46bbbf6cd7562d8afe9853613c"
+  },
+  {
+    "path": "skill-snapshot/mbse-architecture/agents/openai.yaml",
+    "sha256": "e9cfa76ec0e625667a400e04f3f75d9913a25195c4ecc421d1771d6471ed933f"
+  },
+  {
+    "path": "skill-snapshot/mbse-constraint-reasoning/SKILL.md",
+    "sha256": "b0eedeb18808713f736cade7751db53c629ee30b5ed10e1e3d23f1ffeec49e65"
+  },
+  {
+    "path": "skill-snapshot/mbse-constraint-reasoning/agents/openai.yaml",
+    "sha256": "d30d9f6febb665dc7a93595881c91eefc6ebf96aeb351d62fc3b1d57963c8393"
+  },
+  {
+    "path": "skill-snapshot/mbse-constraint-reasoning/references/trade-study.md",
+    "sha256": "3ab7d5d96732deef712cebe8477abe38e0816167c73a31eaea9bcf7b499890b3"
+  },
+  {
+    "path": "skill-snapshot/mbse-discovery/SKILL.md",
+    "sha256": "29f5d65826524852ae24e35d9483b80553bdb895501672ba7238653f8b76c105"
+  },
+  {
+    "path": "skill-snapshot/mbse-discovery/agents/openai.yaml",
+    "sha256": "f97c77393a46efeda62c7e5f06c73783025f930b535046bb31d4fe7003d0dc04"
+  },
+  {
+    "path": "skill-snapshot/mbse-discovery/references/vocabulary.md",
+    "sha256": "8c27e6c63ebea7c275ca3a8d009ccc6570b7d3e2079efa1bfb338fa4c27e31a0"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/SKILL.md",
+    "sha256": "38edd5cd458872c37e6c5ac80b8b9cc73106d19fd3e0441135f27be45f92b5fd"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/agents/openai.yaml",
+    "sha256": "b82db6717c2850a56ac00156a0174e5ce11bfd7e25e0c72ea7a35bb3a45ece85"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/references/engine-evidence.md",
+    "sha256": "8e93cb4eead29cd752fefbc6553cb54862ca61b358546586f736a050602de1c8"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/references/verification-contract.md",
+    "sha256": "f3c0671874b40cfa0c2128a1e6882aa21ff11d6bdf212003ce9f45063def229f"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/scripts/engine_check.py",
+    "sha256": "7c94ab410dbbb67ee4448b418458a994a190faec6f3099f208d63a72f564fe6a"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/scripts/lsp_check.py",
+    "sha256": "bd9f13ad638a864af20a8e56493169a8defa3b95977f84de6cd922a26c9284ba"
+  },
+  {
+    "path": "skill-snapshot/mbse-model-tdd/scripts/normalize_capture.py",
+    "sha256": "2bc457e3ac7eeddde0b33f79b611abecc9098ddd5e13d906cf39f294d25da044"
+  },
+  {
+    "path": "skill-snapshot/mbse-requirements/SKILL.md",
+    "sha256": "e5f7492ff51f19c17b0631a315d443adf99fb865d134fcefba521c86bae188c8"
+  },
+  {
+    "path": "skill-snapshot/mbse-requirements/agents/openai.yaml",
+    "sha256": "b7eb79f766f62207a83233384705fa3ad0374a63190640f104bc69dc7f2c05fc"
+  },
+  {
+    "path": "skill-snapshot/mbse-requirements/references/review.md",
+    "sha256": "5354e423575248d57dc3a5960a49e4502931654f2f7e7235cbdb666817ac69f2"
+  },
+  {
+    "path": "skill-snapshot/mbse-traceability/SKILL.md",
+    "sha256": "a1fc6b078d6105ca1a0feedddc9419e18e0b40fe2a5e9bd6d219fd903b91afee"
+  },
+  {
+    "path": "skill-snapshot/mbse-traceability/agents/openai.yaml",
+    "sha256": "89cc6016a0479799d9a7d588f6723aa2e69e8cb0c0dcac6d65f3ce2e63c9ea7b"
+  },
+  {
+    "path": "skill-snapshot/mbse-traceability/references/graph-contract.md",
+    "sha256": "d3b27d8dc957eac3c40fe5f7f7b08040ab09b128ca40e79c1889d2aa4dcd6e2d"
+  },
+  {
+    "path": "skill-snapshot/mbse-traceability/scripts/trace_check.py",
+    "sha256": "29e3ea8b2e5939697a6f6654c4754e33a370d5a6d5e7fda87e8db833afa139f6"
+  },
+  {
+    "path": "skill-snapshot/mbse-verification/SKILL.md",
+    "sha256": "c643cf3ac7d9bf8807df825f050c3fee2455a6bd3c7edf9152d27ba820d6c84c"
+  },
+  {
+    "path": "skill-snapshot/mbse-verification/agents/openai.yaml",
+    "sha256": "1b9e1ca617b68ba88b03f5f345885ed55f6d7ac7e06b44d6f730260e1c01777f"
+  },
+  {
+    "path": "skill-snapshot/mbse-verification/references/evidence.md",
+    "sha256": "df8ade5b47190f9b4c09d4755ddf826ad2f68dc65579878a39bceba32229716f"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/SKILL.md",
+    "sha256": "7f2d92642ba0fbf9b1f9da0996e908221fcae0c453859f7730e342f702219354"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/agents/openai.yaml",
+    "sha256": "4ecf949ec013efd68363403a6ec0f6198ccf0cc6987446e90ad54b2b934927dc"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/.gitignore",
+    "sha256": "01c9c7cf0f94237049af1ffb52110b959311cb4afe36ae333e2436a09ff1cddf"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/AGENTS.md",
+    "sha256": "6dcb2d0236413da2462caef8d6307409e010cf24b048ed7130a23c4684744893"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/README.md",
+    "sha256": "0c04288357749fc4f4b943f3433850d21b5b08213ee3a1d6d67af98e30d8cb79"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/architecture.md",
+    "sha256": "5576dfb19ee68072f32856a7b3a2d4853094a72893f8d96ce97581536ae48d05"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/decisions.md",
+    "sha256": "8979def5676540d9d52953a44dbeadabb9707b6b7b8aaecfd0e9935614cfedfc"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/glossary.md",
+    "sha256": "770102cb2b42fc8e7aa292b57b2328022b210c16d9ef2c8b09c94df2b6c4db3f"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/mbse-project.md",
+    "sha256": "f722284b4c2d6ae93f15ff86c247a991f72e348683895a6e72946bcccb8fae91"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/needs.md",
+    "sha256": "a379caf4ff8ec08827d13ccdb742a31f98a15dec168e957d19210c9eea03f0e3"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/docs/requirements.md",
+    "sha256": "ef2f23c12c1cd73cf349f493aee5ab10c5e329c41f8ed7055e84961c5ebb2c0f"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/evidence/README.md",
+    "sha256": "c44f37b009cceaa6cc053ec0d56b9357ca08ed8dc7e0941f8ca63d55452f4109"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/assets/project-template/traceability.json",
+    "sha256": "7645887ea0ec6bc8ef3d679e2ad3a2df53bb5f4d8b363f3fe61d696f545122c5"
+  },
+  {
+    "path": "skill-snapshot/setup-mbse-skills/scripts/init_project.py",
+    "sha256": "44b20885f48166f935a8bc6c84f3a7021237b18f3786bb698619f8d3478f8052"
+  }
+]

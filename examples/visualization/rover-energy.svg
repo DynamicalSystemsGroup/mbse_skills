@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+<title id="title">Finite energy trade study</title>
+<desc id="desc">Candidate capacities and modeled remaining energy. Threshold is supplied by the caller. Negative reserve is an idealized budget deficit. Engine results are not physical validation.</desc>
+<rect width="1000" height="640" fill="#ffffff"/>
+<g font-family="sans-serif" fill="#172536">
+<text x="70" y="48" font-size="25" font-weight="bold">Finite energy trade study</text>
+<text x="70" y="78" font-size="16">270 kJ selected from listed candidates</text>
+<text x="70" y="103" font-size="14">Analytical budget under constant inputs; no physical validation or uncertainty band</text>
+<line x1="120" y1="450.000" x2="870" y2="450.000" stroke="#dbe2e8"/>
+<text x="105" y="455.000" text-anchor="end" font-size="14">-21.1</text>
+<text x="120.000" y="477" text-anchor="middle" font-size="14">144.0</text>
+<line x1="120" y1="375.000" x2="870" y2="375.000" stroke="#dbe2e8"/>
+<text x="105" y="380.000" text-anchor="end" font-size="14">-2.2</text>
+<text x="307.500" y="477" text-anchor="middle" font-size="14">207.0</text>
+<line x1="120" y1="300.000" x2="870" y2="300.000" stroke="#dbe2e8"/>
+<text x="105" y="305.000" text-anchor="end" font-size="14">16.7</text>
+<text x="495.000" y="477" text-anchor="middle" font-size="14">270.0</text>
+<line x1="120" y1="225.000" x2="870" y2="225.000" stroke="#dbe2e8"/>
+<text x="105" y="230.000" text-anchor="end" font-size="14">35.6</text>
+<text x="682.500" y="477" text-anchor="middle" font-size="14">333.0</text>
+<line x1="120" y1="150.000" x2="870" y2="150.000" stroke="#dbe2e8"/>
+<text x="105" y="155.000" text-anchor="end" font-size="14">54.4</text>
+<text x="870.000" y="477" text-anchor="middle" font-size="14">396.0</text>
+<path d="M120 150 V450 H870" fill="none" stroke="#506070"/>
+<text x="495" y="516" text-anchor="middle" font-size="17">Usable capacity (kJ)</text>
+<text transform="translate(35 300) rotate(-90)" text-anchor="middle" font-size="17">Remaining energy (%)</text>
+<line x1="120" y1="286.765" x2="870" y2="286.765" stroke="#506070" stroke-dasharray="7 5"/>
+<text x="870" y="277.765" text-anchor="end" font-size="14">Supplied reserve: 20%</text>
+<g fill="#b23844"><title>red: -1/9; {&#x27;opensysml&#x27;: &#x27;violated&#x27;, &#x27;toolkit&#x27;: &#x27;violated&#x27;}</title>
+<path d="M220.143,403.294 l14,14 m-14,0 l14,-14" fill="none" stroke="#b23844" stroke-width="3"/>
+<text x="227.143" y="392.294" text-anchor="middle" font-size="15" font-weight="bold">red</text>
+<text x="227.143" y="435.294" text-anchor="middle" font-size="14">-11.11% — infeasible</text>
+</g>
+<g fill="#167260"><title>green: 7/27; {&#x27;opensysml&#x27;: &#x27;holds&#x27;, &#x27;toolkit&#x27;: &#x27;holds&#x27;}</title>
+<circle cx="495.000" cy="263.235" r="7"/>
+<text x="495.000" y="245.235" text-anchor="middle" font-size="15" font-weight="bold">green</text>
+<text x="495.000" y="306.235" text-anchor="middle" font-size="14">25.93% — feasible</text>
+</g>
+<g fill="#167260"><title>large: 4/9; {&#x27;opensysml&#x27;: &#x27;holds&#x27;, &#x27;toolkit&#x27;: &#x27;holds&#x27;}</title>
+<circle cx="762.857" cy="189.706" r="7"/>
+<text x="762.857" y="171.706" text-anchor="middle" font-size="15" font-weight="bold">large</text>
+<text x="762.857" y="214.706" text-anchor="middle" font-size="14">44.44% — feasible</text>
+</g>
+<text x="70" y="561" font-size="14">Circle: feasible • Cross: infeasible • Diamond: inconclusive/conflicting evidence</text>
+<text x="70" y="588" font-size="14">Discrete candidates only. Missing results are not success. Negative values indicate budget deficit.</text>
+<text x="70" y="615" font-size="14">Retain the adjacent receipt for exact values, source identity and plotting assumptions.</text>
+</g></svg>

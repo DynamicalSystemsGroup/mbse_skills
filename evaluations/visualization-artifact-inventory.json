@@ -1,0 +1,28 @@
+{
+  "reviewed_on": "2026-10-10",
+  "files": {
+    ".local/visualization-evaluation/inputs/brief.md": "3cc20d589b0a16224f850c1977dfaf1e24bf22129d8dd3445c43ef9d11dcef3e",
+    ".local/visualization-evaluation/inputs/summary.json": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb",
+    ".local/visualization-evaluation/output-a/battery-candidates.svg": "4d12860466c6bdd1691d5eab7c98fd498c3853eb107269845280ecf4d1ddd900",
+    ".local/visualization-evaluation/output-a/build.py": "aa83e7f08c247b848805cf47d22809725dd92367f79cfe793e8c643de7e91f6f",
+    ".local/visualization-evaluation/output-a/checks.json": "30311a9c7cb956f78ca2339cf4f8a46e55cb81a7b1ad467de217e828d61c2b55",
+    ".local/visualization-evaluation/output-a/energy-flow.mmd": "d6d3e402106516705cf475b7b4ce2d4b9e2273687fe0c118f8190a7de1ef73b0",
+    ".local/visualization-evaluation/output-a/energy-sketch.excalidraw": "c4355f4f6d70eaf5b253b32da9f488d7ec33af594cd5669aae49c57c4ce9afd2",
+    ".local/visualization-evaluation/output-a/evidence.md": "faa4f4b686f19348dae037edd4d79cfca324d7308ce23db358d8adab7ba0590f",
+    ".local/visualization-evaluation/output-b/arithmetic-check.json": "2833535614a11f643a6985b4730623ca4e0cd4bf29917d855cd8943eaa3bb21c",
+    ".local/visualization-evaluation/output-b/battery-candidates.png": "a98d7f9ec5bc40fc3d2957614aa1cc0e5eaf639890933374816a2d0c1718dd5d",
+    ".local/visualization-evaluation/output-b/battery-candidates.receipt.json": "3f6cd437684192011e91b96db633aa3e5eeb2d789525e37d8589ef8535ab5d61",
+    ".local/visualization-evaluation/output-b/battery-candidates.svg": "e9a17cb54e859e4edcc8819c98c22f01bc0269d6d607e5c32f88b35a19a63817",
+    ".local/visualization-evaluation/output-b/brief.md": "3cc20d589b0a16224f850c1977dfaf1e24bf22129d8dd3445c43ef9d11dcef3e",
+    ".local/visualization-evaluation/output-b/build.py": "fb30e6c7fe43cb73cc639d60c517bd7037602136a401f6b4f5fbc6a80dddfb21",
+    ".local/visualization-evaluation/output-b/energy-flow.mmd": "47ff89c4a1284f97af2a3f3a8c772f8a7626bb3698bb73830066aae340a273f9",
+    ".local/visualization-evaluation/output-b/evidence.md": "2f950c8227d47945281ae6a9e8d1c439c4ee53b20366e15ff29c8c6025672fec",
+    ".local/visualization-evaluation/output-b/identity.json": "fb0871c7147dfe53d5733f5e82884cea4fecc89a8b9749bf65474d188206dd5f",
+    ".local/visualization-evaluation/output-b/plot_energy.py": "b0a2e6e1e440048767f74ab3954622f7c6aaac0c154c87aa5aeadfe34c5e1626",
+    ".local/visualization-evaluation/output-b/rover.excalidraw": "e0eb95045b5b7572de0d1371ccc0385be9f5e73f9d4a8b786d085e553a483f9b",
+    ".local/visualization-evaluation/output-b/scene-check.json": "f55cd7c6fe3e8b7e2aa5981b16dea49200c28b7ec56092b71b9c39106cc49ec3",
+    ".local/visualization-evaluation/output-b/scene-mapping.json": "164cea511d8d9569b86ff5cf753e131ccd8186b83cbd96ae707fc127358c6649",
+    ".local/visualization-evaluation/output-b/summary.json": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb",
+    ".local/visualization-evaluation/request.md": "78a6b54c555f6913fc3ae84030040b920bfa14b79c832a9e85031f2cebf88e71"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "onboarding": {
+    "status": "project-owned conventions configured; actual client discovery/install not run",
+    "preserved": "original native evidence, models, scenario, AGENTS and team note"
+  },
+  "tasks": [
+    {
+      "id": "ambiguous",
+      "status": "draft; verification blocked",
+      "artifact": "project/docs/requirements.md",
+      "open": [
+        "threshold and margin definition",
+        "mission/environment",
+        "owner approval"
+      ]
+    },
+    {
+      "id": "conflict",
+      "status": "infeasible under both obligations",
+      "duration_s": 3000,
+      "demand_j": 300000,
+      "minimum_capacity_j": 375000,
+      "maximum_capacity_j": 270000,
+      "remaining_at_maximum_j": -30000,
+      "remaining_fraction": "-1/9",
+      "proposal": "D-02: demand reduction trade study or explicit approved capacity relaxation; no obligations changed"
+    },
+    {
+      "id": "capability",
+      "stimuli_label": "Synthetic evaluation stimuli; not real engine observations",
+      "captures": {
+        "empty-check": {
+          "satisfaction": "not established",
+          "support": "not established by zero exit and empty checks; subject execution/coverage absent"
+        },
+        "unsupported": {
+          "satisfaction": "not measured",
+          "support": "hypothetical adapter declares optimization unsupported; not executed"
+        },
+        "undecided": {
+          "satisfaction": "undecided; neither holds nor violated",
+          "support": "synthetic completed constraint-check measurement only; no real engine support established"
+        }
+      }
+    },
+    {
+      "id": "change",
+      "review_required": [
+        "A-01",
+        "D-01",
+        "E-01",
+        "E-02",
+        "L-01",
+        "M-01",
+        "R-01",
+        "V-01"
+      ],
+      "contextual_review": [
+        "N-01"
+      ],
+      "evidence_record_ids": [
+        "opensysml:changed-mission:validate",
+        "opensysml:changed-mission:verify",
+        "toolkit:changed-mission:validate",
+        "toolkit:changed-mission:verify"
+      ],
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "native_sha256": "3d203c4e40e37b3881a048cba8136c729b82a359f680beca64e998478a867d50",
+      "outcome": "retained supplied changed capture reports validation accepted and reserve violated; historical baseline retained",
+      "reruns": "after approved input/model changes: validation, verification, finite candidate comparison and boundaries"
+    },
+    {
+      "id": "unrelated",
+      "answer": "Hi",
+      "mbse_workflow_needed": false
+    }
+  ],
+  "actual_checks": [
+    {
+      "check": "changed native source hash",
+      "passed": true
+    },
+    {
+      "check": "changed model record hashes",
+      "passed": true
+    },
+    {
+      "check": "trace node hashes and references",
+      "passed": true
+    },
+    {
+      "check": "native evidence, models, scenario, team note and AGENTS preserved",
+      "passed": true
+    },
+    {
+      "check": "all project JSON parsed",
+      "passed": true
+    }
+  ],
+  "skipped": [
+    "engine execution",
+    "network and installation",
+    "current engine/profile/library byte checks",
+    "collection checks and client discovery",
+    "physical/intended-use validation",
+    "stakeholder approval"
+  ],
+  "limitations": [
+    "teaching assumptions only",
+    "reverse graph uses recorded dependencies",
+    "no complete language-conformance claim"
+  ]
+}

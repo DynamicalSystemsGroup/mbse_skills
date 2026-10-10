@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "skills": [
+    {
+      "name": "setup-mbse-skills",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-discovery",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-requirements",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-architecture",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-verification",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-traceability",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-constraint-reasoning",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-standards-research",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-literature-research",
+      "layer": "core",
+      "requires": []
+    },
+    {
+      "name": "mbse-oosem",
+      "layer": "methodology",
+      "requires": [
+        "mbse-discovery",
+        "mbse-requirements",
+        "mbse-architecture",
+        "mbse-constraint-reasoning",
+        "mbse-verification"
+      ]
+    },
+    {
+      "name": "mbse-sysml-modeling",
+      "layer": "language-tool",
+      "requires": []
+    },
+    {
+      "name": "mbse-model-tdd",
+      "layer": "language-tool",
+      "requires": []
+    },
+    {
+      "name": "mbse-diagramming",
+      "layer": "visualization",
+      "requires": []
+    },
+    {
+      "name": "mbse-excalidraw",
+      "layer": "visualization",
+      "requires": []
+    },
+    {
+      "name": "mbse-engineering-plots",
+      "layer": "visualization",
+      "requires": []
+    }
+  ],
+  "research_candidates": [
+    "Harmony",
+    "RUP SE",
+    "State Analysis",
+    "Vitech MBSE",
+    "OPM"
+  ]
+}

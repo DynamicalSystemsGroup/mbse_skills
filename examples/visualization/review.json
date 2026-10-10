@@ -1,0 +1,33 @@
+{
+  "reviewed_on": "2026-10-10",
+  "artifacts": {
+    "rover-energy.mmd": "f6d19a15f8b474d7761b0e32189034e62726b33b24022df95741fc80ab061886",
+    "rover-energy.dot": "9ef856cc73ab76b68ba856d63219d2fc7b32e3e07391ba6de47d62c277031a5c",
+    "rover-energy.excalidraw": "65279f7f7bb14b5bbad482228a35f7762ec818fa0abd15a7a90e4e9fb350ff31",
+    "rover-energy.svg": "e9a17cb54e859e4edcc8819c98c22f01bc0269d6d607e5c32f88b35a19a63817",
+    "rover-energy.receipt.json": "be843220504197d1e5d568e2ba6dcd16039982456eb5fe35b63039eb785aea14",
+    "source-map.json": "143e0cdb09bf9499a02d39a907db06420cc4b6ab97b00cbfd2d186518dacc389"
+  },
+  "checks": {
+    "excalidraw_starter_structure": "passed: 10 live elements",
+    "plot_arithmetic": "passed: all three exact fractions and finite selection",
+    "svg_generation": "passed",
+    "svg_rasterization": "passed using existing rsvg-convert",
+    "plot_visual_review": "passed after one label-placement repair; inspected full 1000x640 PNG",
+    "mermaid_native_render": "not run: CLI unavailable",
+    "graphviz_native_render": "not run: dot unavailable",
+    "excalidraw_editor_import": "not run",
+    "excalidraw_editor_export": "not run",
+    "diagram_or_sketch_visual_review": "not run",
+    "browser_check": "not run"
+  },
+  "plot_capture": {
+    "path": ".local/visualization-review/rover-energy-v2.png",
+    "sha256": "ce3db1077e6d4ef5a50d0bebf2ee8f3c568826d336092b67c44fdad180d00d4f"
+  },
+  "limits": [
+    "authored explanatory views; not SysML interchange or round trip",
+    "existing engine summary reused; engines not rerun",
+    "no physical or stakeholder validation"
+  ]
+}

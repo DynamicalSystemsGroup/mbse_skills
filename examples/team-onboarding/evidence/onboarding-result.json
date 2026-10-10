@@ -1,0 +1,32 @@
+{
+  "starter": {
+    "destination": "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first",
+    "created": 11,
+    "template_files": 11
+  },
+  "starter_repeat_created": 0,
+  "normalized_records": 40,
+  "recorded_trace_coverage_complete": true,
+  "stale_assumption_detected": true,
+  "change_review_required": [
+    "A-01",
+    "D-01",
+    "E-01",
+    "E-02",
+    "L-01",
+    "M-01",
+    "R-01",
+    "V-01"
+  ],
+  "used_energy_j": "200000",
+  "boundary_j": "250000",
+  "selected_capacity_j": 270000,
+  "changed_remaining_fraction": "-1/9",
+  "changed_engine_check": "Both configured engines accepted model validation and reported the changed modeled condition violated.",
+  "client_plugin_discovery": "Not exercised by this demo; native marketplace discovery is retained separately.",
+  "limits": [
+    "teaching assumptions and decisions are proposed",
+    "retained observations predate onboarding",
+    "no physical or intended-use validation"
+  ]
+}

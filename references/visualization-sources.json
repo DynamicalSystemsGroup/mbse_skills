@@ -1,0 +1,47 @@
+{
+  "reviewed_on": "2026-10-10",
+  "inspiration": {
+    "name": "archify",
+    "source": "https://github.com/tt-a1i/archify",
+    "installed_release": "3.0.1",
+    "frontmatter_version": "3.0",
+    "license": "MIT",
+    "revision": "not recorded; installed-byte identities below",
+    "files": {
+      "SKILL.md": "66dfe99b35d7ceff95bcbdb00f138b8b3ec8094629acf69efba1eeda1013aaf3",
+      "skill-release.json": "93a31980e200d0749d887982eba8b6c3b33452a14e3a04d4e6969b9c42c7eacf",
+      "LICENSE": "b799ab081703e7821ae5096d2c1abdf14bbdc75e8ea1c4045998c36ed6db9706",
+      "references/repository-authoring.md": "da8fa6d2bbc4572e5253e53bbc2d08088568f4d5350e61aa4e2029b2a5d2beb1",
+      "references/authoring-defaults.md": "7277ebf440c568fac425af5ad085ff60976ec401fe694c0ea984efff192961b0",
+      "references/delivery-contract.md": "aa167fd1d2c5ab48cf7c53cd25dc9f49a8b52059e848d71d76b2489aa5b68780"
+    },
+    "adoption": "Original procedures inspired by source-linked typed views, semantic-preserving layout repair and separate artifact/render/browser/perceptual evidence. No implementation, template or wording copied."
+  },
+  "tool_documentation": [
+    {
+      "tool": "Mermaid",
+      "url": "https://mermaid.js.org/syntax/flowchart.html",
+      "edition": "live documentation; no local renderer tested"
+    },
+    {
+      "tool": "Graphviz",
+      "url": "https://graphviz.org/doc/info/lang.html",
+      "edition": "live documentation; no local renderer tested"
+    },
+    {
+      "tool": "Excalidraw",
+      "url": "https://docs.excalidraw.com/docs/codebase/json-schema",
+      "edition": "live documentation; scene format version 2"
+    },
+    {
+      "tool": "Matplotlib",
+      "url": "https://matplotlib.org/stable/users/explain/quick_start.html",
+      "edition": "live documentation; no package installed"
+    },
+    {
+      "tool": "Vega-Lite",
+      "url": "https://vega.github.io/vega-lite/docs/spec.html",
+      "edition": "live documentation; no runtime installed"
+    }
+  ]
+}

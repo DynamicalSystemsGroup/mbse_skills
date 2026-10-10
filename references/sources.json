@@ -1,0 +1,90 @@
+{
+  "retrieved_on": "2026-10-10",
+  "purpose": "Source study only; not installed or activated",
+  "repositories": [
+    {
+      "name": "mattpocock-skills",
+      "upstream": "git@github.com-dsg:mattpocock/skills.git",
+      "commit": "49dd158d1076134a641b33efb035946536778336",
+      "commit_date": "2026-10-09T11:56:49+01:00",
+      "local_path": "references/repos/mattpocock-skills",
+      "study_subpath": ".",
+      "license_path": "LICENSE",
+      "license_declared": "MIT",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "superpowers",
+      "upstream": "git@github.com-dsg:obra/superpowers.git",
+      "commit": "bb92a77741419a4ab5f06e711a283343f1ada0c3",
+      "commit_date": "2026-10-09T17:28:04-07:00",
+      "local_path": "references/repos/superpowers",
+      "study_subpath": ".",
+      "license_path": "LICENSE",
+      "license_declared": "MIT",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "cursor-plugins",
+      "upstream": "git@github.com-dsg:cursor/plugins.git",
+      "commit": "d73344bee8cf22e53b9d5f4cf5749d38ba38c174",
+      "commit_date": "2026-10-09T21:39:39-07:00",
+      "local_path": "references/repos/cursor-plugins",
+      "study_subpath": "pstack",
+      "license_path": "pstack/LICENSE",
+      "license_declared": "MIT",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "scientific-agent-skills",
+      "upstream": "git@github.com-dsg:K-Dense-AI/scientific-agent-skills.git",
+      "commit": "92ace75ac21efe19a620434e0ca4e356081fe807",
+      "commit_date": "2026-10-05T09:39:10+00:00",
+      "local_path": "references/repos/scientific-agent-skills",
+      "study_subpath": ".",
+      "license_path": "LICENSE.md",
+      "license_declared": "MIT",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "trailofbits-skills",
+      "upstream": "git@github.com-dsg:trailofbits/skills.git",
+      "commit": "442fc9d6c89b1e937e6f7a477e7071ea75fcbea4",
+      "commit_date": "2026-10-09T17:55:03-04:00",
+      "local_path": "references/repos/trailofbits-skills",
+      "study_subpath": ".",
+      "license_path": "LICENSE",
+      "license_declared": "CC-BY-SA-4.0",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "agentic-cad-skills",
+      "upstream": "git@github.com-dsg:wogokoro/Agentic-CAD-Skills.git",
+      "commit": "2fe1aba0743708ce8e379d47277f13985596dcab",
+      "commit_date": "2026-08-13T17:38:49+09:00",
+      "local_path": "references/repos/agentic-cad-skills",
+      "study_subpath": ".",
+      "license_path": "LICENSE",
+      "license_declared": "Apache-2.0",
+      "shallow": true,
+      "working_tree_clean": true
+    },
+    {
+      "name": "opensysml-agent-skills",
+      "upstream": "git@github.com-dsg:Open-MBEE/OpenSysML.git",
+      "commit": "714c459fe5dcce1affb62fd98309b63626dfa311",
+      "commit_date": "2026-10-09T05:33:50-07:00",
+      "local_path": "../sysmlv2-standards-research/repos/OpenSysML",
+      "study_subpath": "packaging/agent-skills",
+      "license_path": "LICENSE",
+      "license_declared": "Apache-2.0",
+      "shallow": false,
+      "working_tree_clean": true
+    }
+  ]
+}

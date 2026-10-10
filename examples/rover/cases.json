@@ -1,0 +1,80 @@
+{
+  "subject": "Rover::energyReserve",
+  "cases": [
+    {
+      "id": "red",
+      "model": "red.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "violated"
+    },
+    {
+      "id": "green",
+      "model": "green.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "holds"
+    },
+    {
+      "id": "boundary",
+      "model": "boundary.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "holds"
+    },
+    {
+      "id": "short",
+      "model": "short.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "holds"
+    },
+    {
+      "id": "large",
+      "model": "large.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "holds"
+    },
+    {
+      "id": "below-boundary",
+      "model": "below-boundary.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "violated"
+    },
+    {
+      "id": "unknown",
+      "model": "unknown.sysml",
+      "expected_validation": "valid",
+      "expected_verification": {
+        "opensysml": "unavailable",
+        "toolkit": "undecided"
+      }
+    },
+    {
+      "id": "unresolved",
+      "model": "unresolved.sysml",
+      "expected_validation": {
+        "opensysml": "invalid",
+        "toolkit": "valid"
+      },
+      "expected_verification": {
+        "opensysml": "unavailable",
+        "toolkit": "holds"
+      }
+    },
+    {
+      "id": "unit-error",
+      "model": "unit-error.sysml",
+      "expected_validation": {
+        "opensysml": "invalid",
+        "toolkit": "valid"
+      },
+      "expected_verification": {
+        "opensysml": "unavailable",
+        "toolkit": "undecided"
+      }
+    },
+    {
+      "id": "syntax-error",
+      "model": "syntax-error.sysml",
+      "expected_validation": "invalid"
+    }
+  ],
+  "expectation_basis": "Project equations and independently calculated boundary; negative cases calibrate these pinned operations and do not label tool behavior conformant."
+}

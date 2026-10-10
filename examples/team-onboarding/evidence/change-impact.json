@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "nodes": 9,
+  "fresh": true,
+  "stale": [],
+  "coverage": [
+    {
+      "requirement": "R-01",
+      "status": "proposed",
+      "needs": [
+        "N-01"
+      ],
+      "verification": [
+        "V-01"
+      ],
+      "evidence": [
+        "E-01",
+        "E-02"
+      ],
+      "gaps": []
+    }
+  ],
+  "recorded_coverage_complete": true,
+  "review_required": [
+    "A-01",
+    "D-01",
+    "E-01",
+    "E-02",
+    "L-01",
+    "M-01",
+    "R-01",
+    "V-01"
+  ],
+  "limits": [
+    "recorded dependencies only",
+    "file identity, not semantic freshness",
+    "no satisfaction or approval certification"
+  ]
+}

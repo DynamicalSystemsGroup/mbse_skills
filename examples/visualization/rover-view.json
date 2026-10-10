@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "format": "mermaid",
+  "source_sha256": "f6d19a15f8b474d7761b0e32189034e62726b33b24022df95741fc80ab061886",
+  "helper_sha256": "322b4a9fcfb0a5521f5da79fb5af5c8e55d805b63544ac9779974513a7e7b95e",
+  "nodes": [
+    {
+      "id": "battery",
+      "label": "A-01: candidate battery",
+      "parent": null
+    },
+    {
+      "id": "load",
+      "label": "L-01: aggregate mobility load",
+      "parent": null
+    },
+    {
+      "id": "scenario",
+      "label": "S-01: 2000 m at 1 m/s",
+      "parent": null
+    },
+    {
+      "id": "budget",
+      "label": "R-01 budget check: reserve at least 20 percent",
+      "parent": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge-1",
+      "source": "battery",
+      "target": "load",
+      "label": "I-01: energy supply; 100 W assumed",
+      "raw_label": "\"I-01: energy supply; 100 W assumed\"",
+      "line_style": "solid"
+    },
+    {
+      "id": "edge-2",
+      "source": "scenario",
+      "target": "load",
+      "label": "scenario assumption",
+      "raw_label": "\"scenario assumption\"",
+      "line_style": "dashed"
+    },
+    {
+      "id": "edge-3",
+      "source": "load",
+      "target": "budget",
+      "label": "modeled energy use; 200000 J",
+      "raw_label": "\"modeled energy use; 200000 J\"",
+      "line_style": "dashed"
+    }
+  ],
+  "accessibility": {
+    "accTitle": "Proposed rover energy-flow slice",
+    "accDescr": "Battery supplies an aggregate mobility load under the proposed constant-input scenario. This explanatory view is not a SysML relationship model."
+  },
+  "counts": {
+    "nodes": 4,
+    "edges": 3
+  },
+  "limits": [
+    "structural subset only; no renderer or semantic validation",
+    "labels are inert strings; escape before rendering",
+    "source styles/geometry not retained; source bytes remain authoritative"
+  ]
+}

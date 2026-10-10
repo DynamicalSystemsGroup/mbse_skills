@@ -1,0 +1,24 @@
+{
+  "label": "Synthetic evaluation stimuli; not real engine observations",
+  "captures": [
+    {
+      "id": "empty-check",
+      "operation": "constraint-check",
+      "exit_code": 0,
+      "stdout": {
+        "checks": []
+      }
+    },
+    {
+      "id": "unsupported",
+      "operation": "optimization",
+      "capability_statement": "This hypothetical adapter does not support optimization; operation was not executed."
+    },
+    {
+      "id": "undecided",
+      "operation": "constraint-check",
+      "measurement": "completed",
+      "result": "undecided"
+    }
+  ]
+}

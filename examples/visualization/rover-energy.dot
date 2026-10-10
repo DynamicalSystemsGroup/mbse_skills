@@ -1,0 +1,11 @@
+digraph RoverEnergy {
+  graph [rankdir=LR, label="Proposed rover energy-flow slice; illustrative constant inputs", labelloc=t];
+  node [shape=box];
+  battery [label="A-01: candidate battery"];
+  load [label="L-01: aggregate mobility load"];
+  scenario [label="S-01: 2000 m at 1 m/s"];
+  budget [label="R-01 budget check: reserve at least 20 percent"];
+  battery -> load [label="I-01: energy supply; 100 W assumed"];
+  scenario -> load [style=dashed, label="scenario assumption"];
+  load -> budget [style=dashed, label="modeled energy use; 200000 J"];
+}

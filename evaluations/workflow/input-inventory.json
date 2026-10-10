@@ -1,0 +1,142 @@
+[
+  {
+    "path": "inputs/brief.json",
+    "sha256": "e17b5792f9cdc85ec53cac3e4a8d10645785fbc536ae6638eff2d05811416cb5"
+  },
+  {
+    "path": "inputs/project/.gitignore",
+    "sha256": "01c9c7cf0f94237049af1ffb52110b959311cb4afe36ae333e2436a09ff1cddf"
+  },
+  {
+    "path": "inputs/project/AGENTS.md",
+    "sha256": "50012968f01a0b8f1a313feadfac8361fb21285fa27dd1b22638056dfe50cbd0"
+  },
+  {
+    "path": "inputs/project/README.md",
+    "sha256": "0c04288357749fc4f4b943f3433850d21b5b08213ee3a1d6d67af98e30d8cb79"
+  },
+  {
+    "path": "inputs/project/changed-cases.json",
+    "sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392"
+  },
+  {
+    "path": "inputs/project/docs/architecture.md",
+    "sha256": "60578bda246b7cf3d3d1bed00626e5ed677b5a8f8ec55f618128f82f9436fe8e"
+  },
+  {
+    "path": "inputs/project/docs/decisions.md",
+    "sha256": "d2bd6763cb28bab313a19a35c4a340f2681f7c1a3456b6f2df654dc060c84c5e"
+  },
+  {
+    "path": "inputs/project/docs/glossary.md",
+    "sha256": "a24c997cc250e34ea1314d21a090ce096dd08f05f47e0cc088d7a20057eedba0"
+  },
+  {
+    "path": "inputs/project/docs/mbse-project.md",
+    "sha256": "1c4cbf8e64d3b3b322cea3fabc2c0cd12f7c5d30b6d63da4f7744d059f586e04"
+  },
+  {
+    "path": "inputs/project/docs/needs.md",
+    "sha256": "3e8afdaa32b7e80108876f7d7581186b43857266ee5a8a8e2a2cfeba737963da"
+  },
+  {
+    "path": "inputs/project/docs/requirements.md",
+    "sha256": "aaaf52c750f3eda0768e9038d5000d8b7963b7d67e596039b1c18c9d87db0adc"
+  },
+  {
+    "path": "inputs/project/docs/verification.md",
+    "sha256": "d869f90a26100e49e3657d7c79429faccc3148ec2875060666f36e36172cb569"
+  },
+  {
+    "path": "inputs/project/evidence/README.md",
+    "sha256": "c44f37b009cceaa6cc053ec0d56b9357ca08ed8dc7e0941f8ca63d55452f4109"
+  },
+  {
+    "path": "inputs/project/evidence/change-impact.json",
+    "sha256": "9b7fce7df69fae8b0578efb6cc32da55d03edf74446cced62eeea56746beb7e6"
+  },
+  {
+    "path": "inputs/project/evidence/changed-cli.json",
+    "sha256": "3d203c4e40e37b3881a048cba8136c729b82a359f680beca64e998478a867d50"
+  },
+  {
+    "path": "inputs/project/evidence/changed-model-report.json",
+    "sha256": "ef420f72d7b86fba5446d22680a7dcd532fb629c5822d0c38a83de594b22e1f0"
+  },
+  {
+    "path": "inputs/project/evidence/cli.json",
+    "sha256": "7fc2d25197c0b70eaa3a8418e50e67518f48c061b69949b61e45c816ac734650"
+  },
+  {
+    "path": "inputs/project/evidence/model-report.json",
+    "sha256": "281d8cc78ce7fd73946229e5b8c16a66ea8bb86fc112891dbe55498c3dcc3adf"
+  },
+  {
+    "path": "inputs/project/evidence/onboarding-result.json",
+    "sha256": "4efb4e1d94f299f67cece51afb66a1146721d871b0b3a457f63684e6f60d91bb"
+  },
+  {
+    "path": "inputs/project/evidence/summary.json",
+    "sha256": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb"
+  },
+  {
+    "path": "inputs/project/models/below-boundary.sysml",
+    "sha256": "8296fa6dad1f2d9111c5c44d399dd289daa6e6bda1262ad31590068f752281b0"
+  },
+  {
+    "path": "inputs/project/models/boundary.sysml",
+    "sha256": "8f8879e2059991fc42431006e7e0224e83a9442eb2939f9832da0fcdfb0641f2"
+  },
+  {
+    "path": "inputs/project/models/changed-mission.sysml",
+    "sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d"
+  },
+  {
+    "path": "inputs/project/models/green.sysml",
+    "sha256": "799878f5d4a3ac0c7e2af200419e69bb57f76214ddce678eba070d7ad7901aa2"
+  },
+  {
+    "path": "inputs/project/models/large.sysml",
+    "sha256": "f636b8311da0efda2ada4638c55464d9c5b3ab0a97ad860ee86de87f5035b5b9"
+  },
+  {
+    "path": "inputs/project/models/red.sysml",
+    "sha256": "bd26b56850c4c57724af5805ca6a539c7477fbb9c7fb8449bb77307900b33d70"
+  },
+  {
+    "path": "inputs/project/models/short.sysml",
+    "sha256": "7c90300d96428e1c97b89f53b743eb07d0bac3fd0cb1ac6680a8d52aa7faf16e"
+  },
+  {
+    "path": "inputs/project/models/syntax-error.sysml",
+    "sha256": "7f76acc563da3e4659361f51e39738f8d18d7d7ce61ab5e46fc601bd177f1104"
+  },
+  {
+    "path": "inputs/project/models/unit-error.sysml",
+    "sha256": "3569302c420fb14681724c92aa979106623d210ec66442e6e5bb4db5a8d5f58e"
+  },
+  {
+    "path": "inputs/project/models/unknown.sysml",
+    "sha256": "ec6516a047765b28d86317c04531a96b7bab8d7857c45ae6abf7621fde27ee92"
+  },
+  {
+    "path": "inputs/project/models/unresolved.sysml",
+    "sha256": "ed9c89c8c6f49a95e0a6f858307e0e80efb827769b1dfee23dd2dfd405a3ec13"
+  },
+  {
+    "path": "inputs/project/scenario.json",
+    "sha256": "6b5e32c3e0055a7d0b0de74d5d83a140549b4b3989091816664250c569088436"
+  },
+  {
+    "path": "inputs/project/team-notes.txt",
+    "sha256": "7b1d60967f3fa251c2d6110a68d95349bf9827bc03bb3f35157a2848618d72ad"
+  },
+  {
+    "path": "inputs/project/traceability.json",
+    "sha256": "459186cc0b7f729bf8fc5e84e3fc85396580e25252302238aa0668f2723703cd"
+  },
+  {
+    "path": "inputs/synthetic-captures.json",
+    "sha256": "10554891b77294ceb1fb8f14d04978af89b49b5a3641a080929c2e2a6f677d27"
+  }
+]

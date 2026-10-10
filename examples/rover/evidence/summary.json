@@ -1,0 +1,48 @@
+{
+  "reference": {
+    "duration_seconds": "2000",
+    "used_energy_joules": "200000",
+    "boundary_capacity_joules": "250000"
+  },
+  "objective": "minimum capacity in the explicitly listed finite candidate set",
+  "candidates": [
+    {
+      "case": "red",
+      "capacity_joules": 180000,
+      "remaining_fraction": "-1/9",
+      "engine_verdicts": {
+        "opensysml": "violated",
+        "toolkit": "violated"
+      },
+      "feasible_in_both_observations": false
+    },
+    {
+      "case": "green",
+      "capacity_joules": 270000,
+      "remaining_fraction": "7/27",
+      "engine_verdicts": {
+        "opensysml": "holds",
+        "toolkit": "holds"
+      },
+      "feasible_in_both_observations": true
+    },
+    {
+      "case": "large",
+      "capacity_joules": 360000,
+      "remaining_fraction": "4/9",
+      "engine_verdicts": {
+        "opensysml": "holds",
+        "toolkit": "holds"
+      },
+      "feasible_in_both_observations": true
+    }
+  ],
+  "selected_capacity_joules": 270000,
+  "expectations_met": true,
+  "limits": [
+    "constant power/speed and usable capacity; no physical validation",
+    "Toolkit uses configured external library; OpenSysML uses bundled libraries",
+    "LSP diagnostics do not execute the energy constraint",
+    "OpenSysML diagnostics lack server document versions in this build"
+  ]
+}

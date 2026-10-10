@@ -1,0 +1,3 @@
+interface:
+  display_name: "MBSE OOSEM Workflow"
+  short_description: "OOSEM scenarios, architecture and evidence workflow"

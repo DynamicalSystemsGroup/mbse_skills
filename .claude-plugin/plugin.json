@@ -1,0 +1,15 @@
+{
+  "name": "mbse-skills",
+  "version": "0.1.0",
+  "description": "Portable systems engineering practices with optional methodology, SysML and visualization skills.",
+  "author": {
+    "name": "Dynamical Systems Group contributors"
+  },
+  "license": "MIT",
+  "keywords": [
+    "mbse",
+    "systems-engineering",
+    "sysml",
+    "openmbee"
+  ]
+}

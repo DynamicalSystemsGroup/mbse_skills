@@ -1,0 +1,3 @@
+interface:
+  display_name: "SysML v2 Modeling"
+  short_description: "Build source-grounded models with typed quantities"

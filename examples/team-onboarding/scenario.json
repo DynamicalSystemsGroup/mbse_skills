@@ -1,0 +1,21 @@
+{
+  "system": "Illustrative rover energy budget",
+  "status": "proposed teaching assumptions",
+  "distance_m": 2000,
+  "speed_m_per_s": 1,
+  "power_w": 100,
+  "reserve_fraction": "1/5",
+  "candidate_capacities_j": [
+    180000,
+    270000,
+    360000
+  ],
+  "selected_capacity_j": 270000,
+  "changed_distance_m": 3000,
+  "excluded": [
+    "variable terrain/load",
+    "temperature",
+    "losses and aging",
+    "physical mission validation"
+  ]
+}

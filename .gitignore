@@ -1,0 +1,5 @@
+/references/repos/
+/.local/
+/.venv/
+__pycache__/
+*.pyc

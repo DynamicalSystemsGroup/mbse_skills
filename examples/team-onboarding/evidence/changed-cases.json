@@ -1,0 +1,11 @@
+{
+  "subject": "Rover::energyReserve",
+  "cases": [
+    {
+      "id": "changed-mission",
+      "model": "models/changed-mission.sysml",
+      "expected_validation": "valid",
+      "expected_verification": "violated"
+    }
+  ]
+}

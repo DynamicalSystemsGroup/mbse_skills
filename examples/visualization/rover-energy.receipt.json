@@ -1,0 +1,51 @@
+{
+  "source_file": "summary.json",
+  "source_sha256": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb",
+  "svg_sha256": "e9a17cb54e859e4edcc8819c98c22f01bc0269d6d607e5c32f88b35a19a63817",
+  "helper_sha256": "b0a2e6e1e440048767f74ab3954622f7c6aaac0c154c87aa5aeadfe34c5e1626",
+  "python_version": "3.14.5",
+  "reserve_supplied": "1/5",
+  "selected_capacity_joules": 270000,
+  "points": [
+    {
+      "case": "red",
+      "capacity_joules": 180000,
+      "remaining_fraction": "-1/9",
+      "engine_verdicts": {
+        "opensysml": "violated",
+        "toolkit": "violated"
+      },
+      "status": "infeasible"
+    },
+    {
+      "case": "green",
+      "capacity_joules": 270000,
+      "remaining_fraction": "7/27",
+      "engine_verdicts": {
+        "opensysml": "holds",
+        "toolkit": "holds"
+      },
+      "status": "feasible"
+    },
+    {
+      "case": "large",
+      "capacity_joules": 360000,
+      "remaining_fraction": "4/9",
+      "engine_verdicts": {
+        "opensysml": "holds",
+        "toolkit": "holds"
+      },
+      "status": "feasible"
+    }
+  ],
+  "checks": {
+    "arithmetic": "passed",
+    "svg_generation": "passed",
+    "visual_review": "not run"
+  },
+  "limits": [
+    "supplied threshold not independently verified against model source",
+    "finite candidates only; no engine execution or physical validation",
+    "no uncertainty data or collision check"
+  ]
+}

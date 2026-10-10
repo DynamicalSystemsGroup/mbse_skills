@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "source": {
+    "path": "changed-cli.json",
+    "sha256": "3d203c4e40e37b3881a048cba8136c729b82a359f680beca64e998478a867d50"
+  },
+  "adapter_sha256": "53c758cb6794620eb2b96e979c28c2ecea5e76e992dd2406faefeaa535128581",
+  "records": [
+    {
+      "id": "opensysml:changed-mission:validate",
+      "engine": "opensysml",
+      "engine_sha256": "8a7bdc975c4ddcb72a51bc9e8d98624bd565d47a3b0eea9d66b8ba989e347b7e",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "operation": "validate",
+      "outcome": "accepted",
+      "measurement": "completed",
+      "reason": "Calibrated opensysml validate interpretation: valid; measurement completed.",
+      "native_pointer": "/runs/0/validation",
+      "diagnostics_pointer": "/runs/0/validation/stdout",
+      "subject_scope": {
+        "kind": "model-validation"
+      },
+      "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+      "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+      "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+    },
+    {
+      "id": "opensysml:changed-mission:verify",
+      "engine": "opensysml",
+      "engine_sha256": "8a7bdc975c4ddcb72a51bc9e8d98624bd565d47a3b0eea9d66b8ba989e347b7e",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "operation": "verify",
+      "outcome": "violated",
+      "measurement": "completed",
+      "reason": "Calibrated opensysml verify interpretation: violated; measurement completed.",
+      "native_pointer": "/runs/0/verification",
+      "diagnostics_pointer": "/runs/0/validation/stdout",
+      "subject_scope": {
+        "kind": "named-checks",
+        "subjects": [
+          "Rover::energyReserve"
+        ]
+      },
+      "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+      "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+      "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+    },
+    {
+      "id": "toolkit:changed-mission:validate",
+      "engine": "toolkit",
+      "engine_sha256": "2f03096cdd2814c7ae03390d3759027a34c42588deac1f39d0ef8c5205af7a88",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "operation": "validate",
+      "outcome": "accepted",
+      "measurement": "completed",
+      "reason": "Calibrated toolkit validate interpretation: valid; measurement completed.",
+      "native_pointer": "/runs/1/validation",
+      "diagnostics_pointer": "/runs/1/validation/stdout",
+      "subject_scope": {
+        "kind": "model-validation"
+      },
+      "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+      "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+      "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+    },
+    {
+      "id": "toolkit:changed-mission:verify",
+      "engine": "toolkit",
+      "engine_sha256": "2f03096cdd2814c7ae03390d3759027a34c42588deac1f39d0ef8c5205af7a88",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "operation": "verify",
+      "outcome": "violated",
+      "measurement": "completed",
+      "reason": "Calibrated toolkit verify interpretation: violated; measurement completed.",
+      "native_pointer": "/runs/1/verification",
+      "diagnostics_pointer": "/runs/1/validation/stdout",
+      "subject_scope": {
+        "kind": "file-eligible-checks"
+      },
+      "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+      "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+      "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+    }
+  ],
+  "limits": [
+    "native evidence is authoritative",
+    "no current engine/model byte check",
+    "Toolkit scope is all eligible file checks",
+    "no physical/stakeholder validation"
+  ]
+}

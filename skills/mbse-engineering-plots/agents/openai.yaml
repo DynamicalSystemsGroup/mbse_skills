@@ -1,0 +1,3 @@
+interface:
+  display_name: "MBSE Engineering Plots"
+  short_description: "Engineering plots with units, uncertainty and evidence"

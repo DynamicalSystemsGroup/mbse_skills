@@ -1,0 +1,6 @@
+flowchart LR
+  accTitle: Proposed rover energy-flow slice
+  accDescr: Battery supplies an aggregate mobility load under the proposed constant-input scenario. This explanatory view is not a SysML relationship model.
+  battery["A-01: candidate battery"] -->|"I-01: energy supply; 100 W assumed"| load["L-01: aggregate mobility load"]
+  scenario["S-01: 2000 m at 1 m/s"] -.->|"scenario assumption"| load
+  load -.->|"modeled energy use; 200000 J"| budget["R-01 budget check: reserve at least 20 percent"]

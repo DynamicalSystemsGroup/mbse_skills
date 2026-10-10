@@ -1,0 +1,3 @@
+interface:
+  display_name: "MBSE Architecture"
+  short_description: "Logical architecture, interfaces and allocation"

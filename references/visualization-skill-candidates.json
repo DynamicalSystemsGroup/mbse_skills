@@ -1,0 +1,184 @@
+{
+  "reviewed_on": "2026-10-10",
+  "discovery": "skills.sh leaderboard, cached npx --offline skills find mermaid/plantuml/excalidraw/graphviz, primary GitHub metadata/entrypoints and selected helpers",
+  "limits": [
+    "search counts are changing discovery signals, not quality evidence",
+    "no upstream skill installed, renderer executed or upstream test suite run",
+    "no external skill source vendored; retained raw inspection bytes are ignored local research inputs"
+  ],
+  "repositories": [
+    {
+      "repository": "softaworks/agent-toolkit",
+      "commit": "3027f20f3181758385a1bb8c022d4041dfb4de84",
+      "stars": 2544,
+      "license_metadata": "MIT",
+      "skill_paths": [
+        "dist/plugins/excalidraw/skills/excalidraw/SKILL.md",
+        "dist/plugins/mermaid-diagrams/skills/mermaid-diagrams/SKILL.md",
+        "skills/excalidraw/SKILL.md",
+        "skills/mermaid-diagrams/SKILL.md"
+      ],
+      "root_license_paths": [
+        "LICENSE"
+      ],
+      "tree_truncated": false,
+      "files": {
+        "dist/plugins/excalidraw/skills/excalidraw/SKILL.md": {
+          "sha256": "561c01a2b0c7587021e665645209bf316342ef370dee994a4be2a0b2c84e6d99",
+          "url": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/dist/plugins/excalidraw/skills/excalidraw/SKILL.md"
+        },
+        "dist/plugins/mermaid-diagrams/skills/mermaid-diagrams/SKILL.md": {
+          "sha256": "79bca3c767a821a28aa7d83a9673010b2066afa4889923ea5946153c8967e824",
+          "url": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/dist/plugins/mermaid-diagrams/skills/mermaid-diagrams/SKILL.md"
+        },
+        "skills/excalidraw/SKILL.md": {
+          "sha256": "561c01a2b0c7587021e665645209bf316342ef370dee994a4be2a0b2c84e6d99",
+          "url": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/excalidraw/SKILL.md"
+        },
+        "skills/mermaid-diagrams/SKILL.md": {
+          "sha256": "79bca3c767a821a28aa7d83a9673010b2066afa4889923ea5946153c8967e824",
+          "url": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/skills/mermaid-diagrams/SKILL.md"
+        },
+        "LICENSE": {
+          "sha256": "4b4447da5344f8b2d3a8a19ba8366d1ac7a24d9ab4690bd04576dc772ddf8321",
+          "url": "https://github.com/softaworks/agent-toolkit/blob/3027f20f3181758385a1bb8c022d4041dfb4de84/LICENSE"
+        }
+      }
+    },
+    {
+      "repository": "SpillwaveSolutions/design-doc-mermaid",
+      "commit": "c36d83503d2ba9c1e51638dc2d8a34758a377dea",
+      "stars": 176,
+      "license_metadata": null,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "root_license_paths": [],
+      "tree_truncated": false,
+      "files": {
+        "SKILL.md": {
+          "sha256": "a63eac94737b587294ee529c92bd24b72c17928521e24d500aa933e840c675e4",
+          "url": "https://github.com/SpillwaveSolutions/design-doc-mermaid/blob/c36d83503d2ba9c1e51638dc2d8a34758a377dea/SKILL.md"
+        },
+        "scripts/mermaid_to_image.py": {
+          "sha256": "cf2b769f5eb4aeb18dfd3ad9eab7573ff7e500cc52c85d5d4732aa85e7a6bc63",
+          "url": "https://github.com/SpillwaveSolutions/design-doc-mermaid/blob/c36d83503d2ba9c1e51638dc2d8a34758a377dea/scripts/mermaid_to_image.py"
+        }
+      }
+    },
+    {
+      "repository": "SpillwaveSolutions/plantuml",
+      "commit": "8aa811cf672dd895a970e81065b8f7e7cee52ded",
+      "stars": 58,
+      "license_metadata": null,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "root_license_paths": [],
+      "tree_truncated": false,
+      "files": {
+        "SKILL.md": {
+          "sha256": "cd92a27cd4b97e43b7f97df778167e157a031e868e63846b8488cae3c121de7d",
+          "url": "https://github.com/SpillwaveSolutions/plantuml/blob/8aa811cf672dd895a970e81065b8f7e7cee52ded/SKILL.md"
+        },
+        "scripts/convert_puml.py": {
+          "sha256": "3825cf40199cebd755bd4933b78b293f1416602445f96ee21003e37bf0597d79",
+          "url": "https://github.com/SpillwaveSolutions/plantuml/blob/8aa811cf672dd895a970e81065b8f7e7cee52ded/scripts/convert_puml.py"
+        }
+      }
+    },
+    {
+      "repository": "intellectronica/agent-skills",
+      "commit": "9b0e00ad1b941165e2506545bbfddafa34cf2cb8",
+      "stars": 295,
+      "license_metadata": "CC0-1.0",
+      "skill_paths": [
+        "plugins/beautiful-mermaid/skills/SKILL.md",
+        "skills/beautiful-mermaid/SKILL.md"
+      ],
+      "root_license_paths": [
+        "LICENSE.txt"
+      ],
+      "tree_truncated": false,
+      "files": {
+        "plugins/beautiful-mermaid/skills/SKILL.md": {
+          "sha256": "2ea488822ccd006cbbe6a3c4fa52f3224d1f24e96687acbef167bb61e47b1962",
+          "url": "https://github.com/intellectronica/agent-skills/blob/9b0e00ad1b941165e2506545bbfddafa34cf2cb8/plugins/beautiful-mermaid/skills/SKILL.md"
+        },
+        "skills/beautiful-mermaid/SKILL.md": {
+          "sha256": "2ea488822ccd006cbbe6a3c4fa52f3224d1f24e96687acbef167bb61e47b1962",
+          "url": "https://github.com/intellectronica/agent-skills/blob/9b0e00ad1b941165e2506545bbfddafa34cf2cb8/skills/beautiful-mermaid/SKILL.md"
+        },
+        "LICENSE.txt": {
+          "sha256": "8086d35fe85c31edba067005aa982a702faef484f2c77cd0b58c926975eba2a9",
+          "url": "https://github.com/intellectronica/agent-skills/blob/9b0e00ad1b941165e2506545bbfddafa34cf2cb8/LICENSE.txt"
+        },
+        "skills/beautiful-mermaid/scripts/render.ts": {
+          "sha256": "764d793b2ee5414c8d13762910c670533d124a6aab498842f8022de2da3e8990",
+          "url": "https://github.com/intellectronica/agent-skills/blob/9b0e00ad1b941165e2506545bbfddafa34cf2cb8/skills/beautiful-mermaid/scripts/render.ts"
+        }
+      }
+    },
+    {
+      "repository": "coleam00/excalidraw-diagram-skill",
+      "commit": "8646fcc9f74f38539c6cdb4c969723336a96ddcd",
+      "stars": 4979,
+      "license_metadata": null,
+      "skill_paths": [
+        "SKILL.md"
+      ],
+      "root_license_paths": [],
+      "tree_truncated": false,
+      "files": {
+        "SKILL.md": {
+          "sha256": "f737a9720455fddca9532fbaeb148e49e2746fd37250fa4cf54aa48a807ce1a5",
+          "url": "https://github.com/coleam00/excalidraw-diagram-skill/blob/8646fcc9f74f38539c6cdb4c969723336a96ddcd/SKILL.md"
+        }
+      }
+    },
+    {
+      "repository": "github/awesome-copilot",
+      "commit": "82701c24b99488536ca399ff4789a458b7a05db7",
+      "stars": 39884,
+      "license_metadata": "MIT",
+      "skill_paths": [
+        "skills/excalidraw-diagram-generator/SKILL.md"
+      ],
+      "root_license_paths": [
+        "LICENSE"
+      ],
+      "tree_truncated": false,
+      "files": {
+        "skills/excalidraw-diagram-generator/SKILL.md": {
+          "sha256": "3716375aca4ef46ac4b9e0c6cc349e472be9e1a75df47873d587b7eae56cebce",
+          "url": "https://github.com/github/awesome-copilot/blob/82701c24b99488536ca399ff4789a458b7a05db7/skills/excalidraw-diagram-generator/SKILL.md"
+        },
+        "LICENSE": {
+          "sha256": "e32449d23085399adc1222f7a17408b730550258e51627c153cb108ca9955823",
+          "url": "https://github.com/github/awesome-copilot/blob/82701c24b99488536ca399ff4789a458b7a05db7/LICENSE"
+        },
+        "skills/excalidraw-diagram-generator/scripts/add-arrow.py": {
+          "sha256": "7eb13b7a924e9c63f7b6193683ee7951ac3914e30895a41ed443db3b01df2b9a",
+          "url": "https://github.com/github/awesome-copilot/blob/82701c24b99488536ca399ff4789a458b7a05db7/skills/excalidraw-diagram-generator/scripts/add-arrow.py"
+        }
+      }
+    },
+    {
+      "repository": "openai/plugins",
+      "commit": "0722921d5542fc593105c27bd52630babd8b8c2a",
+      "stars": 7373,
+      "license_metadata": null,
+      "skill_paths": [
+        "plugins/build-web-data-visualization/skills/uml-and-software-architecture-visualization/SKILL.md"
+      ],
+      "root_license_paths": [],
+      "tree_truncated": false,
+      "files": {
+        "plugins/build-web-data-visualization/skills/uml-and-software-architecture-visualization/SKILL.md": {
+          "sha256": "66c7aa61b25c2e68835f8a7eda725a2a232ba25c0631702a5668879aa760460e",
+          "url": "https://github.com/openai/plugins/blob/0722921d5542fc593105c27bd52630babd8b8c2a/plugins/build-web-data-visualization/skills/uml-and-software-architecture-visualization/SKILL.md"
+        }
+      }
+    }
+  ]
+}

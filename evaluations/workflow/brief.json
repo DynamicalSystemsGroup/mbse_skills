@@ -1,0 +1,25 @@
+{
+  "onboarding": "Configure this existing teaching project for the collection, retaining its established conventions. Engines already exist; do not install or rerun anything.",
+  "tasks": [
+    {
+      "id": "ambiguous",
+      "request": "Add a requirement to keep a healthy energy margin after the mission. No stakeholder gave a threshold for this new statement."
+    },
+    {
+      "id": "conflict",
+      "request": "Evaluate a changed 3 km traverse at 1 m/s and 100 W; retain at least 20% of initial usable energy and do not exceed 270000 J capacity. Propose a decision without changing either obligation silently."
+    },
+    {
+      "id": "capability",
+      "request": "Interpret the separately labeled synthetic captures: do they establish modeled constraint satisfaction or support?"
+    },
+    {
+      "id": "change",
+      "request": "Identify review/rerun impact when A-01 distance changes to 3 km, using the retained trace graph and the fresh changed-model capture. Keep old evidence historical for the original inputs."
+    },
+    {
+      "id": "unrelated",
+      "request": "Change the greeting Hello to Hi in a plain informal note. Explain whether an MBSE workflow is needed."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "captured_at_utc": "2026-10-10T14:11:06.551287+00:00",
+  "helper_sha256": "7c94ab410dbbb67ee4448b418458a994a190faec6f3099f208d63a72f564fe6a",
+  "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+  "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+  "engines": {
+    "engines": {
+      "opensysml": {
+        "executable": "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-standards-research/repos/sysmlv2-testing-next/.local/opensysml-pinned-build/source/bin/sysml",
+        "sha256": "8a7bdc975c4ddcb72a51bc9e8d98624bd565d47a3b0eea9d66b8ba989e347b7e"
+      },
+      "opensysml-lsp": {
+        "executable": "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/sysml-lsp",
+        "sha256": "b9b1bcd9249131e8049614f62a3d636ba85984f3790c44dba2e7457545195238"
+      },
+      "toolkit": {
+        "executable": "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysmlv2-0.10.0-x86_64-unknown-linux-gnu/sysmlv2",
+        "sha256": "2f03096cdd2814c7ae03390d3759027a34c42588deac1f39d0ef8c5205af7a88"
+      }
+    },
+    "library": "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysml-v2-release/sysml.library",
+    "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646",
+    "opensysml_source_revision": "714c459fe5dcce1affb62fd98309b63626dfa311",
+    "opensysml_lsp_build": {
+      "command": "go build -trimpath ./cmd/sysml-lsp",
+      "toolchain": "Go 1.25.11",
+      "network": "GOPROXY=off; cached modules only"
+    }
+  },
+  "runs": [
+    {
+      "engine": "opensysml",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "validation": {
+        "argv": [
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-standards-research/repos/sysmlv2-testing-next/.local/opensysml-pinned-build/source/bin/sysml",
+          "-strict",
+          "-no-record-cache",
+          "-json",
+          "-validate",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml"
+        ],
+        "state": "completed",
+        "exit_code": 0,
+        "stdout": "{\n  \"status\": \"holds\",\n  \"exit\": 0,\n  \"checks\": null,\n  \"diagnostics\": null,\n  \"output\": [\n    \"\u2713 package Rover\",\n    \"\u2713 /home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml: no errors\"\n  ],\n  \"errors\": null\n}\n",
+        "stderr": "",
+        "elapsed_seconds": 0.0356,
+        "outcome": "valid"
+      },
+      "expectation_met": true,
+      "verification": {
+        "argv": [
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-standards-research/repos/sysmlv2-testing-next/.local/opensysml-pinned-build/source/bin/sysml",
+          "-strict",
+          "-no-record-cache",
+          "-json",
+          "-constraint",
+          "Rover::energyReserve",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml"
+        ],
+        "state": "completed",
+        "exit_code": 1,
+        "stdout": "{\n  \"status\": \"fails\",\n  \"exit\": 1,\n  \"checks\": [\n    {\n      \"subject\": \"Rover::energyReserve\",\n      \"status\": \"fails\",\n      \"values\": null,\n      \"lines\": [\n        \"\u2717 Constraint Rover::energyReserve failed\",\n        \"  Assertion evaluated to false: remaining \\u003e= reserve\",\n        \"  standing: violated (witnessed: 1 run under reverse)\"\n      ],\n      \"rows\": null,\n      \"plan\": {\n        \"engine\": \"auto\",\n        \"standing\": \"violated (witnessed: 1 run under reverse)\",\n        \"steps\": [\n          {\n            \"engine\": \"run\",\n            \"status\": \"answered\"\n          }\n        ],\n        \"workers\": 0,\n        \"warming\": 0\n      },\n      \"results\": [\n        {\n          \"engine\": \"run\",\n          \"claim\": \"violated\",\n          \"strength\": \"witnessed\",\n          \"bounds\": [\n            {\n              \"name\": \"steps\",\n              \"limit\": 10000000,\n              \"reached\": false\n            },\n            {\n              \"name\": \"elements\",\n              \"limit\": 1000000,\n              \"reached\": false\n            }\n          ],\n          \"witness\": {\n            \"schedule\": \"reverse\",\n            \"choices\": []\n          },\n          \"reason\": \"constraint energyReserve: assertion evaluated to false: remaining \\u003e= reserve\",\n          \"standing\": \"violated (witnessed: 1 run under reverse)\"\n        }\n      ]\n    }\n  ],\n  \"diagnostics\": null,\n  \"output\": [\n    \"\u2713 package Rover\"\n  ],\n  \"errors\": null\n}\n",
+        "stderr": "",
+        "elapsed_seconds": 0.0597,
+        "outcome": "violated"
+      }
+    },
+    {
+      "engine": "toolkit",
+      "case": "changed-mission",
+      "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+      "validation": {
+        "argv": [
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysmlv2-0.10.0-x86_64-unknown-linux-gnu/sysmlv2",
+          "check",
+          "--format",
+          "json",
+          "--lib",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysml-v2-release/sysml.library",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml"
+        ],
+        "state": "completed",
+        "exit_code": 0,
+        "stdout": "{\n  \"findings\": [],\n  \"summary\": {\n    \"errors\": 0,\n    \"hints\": 0,\n    \"infos\": 0,\n    \"warnings\": 0\n  }\n}\n",
+        "stderr": "",
+        "elapsed_seconds": 0.8169,
+        "outcome": "valid"
+      },
+      "expectation_met": true,
+      "verification": {
+        "argv": [
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysmlv2-0.10.0-x86_64-unknown-linux-gnu/sysmlv2",
+          "verify",
+          "--lib",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysml-v2-release/sysml.library",
+          "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml"
+        ],
+        "state": "completed",
+        "exit_code": 1,
+        "stdout": "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills/.local/onboarding-first/models/changed-mission.sysml:13:32  energyReserve (ConstraintUsage): VIOLATED (with remaining = -1/9, reserve = 0.2)\n0 satisfied, 1 violated, 0 undecided\n",
+        "stderr": "",
+        "elapsed_seconds": 0.7243,
+        "outcome": "violated"
+      }
+    }
+  ],
+  "versions": {
+    "opensysml": {
+      "argv": [
+        "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-standards-research/repos/sysmlv2-testing-next/.local/opensysml-pinned-build/source/bin/sysml",
+        "-version"
+      ],
+      "state": "completed",
+      "exit_code": 0,
+      "stdout": "sysml research-714c459fe5dc\n  Commit:     714c459fe5dcce1affb62fd98309b63626dfa311\n  Build time: 2026-10-09_16:35:54\n  Go version: go1.25.11\n",
+      "stderr": "",
+      "elapsed_seconds": 0.0071
+    },
+    "toolkit": {
+      "argv": [
+        "/home/rohan/Documents/Github/work/dsg/openmbee/sysmlv2-testing/.cache/toolchains/sysmlv2-0.10.0-x86_64-unknown-linux-gnu/sysmlv2",
+        "--version"
+      ],
+      "state": "completed",
+      "exit_code": 0,
+      "stdout": "sysmlv2 0.10.0\n",
+      "stderr": "",
+      "elapsed_seconds": 0.0022
+    }
+  },
+  "expectations_met": true
+}

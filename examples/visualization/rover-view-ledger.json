@@ -1,0 +1,44 @@
+{
+  "status": "proposed explanatory slice; no stakeholder acceptance",
+  "destination": {
+    "format": "editable Mermaid plus extracted JSON",
+    "dimensions": null,
+    "detail": "energy-flow slice",
+    "audience": "engineering reviewers"
+  },
+  "source_slice": {
+    "file": "rover-energy.mmd",
+    "sha256": "f6d19a15f8b474d7761b0e32189034e62726b33b24022df95741fc80ab061886",
+    "nodes": 4,
+    "relationships": 3,
+    "full_architecture_counts": "unknown"
+  },
+  "drawn_slice": {
+    "nodes": 4,
+    "relationships": 3
+  },
+  "mapping": {
+    "battery": "A-01",
+    "load": "L-01",
+    "scenario": "S-01",
+    "budget": "R-01",
+    "edge-1": "I-01 simplified energy exchange",
+    "edge-2": "scenario assumption",
+    "edge-3": "analytical budget input"
+  },
+  "merged_instances": [],
+  "collapsed_groups": [],
+  "omitted_from_selected_diagram": [],
+  "scope_limits": [
+    "the source diagram already aggregates mobility load",
+    "faults, physical characterization and formal SysML relationships are outside this selected diagram",
+    "no claim of full architecture coverage"
+  ],
+  "checks": {
+    "structural_extraction": "passed",
+    "native_render": "not-run",
+    "geometry": "not-run",
+    "visual": "not-run",
+    "model_semantics": "not-run"
+  }
+}

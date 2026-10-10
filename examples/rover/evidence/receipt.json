@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-10",
+  "artifacts": [
+    {
+      "path": "cli.json",
+      "sha256": "7fc2d25197c0b70eaa3a8418e50e67518f48c061b69949b61e45c816ac734650",
+      "bytes": 47998
+    },
+    {
+      "path": "profile.json",
+      "sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+      "bytes": 1230
+    },
+    {
+      "path": "lsp.json",
+      "sha256": "1e20fbfb648f4d370e83e453d86b679ce700c559e682114beef16649f116907e",
+      "bytes": 63702
+    },
+    {
+      "path": "summary.json",
+      "sha256": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb",
+      "bytes": 1338
+    }
+  ],
+  "case_manifest_sha256": "60e47d7c65284e212b2f00e8a5f1e99feb894404a227595be825d613b8591f7b",
+  "helpers": {
+    "skills/mbse-model-tdd/scripts/engine_check.py": "7c94ab410dbbb67ee4448b418458a994a190faec6f3099f208d63a72f564fe6a",
+    "skills/mbse-model-tdd/scripts/lsp_check.py": "bd9f13ad638a864af20a8e56493169a8defa3b95977f84de6cd922a26c9284ba",
+    "scripts/rover_demo.py": "df9ce13c31681daf880c62814ef3ef5b4d91212834d89cc940d8b03dec5d1b2e"
+  },
+  "models": {
+    "examples/rover/red.sysml": "bd26b56850c4c57724af5805ca6a539c7477fbb9c7fb8449bb77307900b33d70",
+    "examples/rover/boundary.sysml": "8f8879e2059991fc42431006e7e0224e83a9442eb2939f9832da0fcdfb0641f2",
+    "examples/rover/unit-error.sysml": "3569302c420fb14681724c92aa979106623d210ec66442e6e5bb4db5a8d5f58e",
+    "examples/rover/large.sysml": "f636b8311da0efda2ada4638c55464d9c5b3ab0a97ad860ee86de87f5035b5b9",
+    "examples/rover/short.sysml": "7c90300d96428e1c97b89f53b743eb07d0bac3fd0cb1ac6680a8d52aa7faf16e",
+    "examples/rover/unknown.sysml": "ec6516a047765b28d86317c04531a96b7bab8d7857c45ae6abf7621fde27ee92",
+    "examples/rover/syntax-error.sysml": "7f76acc563da3e4659361f51e39738f8d18d7d7ce61ab5e46fc601bd177f1104",
+    "examples/rover/below-boundary.sysml": "8296fa6dad1f2d9111c5c44d399dd289daa6e6bda1262ad31590068f752281b0",
+    "examples/rover/green.sysml": "799878f5d4a3ac0c7e2af200419e69bb57f76214ddce678eba070d7ad7901aa2",
+    "examples/rover/unresolved.sysml": "ed9c89c8c6f49a95e0a6f858307e0e80efb827769b1dfee23dd2dfd405a3ec13"
+  }
+}

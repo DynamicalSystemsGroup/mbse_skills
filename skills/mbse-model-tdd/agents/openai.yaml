@@ -1,0 +1,3 @@
+interface:
+  display_name: "MBSE Model TDD"
+  short_description: "Check model changes against reproducible engine evidence"

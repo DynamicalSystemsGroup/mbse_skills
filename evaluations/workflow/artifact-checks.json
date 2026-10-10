@@ -1,0 +1,60 @@
+{
+  "output-a": {
+    "schema": "invalid",
+    "error": "R-02: invalid kind, status or title",
+    "unrelated_file_preserved": true,
+    "native_captures_preserved": true
+  },
+  "output-b": {
+    "schema": "valid",
+    "fresh": true,
+    "coverage": [
+      {
+        "requirement": "R-01",
+        "status": "proposed",
+        "needs": [
+          "N-01"
+        ],
+        "verification": [
+          "V-02"
+        ],
+        "evidence": [
+          "E-03"
+        ],
+        "gaps": []
+      },
+      {
+        "requirement": "R-02",
+        "status": "proposed",
+        "needs": [
+          "N-01"
+        ],
+        "verification": [
+          "V-02"
+        ],
+        "evidence": [
+          "E-03"
+        ],
+        "gaps": []
+      },
+      {
+        "requirement": "R-03",
+        "status": "open",
+        "needs": [
+          "N-01"
+        ],
+        "verification": [
+          "V-03"
+        ],
+        "evidence": [],
+        "gaps": [
+          "acceptance",
+          "evidence"
+        ]
+      }
+    ],
+    "complete": false,
+    "unrelated_file_preserved": true,
+    "native_captures_preserved": true
+  }
+}

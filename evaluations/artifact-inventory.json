@@ -1,0 +1,275 @@
+{
+  "date": "2026-10-10",
+  "conditions": {
+    "output-a": "baseline",
+    "output-b": "skill-assisted"
+  },
+  "input_files": [
+    {
+      "path": ".local/rover-work/request.md",
+      "sha256": "0e8eb68ecb6f65815d3a5336d60aac7a098365f6842f7423b38861220d0e1629"
+    },
+    {
+      "path": ".local/rover-work/rover.sysml",
+      "sha256": "bd26b56850c4c57724af5805ca6a539c7477fbb9c7fb8449bb77307900b33d70"
+    },
+    {
+      "path": ".local/rover-work/engines.json",
+      "sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda"
+    },
+    {
+      "path": ".local/rover-work/raw/open.json",
+      "sha256": "4e77400bb4f8e85622596764f9333ba79849898bd8e1594ceafa7cbd088095f1"
+    },
+    {
+      "path": ".local/rover-work/raw/toolkit.txt",
+      "sha256": "a9f2eb9b59497d53d3079ce762ba68ef6d5afbc6856270ad70e303c61dbead0f"
+    },
+    {
+      "path": ".local/rover-work/raw/lsp.json",
+      "sha256": "404b67c7929a0219b127f33ec5ac1877730cdebc96d121e648986318a45c6ff7"
+    }
+  ],
+  "skill_resources": [
+    {
+      "path": "skills/mbse-discovery/SKILL.md",
+      "sha256": "29f5d65826524852ae24e35d9483b80553bdb895501672ba7238653f8b76c105"
+    },
+    {
+      "path": "skills/mbse-standards-research/SKILL.md",
+      "sha256": "455163d25388e237cdfbad583c82c5ad0f2971b58c2b061c153aa855313e9e92"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/SKILL.md",
+      "sha256": "b0eedeb18808713f736cade7751db53c629ee30b5ed10e1e3d23f1ffeec49e65"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/SKILL.md",
+      "sha256": "8d5d4a2035985768afa67a235856d2fb0ddee9a90ae7ec72dd9be932bcd8b1a0"
+    },
+    {
+      "path": "skills/mbse-literature-research/SKILL.md",
+      "sha256": "e202bdc74e0f7645324b7326d196a5655738b8b182953ae6b9c8b3b9affb3491"
+    },
+    {
+      "path": "skills/mbse-model-tdd/SKILL.md",
+      "sha256": "f4fe26779b8d9bc1151b795c15090a78447f92fba7ce169b1f293ecee01f2d4a"
+    },
+    {
+      "path": "skills/mbse-discovery/references/vocabulary.md",
+      "sha256": "e0e10925987714664bcb98559f6f6dcaf98513ca5da29adf1c7a49002559aa43"
+    },
+    {
+      "path": "skills/mbse-standards-research/references/source-selection.md",
+      "sha256": "738730f7f906a3a0191b87687fecd5690b546d4d3b4ec5b2f9f3d7c783080952"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/references/trade-study.md",
+      "sha256": "3ab7d5d96732deef712cebe8477abe38e0816167c73a31eaea9bcf7b499890b3"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/references/foundations.md",
+      "sha256": "3af014be3ef2a9956fd50142aaaa82d5fb618234d2c6480b0578928f197f53e3"
+    },
+    {
+      "path": "skills/mbse-literature-research/references/research-evidence.md",
+      "sha256": "d0b316e25fb5739702a4f1efe048ff336e1a0defb92fe589a811c0def565370a"
+    },
+    {
+      "path": "skills/mbse-model-tdd/references/engine-evidence.md",
+      "sha256": "8e93cb4eead29cd752fefbc6553cb54862ca61b358546586f736a050602de1c8"
+    }
+  ],
+  "candidate_artifacts": [
+    {
+      "path": ".local/rover-work/output-a/updated-toolkit-verify.json",
+      "sha256": "6937cbc5f4932c83b73dbcd3d1e562cbf852ed48489bb6d8997a0de43406d316",
+      "bytes": 680
+    },
+    {
+      "path": ".local/rover-work/output-a/boundary-opensysml-constraint.json",
+      "sha256": "7f3fba31db90731afda4c9dfa27799f18e6b0daa0acce01e97cdc50e0ae26ab6",
+      "bytes": 1796
+    },
+    {
+      "path": ".local/rover-work/output-a/boundary-toolkit-values.json",
+      "sha256": "01680efbab2e4e09bcb0fff3ef98e2859d30841d264da563bc0188257855f797",
+      "bytes": 664
+    },
+    {
+      "path": ".local/rover-work/output-a/manifest.json",
+      "sha256": "ed09ec52f648e4c745bbe62f9489c3e0497ed9e51488ddb1f7e35370eb686c81",
+      "bytes": 1642
+    },
+    {
+      "path": ".local/rover-work/output-a/original-opensysml-validate-json.json",
+      "sha256": "141133a5273d755c920216ac55a8140a8f3d65de1762db297c1025101ba568bb",
+      "bytes": 706
+    },
+    {
+      "path": ".local/rover-work/output-a/boundary-toolkit-verify.json",
+      "sha256": "a89c1eba475e102107c3681254c103ba43e9a9e38a160f84945cf52df4f3c3ef",
+      "bytes": 687
+    },
+    {
+      "path": ".local/rover-work/output-a/original-opensysml-constraint.json",
+      "sha256": "c8c4a488ca56a76e5e0712c10f90dc1de76c651d80a4ef6a716079af461449ce",
+      "bytes": 2063
+    },
+    {
+      "path": ".local/rover-work/output-a/engineering-note.md",
+      "sha256": "4916f8a6fffb7cb13b8b13c916e19511ba838fc11add1059bc20d58fe1653883",
+      "bytes": 6424
+    },
+    {
+      "path": ".local/rover-work/output-a/updated-opensysml-validate.json",
+      "sha256": "a013fdf16569b7daaf6acd6ea1f37759ec3291b5174ec00630895c0b6faf0329",
+      "bytes": 565
+    },
+    {
+      "path": ".local/rover-work/output-a/boundary.sysml",
+      "sha256": "8f8879e2059991fc42431006e7e0224e83a9442eb2939f9832da0fcdfb0641f2",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-a/original-toolkit-values.json",
+      "sha256": "3d88e7f33692568cc1e9ef579a6501ef87b9b9017d118531296d8ac57f4a1150",
+      "bytes": 653
+    },
+    {
+      "path": ".local/rover-work/output-a/original-toolkit-verify.json",
+      "sha256": "94bb7d7c013c352a5257d8890873fc987ef1d6d2b689be1e5e152af77bb7aa42",
+      "bytes": 701
+    },
+    {
+      "path": ".local/rover-work/output-a/rover.sysml",
+      "sha256": "799878f5d4a3ac0c7e2af200419e69bb57f76214ddce678eba070d7ad7901aa2",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-a/updated-toolkit-values.json",
+      "sha256": "6c8078f694c82ecd12694425be10645dfe823cff97bd05a7e20c33de507f0cd3",
+      "bytes": 661
+    },
+    {
+      "path": ".local/rover-work/output-a/updated-opensysml-constraint.json",
+      "sha256": "2f886863fca0bbe2d3f59368ead6f91eeaa7aaf5f0e98975315ccd54072d339f",
+      "bytes": 1792
+    },
+    {
+      "path": ".local/rover-work/output-a/commands.json",
+      "sha256": "3f8715eec68d968efff5a6f426939ac3ef1b96d0f80e9ca8cfa855354453628f",
+      "bytes": 12587
+    },
+    {
+      "path": ".local/rover-work/output-a/original-toolkit-no-library.json",
+      "sha256": "994e5a55bb9ac0bf22ade0f172d1925d774cc1114d8fe4bf094d7a27268ea298",
+      "bytes": 562
+    },
+    {
+      "path": ".local/rover-work/output-a/supplied-captures/open.json",
+      "sha256": "4e77400bb4f8e85622596764f9333ba79849898bd8e1594ceafa7cbd088095f1",
+      "bytes": 40
+    },
+    {
+      "path": ".local/rover-work/output-a/supplied-captures/toolkit.txt",
+      "sha256": "a9f2eb9b59497d53d3079ce762ba68ef6d5afbc6856270ad70e303c61dbead0f",
+      "bytes": 37
+    },
+    {
+      "path": ".local/rover-work/output-a/supplied-captures/lsp.json",
+      "sha256": "404b67c7929a0219b127f33ec5ac1877730cdebc96d121e648986318a45c6ff7",
+      "bytes": 129
+    },
+    {
+      "path": ".local/rover-work/output-b/control-249999.sysml",
+      "sha256": "8296fa6dad1f2d9111c5c44d399dd289daa6e6bda1262ad31590068f752281b0",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-b/control-360000.sysml",
+      "sha256": "f636b8311da0efda2ada4638c55464d9c5b3ab0a97ad860ee86de87f5035b5b9",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-b/lsp-command.txt",
+      "sha256": "9cd36aa1ab396f8ae848995fa59763b2e6936c33660f5eb6b0beb0366e076eaa",
+      "bytes": 57
+    },
+    {
+      "path": ".local/rover-work/output-b/cases.json",
+      "sha256": "76402f8299e7615440c2883aeaee65a9771aefedb8ba92a732341147481b5b6d",
+      "bytes": 1004
+    },
+    {
+      "path": ".local/rover-work/output-b/lsp-command.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": ".local/rover-work/output-b/engineering-note.md",
+      "sha256": "c1a9f1f410d81ebd81e97ef3a43b030026740822375602c1174e503e541d8dbd",
+      "bytes": 6208
+    },
+    {
+      "path": ".local/rover-work/output-b/input-identities.json",
+      "sha256": "fc8a02994626440f34b7e10a1dd6fe2f8b0ef1c493cee6e427867cfaf9faa4c4",
+      "bytes": 982
+    },
+    {
+      "path": ".local/rover-work/output-b/baseline.sysml",
+      "sha256": "bd26b56850c4c57724af5805ca6a539c7477fbb9c7fb8449bb77307900b33d70",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-b/commands.md",
+      "sha256": "854921bf8c24ec6dc6572519b40199cd348b24a4ab15420542cbb09695748373",
+      "bytes": 1908
+    },
+    {
+      "path": ".local/rover-work/output-b/cli-command.exit",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "bytes": 2
+    },
+    {
+      "path": ".local/rover-work/output-b/rover.sysml",
+      "sha256": "799878f5d4a3ac0c7e2af200419e69bb57f76214ddce678eba070d7ad7901aa2",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-b/independent-calculation.json",
+      "sha256": "4d8b1f0780a82fad8c14924773046d587047f11b305f60e9017c3b5c94949b0e",
+      "bytes": 1596
+    },
+    {
+      "path": ".local/rover-work/output-b/control-250001.sysml",
+      "sha256": "100a741f6a5c451a2219833e0ef054673dd7c879d56572ec182585b96621b503",
+      "bytes": 572
+    },
+    {
+      "path": ".local/rover-work/output-b/cli-results.json",
+      "sha256": "cf7848204170334c17f9d2f53151a22373bb70bc0ac391c88174077face2678b",
+      "bytes": 31330
+    },
+    {
+      "path": ".local/rover-work/output-b/cli-command.txt",
+      "sha256": "518ec495616b18ea5e38013ceb75cf39eb831199b3ef5bcf5c7a99a3d0fe4dce",
+      "bytes": 69
+    },
+    {
+      "path": ".local/rover-work/output-b/lsp-results.json",
+      "sha256": "1ee7534bdccfe2c906b4df2c534d975105b032964e3f81c27d088e6b50524cde",
+      "bytes": 26264
+    },
+    {
+      "path": ".local/rover-work/output-b/control-250000.sysml",
+      "sha256": "8f8879e2059991fc42431006e7e0224e83a9442eb2939f9832da0fcdfb0641f2",
+      "bytes": 572
+    }
+  ],
+  "post_review_lsp": {
+    "path": ".local/rover-work/post-review-lsp.json",
+    "sha256": "5f5973501100d1fcebfaaf3be018da66cd50698deeb4c8ea69b49d1941dcbf36"
+  },
+  "limits": "Single exploratory pair; candidate captures preceded helper review fixes. Original helper bytes were not separately frozen."
+}

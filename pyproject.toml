@@ -1,0 +1,9 @@
+[project]
+name = "mbse-skills"
+version = "0.1.0"
+description = "Portable MBSE agent skills and bounded local verification helpers"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+package = false

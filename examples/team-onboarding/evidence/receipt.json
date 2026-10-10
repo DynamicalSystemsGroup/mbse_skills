@@ -1,0 +1,33 @@
+{
+  "generated_at_utc": "2026-10-10T14:20:02.579374+00:00",
+  "files_sha256": {
+    "change-impact.json": "0c8637f97c24f6ecd6b1b932d116906c9710e26e00aac69397c616572b3c7422",
+    "changed-cases.json": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+    "changed-cli.json": "3d203c4e40e37b3881a048cba8136c729b82a359f680beca64e998478a867d50",
+    "changed-mission.sysml": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+    "changed-model-report.json": "1accb1743b46161a3fc4a0cb9ac9187e95570ddb2b277fe3ef5a40b612b4aabb",
+    "codex-marketplace-discovery.json": "39500b26803e3dfa08de0cd2544f78102059f8d3eadf958e7548e7c37fcf4bf5",
+    "onboarding-result.json": "4e4cd53fc299d9e6c69906442377b88aadc7722991510d091cec1417950424b2"
+  },
+  "current_helpers_sha256": {
+    "scripts/onboarding_demo.py": "62fd6eeb20d258dc3d1aed4af380ce73e31592c56033e9683e7ce11ac317bb4b",
+    "skills/setup-mbse-skills/scripts/init_project.py": "44b20885f48166f935a8bc6c84f3a7021237b18f3786bb698619f8d3478f8052",
+    "skills/mbse-traceability/scripts/trace_check.py": "50584143185a28e0315f65c77300d37d88306166a5ccc91605ad6276213a449b",
+    "skills/mbse-model-tdd/scripts/engine_check.py": "7c94ab410dbbb67ee4448b418458a994a190faec6f3099f208d63a72f564fe6a",
+    "skills/mbse-model-tdd/scripts/normalize_capture.py": "53c758cb6794620eb2b96e979c28c2ecea5e76e992dd2406faefeaa535128581"
+  },
+  "checks": {
+    "changed_native_replay": {
+      "native_source_verified": true,
+      "records_replayed": 4
+    },
+    "changed_model_hashes_match": true,
+    "native_manifest_hash_matches": true,
+    "marketplace_manifest_hashes_match": true
+  },
+  "limits": [
+    "current helpers may postdate native capture; replay is derived",
+    "native client check establishes marketplace availability only",
+    "no stakeholder or physical validation"
+  ]
+}

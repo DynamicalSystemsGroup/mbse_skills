@@ -1,0 +1,40 @@
+{
+  "client": "codex-cli 0.162.1",
+  "argv": [
+    "codex",
+    "-c",
+    "marketplaces.mbse-smoke.source_type=\"local\"",
+    "-c",
+    "marketplaces.mbse-smoke.source=\"/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills\"",
+    "plugin",
+    "list",
+    "--marketplace",
+    "mbse-skills-community",
+    "--available",
+    "--json"
+  ],
+  "exit_code": 0,
+  "result": {
+    "installed": [],
+    "available": [
+      {
+        "pluginId": "mbse-skills@mbse-skills-community",
+        "name": "mbse-skills",
+        "marketplaceName": "mbse-skills-community",
+        "version": "0.1.0",
+        "installed": false,
+        "enabled": false,
+        "source": {
+          "source": "local",
+          "path": "/home/rohan/Documents/Github/work/dsg/openmbee/mbse_skills"
+        },
+        "installPolicy": "AVAILABLE",
+        "authPolicy": "ON_INSTALL"
+      }
+    ]
+  },
+  "plugin_sha256": "2df11e429f1385772f79cf58c35311b958c6948300484ec195c2ae56bc0c6b5b",
+  "marketplace_sha256": "130e507e42926ca72afa1524684a63cb5c160bbfa4e7f00d204cce15874947a8",
+  "scope": "Native marketplace discovery through invocation-only config overrides; not plugin installation or skill invocation.",
+  "user_config_modified": false
+}

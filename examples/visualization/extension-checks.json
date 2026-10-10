@@ -1,0 +1,52 @@
+{
+  "recorded_on": "2026-10-10",
+  "artifacts": {
+    "rover-energy-accessible.svg": "66df32cfd2cd9cac2ddaebd6db75b7ed6c8e9f24dc1352052db3cb220ee11708",
+    "rover-energy-accessible.receipt.json": "c702dea8cb466e487c5aa4a8b8a5ac39481e34cfd8e9c8916291201de848fcff",
+    "rover-view.json": "8cff2a26b0397c105bea66cee386a5bdb5532e45d6e65bf9a519363e1b6ac8a2",
+    "rover-view-ledger.json": "f9c5079386fdaa11b65e2f085ab5cffbcabcfe868ab2cc3147cbb66fc34a1cbf"
+  },
+  "helpers": {
+    "skills/mbse-diagramming/scripts/svg_check.py": "395748bb870c30902c5ec8ef85c2ef228ab0efeb9d716f765321c7d2959035dc",
+    "skills/mbse-diagramming/scripts/import_view.py": "322b4a9fcfb0a5521f5da79fb5af5c8e55d805b63544ac9779974513a7e7b95e",
+    "skills/mbse-engineering-plots/scripts/plot_energy.py": "6641cbb51cbc1880a48888d8768b820fb0458baafc81a2357fa145fc7df26aec"
+  },
+  "commands": [
+    {
+      "command": "uv run --locked --offline python skills/mbse-engineering-plots/scripts/plot_energy.py examples/rover/evidence/summary.json examples/visualization/rover-energy-accessible.svg --reserve 0.2",
+      "exit_code": 0
+    },
+    {
+      "command": "uv run --locked --offline python skills/mbse-diagramming/scripts/svg_check.py examples/visualization/rover-energy-accessible.svg",
+      "exit_code": 0
+    },
+    {
+      "command": "uv run --locked --offline python skills/mbse-diagramming/scripts/import_view.py examples/visualization/rover-energy.mmd --format mermaid",
+      "exit_code": 0
+    },
+    {
+      "command": "rsvg-convert examples/visualization/rover-energy-accessible.svg -o .local/diagram-design-study/rover-energy-accessible.png",
+      "exit_code": 0
+    }
+  ],
+  "checks": {
+    "static_svg_accessibility": "passed",
+    "mermaid_extraction": "passed: 4 nodes, 3 edges, both accessibility metadata fields",
+    "rasterization": "passed",
+    "plot_visual_review": "passed: inspected 1000x640 raster for labels, threshold, legend and clipping",
+    "automated_geometry": "not-run",
+    "mermaid_native_render": "not-run",
+    "sequence_state_render": "not-run",
+    "excalidraw_editor": "not-run",
+    "model_semantics": "not-run"
+  },
+  "visual_capture": {
+    "path": ".local/diagram-design-study/rover-energy-accessible.png",
+    "sha256": "ce3db1077e6d4ef5a50d0bebf2ee8f3c568826d336092b67c44fdad180d00d4f"
+  },
+  "limits": [
+    "single example plus unit checks; no behavioral benchmark claim",
+    "existing engine summary reused; engines not rerun",
+    "no physical validation"
+  ]
+}

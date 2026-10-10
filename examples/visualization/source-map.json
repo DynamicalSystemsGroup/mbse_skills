@@ -1,0 +1,40 @@
+{
+  "purpose": "Explanatory proposed energy-flow and budget slice; no automatic SysML export",
+  "sources": {
+    "examples/rover/oosem-walkthrough.md": "3cc20d589b0a16224f850c1977dfaf1e24bf22129d8dd3445c43ef9d11dcef3e",
+    "examples/rover/green.sysml": "799878f5d4a3ac0c7e2af200419e69bb57f76214ddce678eba070d7ad7901aa2",
+    "examples/rover/evidence/summary.json": "612aa8efbd845ced3eda83846e438e0418131a685f4c69f5188f5f32ce3670bb"
+  },
+  "status": "proposed teaching artifacts; no stakeholder acceptance",
+  "nodes": {
+    "battery": "A-01 in OOSEM walkthrough",
+    "load": "L-01 in OOSEM walkthrough",
+    "scenario": "S-01 in OOSEM walkthrough",
+    "budget": "R-01 in OOSEM walkthrough"
+  },
+  "relationships": {
+    "battery -> load": "I-01 simplified energy exchange; constant 100 W assumption",
+    "scenario -> load": "scenario assumption, not a physical exchange",
+    "load -> budget": "analytical input, not satisfaction or physical measurement"
+  },
+  "scene_mapping": {
+    "battery": "A-01",
+    "load": "L-01",
+    "energy-supply": "I-01",
+    "scope": "S-01",
+    "budget-note": "R-01 analytical budget"
+  },
+  "aggregation": "aggregate mobility load; no detailed propulsion, interfaces or onboard estimator",
+  "omissions": [
+    "faults and power transients",
+    "physical characterization and mission validation",
+    "SysML requirement/satisfaction element representation"
+  ],
+  "checks": {
+    "source_mapping": "authored inspection",
+    "mermaid_render": "not run; CLI unavailable",
+    "graphviz_render": "not run; dot unavailable",
+    "excalidraw_import": "not run; editor not exercised",
+    "excalidraw_export": "not run"
+  }
+}

@@ -1,0 +1,3 @@
+interface:
+  display_name: "MBSE Constraint Reasoning"
+  short_description: "Explain feasibility and bounded design trade studies"

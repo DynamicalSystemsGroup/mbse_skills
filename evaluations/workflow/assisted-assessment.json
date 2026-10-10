@@ -1,0 +1,224 @@
+{
+  "onboarding": {
+    "status": "configured project-owned conventions; no install/run",
+    "unresolved": [
+      "stakeholder owners/approvals",
+      "R-03 threshold",
+      "active runnable profile",
+      "physical adequacy"
+    ],
+    "tools": "project/evidence/tool-identities.json; retained capture identities only"
+  },
+  "tasks": [
+    {
+      "id": "ambiguous",
+      "status": "open draft",
+      "requirement": "R-03",
+      "threshold": null,
+      "stakeholder_approval": false,
+      "verification": "V-03 planned; acceptance not evaluable",
+      "issue": "I-01"
+    },
+    {
+      "id": "conflict",
+      "status": "infeasible",
+      "duration_s": 3000,
+      "demand_j": 300000,
+      "capacity_cap_j": 270000,
+      "reserve_fraction": "1/5",
+      "remaining_j": -30000,
+      "remaining_fraction": "-1/9",
+      "minimum_capacity_j": 375000,
+      "capacity_gap_j": 105000,
+      "decision": "D-02 proposed mission hold; investigate power <=72 W while maintaining speed; no obligations relaxed",
+      "alternatives": {
+        "maximum_distance_m": 2160,
+        "minimum_speed_m_per_s": "25/18",
+        "maximum_power_w": 72
+      },
+      "limitations": [
+        "constant power/speed and usable capacity",
+        "no demonstrated mobility at proposed alternative power/speed",
+        "no physical validation"
+      ]
+    },
+    {
+      "id": "capability",
+      "label": "Synthetic evaluation stimuli; not real engine observations",
+      "captures": [
+        {
+          "id": "empty-check",
+          "outcome": "no constraint result established",
+          "support": "operation invocation exits successfully, no named modeled condition observation; satisfaction and meaningful support unestablished"
+        },
+        {
+          "id": "unsupported",
+          "outcome": "unsupported",
+          "measurement": "not executed",
+          "support": "hypothetical adapter explicitly lacks optimization; no result"
+        },
+        {
+          "id": "undecided",
+          "outcome": "undecided",
+          "measurement": "completed",
+          "support": "hypothetical operation returned inconclusive result; neither satisfied nor violated"
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "status": "review required; changed model reserve violated",
+      "recorded_baseline_impact": [
+        "A-01",
+        "R-01",
+        "L-01",
+        "M-01",
+        "V-01",
+        "E-01",
+        "E-02",
+        "D-01"
+      ],
+      "additional_semantic_review": [
+        "N-01 mission need remains 2 km",
+        "L-02 lacks graph node",
+        "R-02 explicit capacity cap"
+      ],
+      "historical_evidence": [
+        "E-01",
+        "E-02"
+      ],
+      "changed_evidence": "E-03",
+      "rerun_needed_after_mitigation": [
+        "reserve check with exact model/profile identity",
+        "candidate comparison under revised inputs",
+        "exact boundary and below-boundary controls"
+      ],
+      "supplied_changed_observation": "two validation accepted and two reserve violation records; not executed here"
+    },
+    {
+      "id": "unrelated",
+      "answer": "Hi",
+      "mbse_workflow_needed": false,
+      "engineering_files_changed_for_greeting": false
+    }
+  ],
+  "evidence_identity": {
+    "changed_report_sha256": "ef420f72d7b86fba5446d22680a7dcd532fb629c5822d0c38a83de594b22e1f0",
+    "native": {
+      "path": "evidence/changed-cli.json",
+      "sha256": "3d203c4e40e37b3881a048cba8136c729b82a359f680beca64e998478a867d50"
+    },
+    "records": [
+      {
+        "id": "opensysml:changed-mission:validate",
+        "engine": "opensysml",
+        "engine_sha256": "8a7bdc975c4ddcb72a51bc9e8d98624bd565d47a3b0eea9d66b8ba989e347b7e",
+        "case": "changed-mission",
+        "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+        "operation": "validate",
+        "outcome": "accepted",
+        "measurement": "completed",
+        "reason": "Calibrated opensysml validate interpretation: valid; measurement completed.",
+        "native_pointer": "/runs/0/validation",
+        "diagnostics_pointer": "/runs/0/validation/stdout",
+        "subject_scope": {
+          "kind": "model-validation"
+        },
+        "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+        "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+        "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+      },
+      {
+        "id": "opensysml:changed-mission:verify",
+        "engine": "opensysml",
+        "engine_sha256": "8a7bdc975c4ddcb72a51bc9e8d98624bd565d47a3b0eea9d66b8ba989e347b7e",
+        "case": "changed-mission",
+        "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+        "operation": "verify",
+        "outcome": "violated",
+        "measurement": "completed",
+        "reason": "Calibrated opensysml verify interpretation: violated; measurement completed.",
+        "native_pointer": "/runs/0/verification",
+        "diagnostics_pointer": "/runs/0/validation/stdout",
+        "subject_scope": {
+          "kind": "named-checks",
+          "subjects": [
+            "Rover::energyReserve"
+          ]
+        },
+        "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+        "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+        "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+      },
+      {
+        "id": "toolkit:changed-mission:validate",
+        "engine": "toolkit",
+        "engine_sha256": "2f03096cdd2814c7ae03390d3759027a34c42588deac1f39d0ef8c5205af7a88",
+        "case": "changed-mission",
+        "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+        "operation": "validate",
+        "outcome": "accepted",
+        "measurement": "completed",
+        "reason": "Calibrated toolkit validate interpretation: valid; measurement completed.",
+        "native_pointer": "/runs/1/validation",
+        "diagnostics_pointer": "/runs/1/validation/stdout",
+        "subject_scope": {
+          "kind": "model-validation"
+        },
+        "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+        "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+        "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+      },
+      {
+        "id": "toolkit:changed-mission:verify",
+        "engine": "toolkit",
+        "engine_sha256": "2f03096cdd2814c7ae03390d3759027a34c42588deac1f39d0ef8c5205af7a88",
+        "case": "changed-mission",
+        "model_sha256": "53de11a081333e2b3ec09c85b30dfce8e35951bb99acaaedc90e35e4c7dc892d",
+        "operation": "verify",
+        "outcome": "violated",
+        "measurement": "completed",
+        "reason": "Calibrated toolkit verify interpretation: violated; measurement completed.",
+        "native_pointer": "/runs/1/verification",
+        "diagnostics_pointer": "/runs/1/validation/stdout",
+        "subject_scope": {
+          "kind": "file-eligible-checks"
+        },
+        "profile_sha256": "c4812360cbb8c121024c863deb15614f31267669b81bdba66527f49a53f23bda",
+        "manifest_sha256": "6b70009166d334e47580b51dec48adf72ad4affbfec7e26a799664270cf1f392",
+        "library_sha256": "5bb5214ed85a5c9be48be74a317352b91ad54cc019c43f245d5d3e198d91a646"
+      }
+    ],
+    "tool_paths": "project/evidence/tool-identities.json",
+    "baseline_graph_sha256": "459186cc0b7f729bf8fc5e84e3fc85396580e25252302238aa0668f2723703cd",
+    "original_scenario_sha256": "6b5e32c3e0055a7d0b0de74d5d83a140549b4b3989091816664250c569088436"
+  },
+  "actual_checks": {
+    "baseline_trace_helper": "exit 0; captured baseline-trace-check.json",
+    "current_trace_helper": "exit 0; captured current-trace-check.json",
+    "coverage": "R-03 acceptance and evidence intentionally missing; graph completeness is not compliance",
+    "independent_arithmetic": "exact Fraction assertions passed",
+    "identity_checks": [
+      "evidence/onboarding-result.json unchanged",
+      "evidence/cli.json unchanged",
+      "evidence/changed-cli.json unchanged",
+      "evidence/changed-model-report.json unchanged",
+      "evidence/change-impact.json unchanged",
+      "evidence/summary.json unchanged",
+      "evidence/model-report.json unchanged",
+      "changed report native source hash matches",
+      "all changed records model hash matches copied changed-mission bytes",
+      "changed native valid/violated outcomes inspected",
+      "team-notes.txt unchanged"
+    ]
+  },
+  "skipped": [
+    "engines and LSP",
+    "network/install",
+    "current binary/library/profile byte verification",
+    "physical tests",
+    "stakeholder validation",
+    "repository just check/demo; prohibited shared-repository read scope"
+  ],
+  "command_issue": "python command unavailable; switched to python3; no dependency changes"
+}

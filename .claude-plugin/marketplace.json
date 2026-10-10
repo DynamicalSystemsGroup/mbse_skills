@@ -1,0 +1,13 @@
+{
+  "name": "mbse-skills-community",
+  "owner": {
+    "name": "Dynamical Systems Group contributors"
+  },
+  "plugins": [
+    {
+      "name": "mbse-skills",
+      "source": "./",
+      "description": "Core MBSE practices and optional methodology, language/tool and visualization extensions."
+    }
+  ]
+}
