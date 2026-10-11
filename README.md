@@ -8,6 +8,37 @@
 
 A portable collection of systems engineering practices with optional methodology, modeling-language and tool extensions. The core can be used with prose, tables or a project's chosen modeling representation; it does not require SysML or an engine.
 
+## Install
+
+Requires Node.js/npm for `npx`. From the engineering project where you want the skills, run:
+
+```bash
+npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --agent codex --skill '*' --copy
+```
+
+This copies all 16 skills into project-local `.agents/skills` for Codex. Then open your agent in that project and ask:
+
+> Use setup-mbse-skills to configure this project's MBSE conventions and help me choose a first engineering task.
+
+To choose your agent and skills interactively:
+
+```bash
+npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --copy
+```
+
+Version 1.7.0 is the tested installer. Installation and file integrity have been checked; native agent loading and invocation remain untested. See [installation evidence and limits](docs/distribution.md#editable-skills-with-npx). Each portable folder includes its license and notice.
+
+No repository clone or Python environment is needed to install the skills. There is no packaged `uvx` installer for this collection; `uv` is used for Python helpers and development checks.
+
+### Plugin and manual alternatives
+
+For plugin use, load this reviewed checkout in Claude Code with `claude --plugin-dir /absolute/path/to/mbse_skills`, then invoke `/mbse-skills:setup-mbse-skills` in your engineering project. The setup skill records project conventions and an actionable first task. See [installation and releases](docs/distribution.md) for local marketplace installation, editable skills, compatibility limits and the publication checklist. Codex CLI marketplace discovery has passed; installation and skill invocation remain untested.
+
+
+Point the agent to the relevant entrypoint, for example: “Use `skills/mbse-model-tdd/SKILL.md` to establish a failing check, revise my model and retain the evidence.” For discovery through your client's normal skill mechanism, copy or symlink the selected complete skill folders into that client's project-local skills directory. Keep an existing installation intact and avoid installing the same skill twice. Check the client's current discovery conventions; compatibility across all clients has not been tested.
+
+A full repository checkout is needed for the included example and development checks; individual skill folders supply their own reasoning references and required helpers. Standards and engines remain separately accessed resources. The collection does not bundle standards PDFs or engine binaries.
+
 ## About
 
 Hosted by [Dynamical Systems Group](https://github.com/DynamicalSystemsGroup/mbse_skills), this independent project welcomes OpenMBEE and other teams building agent-assisted engineering workflows. Version 0.1.0 is an early draft: coverage and client support are bounded by the documented evidence, and no institutional endorsement or complete SysML conformance is claimed.
@@ -32,15 +63,6 @@ Use `mbse-grill-me` when you want an interactive engineering interview or plan s
 Each folder has a standard `SKILL.md`, focused references where needed and UI metadata. Engine/LSP helpers remain bundled with the SysML model-TDD extension. Plugin packaging is available; no router, hook, MCP server or tool installation runs automatically.
 
 The [OOSEM-oriented rover walkthrough](examples/rover/oosem-walkthrough.md) connects a proposed need to requirements, logical responsibilities, allocation and existing SysML evidence. It is a bounded teaching example, not a complete OOSEM implementation, conformance certification or physically validated rover design.
-
-## Use with an agent
-
-For plugin use, load this reviewed checkout in Claude Code with `claude --plugin-dir /absolute/path/to/mbse_skills`, then invoke `/mbse-skills:setup-mbse-skills` in your engineering project. The setup skill records project conventions and an actionable first task. See [installation and releases](docs/distribution.md) for local marketplace installation, editable skills, compatibility limits and the publication checklist. Codex CLI marketplace discovery has passed; installation and skill invocation remain untested.
-
-
-Point the agent to the relevant entrypoint, for example: “Use `skills/mbse-model-tdd/SKILL.md` to establish a failing check, revise my model and retain the evidence.” For discovery through your client's normal skill mechanism, copy or symlink the selected complete skill folders into that client's project-local skills directory. Keep an existing installation intact and avoid installing the same skill twice. Check the client's current discovery conventions; compatibility across all clients has not been tested.
-
-A full repository checkout is needed for the included example and development checks; individual skill folders supply their own reasoning references and required helpers. Standards and engines remain separately accessed resources. The collection does not bundle standards PDFs or engine binaries.
 
 ## Start a team project
 

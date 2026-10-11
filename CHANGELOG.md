@@ -15,4 +15,6 @@
 
 - Changed original collection licensing to Apache-2.0 and added README status badges; third-party terms remain as recorded.
 
+- Verified npx Skills 1.7.0 discovery and project-local copy installation; bundled Apache license/notices in each portable skill folder.
+
 This version has not been published or tagged.

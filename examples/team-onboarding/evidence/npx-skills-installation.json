@@ -1,0 +1,520 @@
+{
+  "recorded_on": "2026-10-11",
+  "installer": "skills@1.7.0",
+  "node": "v24.16.0",
+  "npm": "11.13.0",
+  "remote_source": "DynamicalSystemsGroup/mbse_skills",
+  "remote_revision_compared": "9f58e1469a1cff6574a52eed80825e7a7f66d03f",
+  "scope": "isolated project; codex target; copy mode",
+  "discovered_skills": [
+    "mbse-architecture",
+    "mbse-constraint-reasoning",
+    "mbse-diagramming",
+    "mbse-discovery",
+    "mbse-engineering-plots",
+    "mbse-excalidraw",
+    "mbse-grill-me",
+    "mbse-literature-research",
+    "mbse-model-tdd",
+    "mbse-oosem",
+    "mbse-requirements",
+    "mbse-standards-research",
+    "mbse-sysml-modeling",
+    "mbse-traceability",
+    "mbse-verification",
+    "setup-mbse-skills"
+  ],
+  "remote_install_matching_files": 73,
+  "local_install_matching_files": 105,
+  "local_installed_files": [
+    {
+      "path": "skills/mbse-architecture/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-architecture/SKILL.md",
+      "sha256": "c313abf6e2a4b6a46f42f2ea1e126c8f81da00e87f3f21482becd9fd9b689fd9"
+    },
+    {
+      "path": "skills/mbse-architecture/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-architecture/agents/openai.yaml",
+      "sha256": "e9cfa76ec0e625667a400e04f3f75d9913a25195c4ecc421d1771d6471ed933f"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/SKILL.md",
+      "sha256": "f6bcd12c4d2c6570d5de119ee47291fe78700b019ca60045114f71ff0e3127a8"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/agents/openai.yaml",
+      "sha256": "d30d9f6febb665dc7a93595881c91eefc6ebf96aeb351d62fc3b1d57963c8393"
+    },
+    {
+      "path": "skills/mbse-constraint-reasoning/references/trade-study.md",
+      "sha256": "3ab7d5d96732deef712cebe8477abe38e0816167c73a31eaea9bcf7b499890b3"
+    },
+    {
+      "path": "skills/mbse-diagramming/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-diagramming/SKILL.md",
+      "sha256": "49bc5dd2f2e6379b80ceadd1ed95561e75c1ff71241ba63fd4ce6661a771cab1"
+    },
+    {
+      "path": "skills/mbse-diagramming/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-diagramming/agents/openai.yaml",
+      "sha256": "3145330bafa6897d7cb70a0a7607cdd8ab86305aa89092b2cdc0ce61dc202889"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/behavior-examples.md",
+      "sha256": "95ab2d9fca2bca6f50bcb8888c48e0f3e5bfe66270e7159fcdb6810dea3b6938"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/view-contract.md",
+      "sha256": "f529aaa75d5bad03661cf2dbe795f0fe924d370be479284c9049755f9282f81c"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/diagram-families.md",
+      "sha256": "9cfd626d08a9b43628a3bcd7de27890a6505ccd29855592efb3c4cf614bfb22e"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/semantic-patterns.md",
+      "sha256": "3a7640c5dc618ca642da0f7c0ea5bdbff805805ffa4b6a6b325b350c430e5b5e"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/import-contract.md",
+      "sha256": "89134414cdac58d92a53cad1a65f54d9ea9185da068db7008e79caf8057ed2d0"
+    },
+    {
+      "path": "skills/mbse-diagramming/references/tools.md",
+      "sha256": "c789dd8a564dc235c2080ea276f68affa5edf81662f1f851eabf56e6df852df6"
+    },
+    {
+      "path": "skills/mbse-diagramming/scripts/svg_check.py",
+      "sha256": "395748bb870c30902c5ec8ef85c2ef228ab0efeb9d716f765321c7d2959035dc"
+    },
+    {
+      "path": "skills/mbse-diagramming/scripts/import_view.py",
+      "sha256": "322b4a9fcfb0a5521f5da79fb5af5c8e55d805b63544ac9779974513a7e7b95e"
+    },
+    {
+      "path": "skills/mbse-discovery/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-discovery/SKILL.md",
+      "sha256": "52529a8bae3429b54c33fc02d8e2a98d1326de275f1100133b7f88250c5116bf"
+    },
+    {
+      "path": "skills/mbse-discovery/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-discovery/agents/openai.yaml",
+      "sha256": "f97c77393a46efeda62c7e5f06c73783025f930b535046bb31d4fe7003d0dc04"
+    },
+    {
+      "path": "skills/mbse-discovery/references/vocabulary.md",
+      "sha256": "8c27e6c63ebea7c275ca3a8d009ccc6570b7d3e2079efa1bfb338fa4c27e31a0"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/SKILL.md",
+      "sha256": "0858535292d65f56c9bc053bc6a07fa19867ba760611235c3c4c27f5df22988f"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/agents/openai.yaml",
+      "sha256": "cd7a5006f5f9c7d034ecd28841cead2212c2bf1d5a3ea945655a3e9ee0580dc0"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/references/tools.md",
+      "sha256": "9327f1b1e06649a7e20ca0b27771e9184a05bfe3c9bab33ddd98293bcf4afd78"
+    },
+    {
+      "path": "skills/mbse-engineering-plots/scripts/plot_energy.py",
+      "sha256": "6641cbb51cbc1880a48888d8768b820fb0458baafc81a2357fa145fc7df26aec"
+    },
+    {
+      "path": "skills/mbse-excalidraw/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-excalidraw/SKILL.md",
+      "sha256": "784cafbd6cb87655ee851a39f419dcafa2a9775fa43b8d6bd2ccedd68acb51f4"
+    },
+    {
+      "path": "skills/mbse-excalidraw/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-excalidraw/agents/openai.yaml",
+      "sha256": "a2cc3afd05800dd54426ff46c5a18621199f8c4e66e8c96039100a2c96aeafe5"
+    },
+    {
+      "path": "skills/mbse-excalidraw/references/scene-contract.md",
+      "sha256": "bb4f4ccbb0f3fdbb955264f1995253fce20c2d8212e123ad730bd1cd9bb85da3"
+    },
+    {
+      "path": "skills/mbse-excalidraw/scripts/scene_check.py",
+      "sha256": "2afe1eb817dfcf61a861aa9723f57f138bb30549b7a656f96787d05644a4ea99"
+    },
+    {
+      "path": "skills/mbse-grill-me/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-grill-me/SKILL.md",
+      "sha256": "5ca456b8c9269cc39ad77b56b4db4094a21fdd6145f0135c1be0efbde1919f19"
+    },
+    {
+      "path": "skills/mbse-grill-me/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-grill-me/agents/openai.yaml",
+      "sha256": "50fb42004cd980a67646876199a949ec1bafd53a31b67255b9d71a6e98a3ff0d"
+    },
+    {
+      "path": "skills/mbse-grill-me/references/question-patterns.md",
+      "sha256": "c306b5573a31204cd75bbc3ab3605146e4b965c7afbed6f571e9376d80f983b0"
+    },
+    {
+      "path": "skills/mbse-literature-research/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-literature-research/SKILL.md",
+      "sha256": "77f6ca9f0ca94cca3c784cba24e489d1b927a9d0b3035599a291b849b7397ff1"
+    },
+    {
+      "path": "skills/mbse-literature-research/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-literature-research/agents/openai.yaml",
+      "sha256": "981dd1e431fa1e414870a622bf4775745417a755a99524a089629f01196d4cb4"
+    },
+    {
+      "path": "skills/mbse-literature-research/references/research-evidence.md",
+      "sha256": "d0b316e25fb5739702a4f1efe048ff336e1a0defb92fe589a811c0def565370a"
+    },
+    {
+      "path": "skills/mbse-model-tdd/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-model-tdd/SKILL.md",
+      "sha256": "15479e77b931cb66a66f383b33b1fec71f6fb28867253a504300906d14cd1820"
+    },
+    {
+      "path": "skills/mbse-model-tdd/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-model-tdd/agents/openai.yaml",
+      "sha256": "b82db6717c2850a56ac00156a0174e5ce11bfd7e25e0c72ea7a35bb3a45ece85"
+    },
+    {
+      "path": "skills/mbse-model-tdd/references/engine-evidence.md",
+      "sha256": "8e93cb4eead29cd752fefbc6553cb54862ca61b358546586f736a050602de1c8"
+    },
+    {
+      "path": "skills/mbse-model-tdd/references/verification-contract.md",
+      "sha256": "03ca13a29623c9360a9479529e88f319568fcad3f7d68817bf28f045ca1fddfd"
+    },
+    {
+      "path": "skills/mbse-model-tdd/scripts/lsp_check.py",
+      "sha256": "bd9f13ad638a864af20a8e56493169a8defa3b95977f84de6cd922a26c9284ba"
+    },
+    {
+      "path": "skills/mbse-model-tdd/scripts/engine_check.py",
+      "sha256": "7c94ab410dbbb67ee4448b418458a994a190faec6f3099f208d63a72f564fe6a"
+    },
+    {
+      "path": "skills/mbse-model-tdd/scripts/normalize_capture.py",
+      "sha256": "53c758cb6794620eb2b96e979c28c2ecea5e76e992dd2406faefeaa535128581"
+    },
+    {
+      "path": "skills/mbse-oosem/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-oosem/SKILL.md",
+      "sha256": "fcaf8fb561ccee140e4c338609029362d1b85ad10a25460e42d1e46c316a3da6"
+    },
+    {
+      "path": "skills/mbse-oosem/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-oosem/agents/openai.yaml",
+      "sha256": "d03567c6a05bb158e0cb2dd36fa9318a5619e783dd2f2991bd02ba249fcfa0e6"
+    },
+    {
+      "path": "skills/mbse-oosem/references/source-basis.md",
+      "sha256": "4c59ad0b4f6ace2b096cc03efc80e7077bc91ccbca0ce4b1311e4fd7e84438fc"
+    },
+    {
+      "path": "skills/mbse-requirements/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-requirements/SKILL.md",
+      "sha256": "02fe1b2a9461415ac79d6d745de43354f3e4a2779126cc8b8111506574cd1731"
+    },
+    {
+      "path": "skills/mbse-requirements/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-requirements/agents/openai.yaml",
+      "sha256": "b7eb79f766f62207a83233384705fa3ad0374a63190640f104bc69dc7f2c05fc"
+    },
+    {
+      "path": "skills/mbse-requirements/references/review.md",
+      "sha256": "5354e423575248d57dc3a5960a49e4502931654f2f7e7235cbdb666817ac69f2"
+    },
+    {
+      "path": "skills/mbse-standards-research/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-standards-research/SKILL.md",
+      "sha256": "a6a0ffe368d89371b80798da21e65dd7e0ed93db46b81fa4b581add9b7788be2"
+    },
+    {
+      "path": "skills/mbse-standards-research/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-standards-research/agents/openai.yaml",
+      "sha256": "5d59871d4c3400994210e0c819c92ee46d6b211794dd0df59f17df5ce3e96577"
+    },
+    {
+      "path": "skills/mbse-standards-research/references/source-selection.md",
+      "sha256": "57c8cd35fa4e72fcba7a2020a21156779f9bd9b90186db77675f06f02065698b"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/SKILL.md",
+      "sha256": "769947570614e3370261dc6e44019008d0aa50671ffce299d72f8ae8e65d33c3"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/agents/openai.yaml",
+      "sha256": "22f52b2dcf183ff10327ff4b2b2ce705347f33e7a81f5dfaddf9c4a13bc67c6f"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/references/foundations.md",
+      "sha256": "3af014be3ef2a9956fd50142aaaa82d5fb618234d2c6480b0578928f197f53e3"
+    },
+    {
+      "path": "skills/mbse-sysml-modeling/references/source-selection.md",
+      "sha256": "738730f7f906a3a0191b87687fecd5690b546d4d3b4ec5b2f9f3d7c783080952"
+    },
+    {
+      "path": "skills/mbse-traceability/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-traceability/SKILL.md",
+      "sha256": "e8417e2f7a709993ce44b584a7c1f4a25e21723eaa6d2f61007f7e56490bd800"
+    },
+    {
+      "path": "skills/mbse-traceability/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-traceability/agents/openai.yaml",
+      "sha256": "89cc6016a0479799d9a7d588f6723aa2e69e8cb0c0dcac6d65f3ce2e63c9ea7b"
+    },
+    {
+      "path": "skills/mbse-traceability/references/graph-contract.md",
+      "sha256": "139c3bc92a4b5f37ae3a4eac65859a5ecc921ad717e45a4e4ab68e2bbc16bbc8"
+    },
+    {
+      "path": "skills/mbse-traceability/scripts/trace_check.py",
+      "sha256": "50584143185a28e0315f65c77300d37d88306166a5ccc91605ad6276213a449b"
+    },
+    {
+      "path": "skills/mbse-verification/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/mbse-verification/SKILL.md",
+      "sha256": "93e4761539b5afbe6edcd24c0cd21bf7c9833a60d0764829f34348658f60d69b"
+    },
+    {
+      "path": "skills/mbse-verification/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/mbse-verification/agents/openai.yaml",
+      "sha256": "1b9e1ca617b68ba88b03f5f345885ed55f6d7ac7e06b44d6f730260e1c01777f"
+    },
+    {
+      "path": "skills/mbse-verification/references/evidence.md",
+      "sha256": "df8ade5b47190f9b4c09d4755ddf826ad2f68dc65579878a39bceba32229716f"
+    },
+    {
+      "path": "skills/setup-mbse-skills/NOTICE",
+      "sha256": "ab3b74b577907c3ce24e92c1581f94bea9a7b01ed5ac07a629364df738cba96c"
+    },
+    {
+      "path": "skills/setup-mbse-skills/SKILL.md",
+      "sha256": "2889666e591fa680f3b1a0c10877dfd25158fba6265c33d311053b8e679209b7"
+    },
+    {
+      "path": "skills/setup-mbse-skills/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "skills/setup-mbse-skills/agents/openai.yaml",
+      "sha256": "4ecf949ec013efd68363403a6ec0f6198ccf0cc6987446e90ad54b2b934927dc"
+    },
+    {
+      "path": "skills/setup-mbse-skills/scripts/init_project.py",
+      "sha256": "44b20885f48166f935a8bc6c84f3a7021237b18f3786bb698619f8d3478f8052"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/traceability.json",
+      "sha256": "7645887ea0ec6bc8ef3d679e2ad3a2df53bb5f4d8b363f3fe61d696f545122c5"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/README.md",
+      "sha256": "0c04288357749fc4f4b943f3433850d21b5b08213ee3a1d6d67af98e30d8cb79"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/AGENTS.md",
+      "sha256": "6dcb2d0236413da2462caef8d6307409e010cf24b048ed7130a23c4684744893"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/.gitignore",
+      "sha256": "01c9c7cf0f94237049af1ffb52110b959311cb4afe36ae333e2436a09ff1cddf"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/glossary.md",
+      "sha256": "770102cb2b42fc8e7aa292b57b2328022b210c16d9ef2c8b09c94df2b6c4db3f"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/architecture.md",
+      "sha256": "5576dfb19ee68072f32856a7b3a2d4853094a72893f8d96ce97581536ae48d05"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/mbse-project.md",
+      "sha256": "f722284b4c2d6ae93f15ff86c247a991f72e348683895a6e72946bcccb8fae91"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/needs.md",
+      "sha256": "a379caf4ff8ec08827d13ccdb742a31f98a15dec168e957d19210c9eea03f0e3"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/decisions.md",
+      "sha256": "8979def5676540d9d52953a44dbeadabb9707b6b7b8aaecfd0e9935614cfedfc"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/docs/requirements.md",
+      "sha256": "ef2f23c12c1cd73cf349f493aee5ab10c5e329c41f8ed7055e84961c5ebb2c0f"
+    },
+    {
+      "path": "skills/setup-mbse-skills/assets/project-template/evidence/README.md",
+      "sha256": "c44f37b009cceaa6cc053ec0d56b9357ca08ed8dc7e0941f8ca63d55452f4109"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "npx",
+        "--yes",
+        "skills@1.7.0",
+        "--version"
+      ],
+      "returncode": 0,
+      "raw_stdout_sha256": "bb7320d831e7a151aa901c35e7326c752fa2ef5024f30768c42319b8bed171ed",
+      "stdout_lines": 1
+    },
+    {
+      "argv": [
+        "npx",
+        "--yes",
+        "skills@1.7.0",
+        "add",
+        "DynamicalSystemsGroup/mbse_skills",
+        "--list"
+      ],
+      "returncode": 0,
+      "raw_stdout_sha256": "72b6e3ce80ee38fd49b7ff2aeba1db3a5eee7450190e32e57d864e5fb3b569e5",
+      "stdout_lines": 80,
+      "discovery_output": "\n\u2502\n\u25cf   codex  Agent detected \u2014 installing non-interactively\n\u2502\n\u25c7  Source: https://github.com/DynamicalSystemsGroup/mbse_skills.git\n\u2502\n\u25d2  Cloning repository\u2026\u25d0  Cloning repository\u2026\u25d3  Cloning repository\u2026\u25d1  Cloning repository\u2026\u25d2  Cloning repository\u2026\u25d0  Cloning repository\u2026\u25d3  Cloning repository\u2026\u25d1  Cloning repository\u2026\u25d2  Cloning repository\u2026.\u25d0  Cloning repository\u2026.\u25d3  Cloning repository\u2026.\u25d1  Cloning repository\u2026.\u25d2  Cloning repository\u2026.\u25d0  Cloning repository\u2026.\u25d3  Cloning repository\u2026.\u25d1  Cloning repository\u2026.\u25d2  Cloning repository\u2026..\u25d0  Cloning repository\u2026..\u25d3  Cloning repository\u2026..\u25d1  Cloning repository\u2026..\u25d2  Cloning repository\u2026..\u25d0  Cloning repository\u2026..\u25d3  Cloning repository\u2026..\u25d1  Cloning repository\u2026..\u25d2  Cloning repository\u2026...\u25d0  Cloning repository\u2026...\u25d3  Cloning repository\u2026...\u25d1  Cloning repository\u2026...\u25d2  Cloning repository\u2026...\u25d0  Cloning repository\u2026...\u25d3  Cloning repository\u2026...\u25d1  Cloning repository\u2026...\u25d2  Cloning repository\u2026...\u25d0  Cloning repository\u2026\u25d3  Cloning repository\u2026\u25d1  Cloning repository\u2026\u25d2  Cloning repository\u2026\u25d0  Cloning repository\u2026\u25d3  Cloning repository\u2026\u25d1  Cloning repository\u2026\u25d2  Cloning repository\u2026\u25c7  Repository cloned\n\u2502\n\u25c7  Found 16 skills\n\n\u2502\n\u25c7  Available Skills\n\u2502\n\u2502    mbse-architecture\n\u2502\n\u2502      Develop or review logical and allocated system architectures, behavior, interfaces and design rationale without requiring SysML.\n\u2502\n\u2502    mbse-constraint-reasoning\n\u2502\n\u2502      Explain engineering constraints and evaluate feasible design alternatives against explicit objectives, units, bounds and uncertainty.\n\u2502\n\u2502    mbse-diagramming\n\u2502\n\u2502      Create or review source-linked engineering architecture, workflow, sequence or state diagrams in Mermaid, Graphviz or an available UML/PlantUML tool skill; preserve semantics and report actual rendering checks.\n\u2502\n\u2502    mbse-discovery\n\u2502\n\u2502      Clarify system boundaries, stakeholder needs, requirements and vocabulary before authoring or reviewing an engineering model.\n\u2502\n\u2502    mbse-engineering-plots\n\u2502\n\u2502      Visualize engineering constraints, finite trade studies, sensitivity or verification data with explicit units, uncertainty and provenance; use reproducible plots rather than decorative charts.\n\u2502\n\u2502    mbse-excalidraw\n\u2502\n\u2502      Create or revise editable Excalidraw engineering sketches with stable artifact mapping, meaningful arrows and explicit proposal status; retain the scene and review its exports.\n\u2502\n\u2502    mbse-grill-me\n\u2502\n\u2502      Interview a user adaptively to clarify or stress-test an engineering goal, plan, requirement or modeling decision; start open-ended and narrow to grounded choices. Use when asked to grill the user or work through uncertainty interactively, rather than for an already precise edit or a factual lookup.\n\u2502\n\u2502    mbse-literature-research\n\u2502\n\u2502      Find and assess MBSE papers, methods and related repositories with verified bibliographic identity, version, applicability and evidence provenance.\n\u2502\n\u2502    mbse-model-tdd\n\u2502\n\u2502      Develop test-first checks for SysML v2 model changes, collect pinned engine and LSP evidence, and investigate differing or unavailable results.\n\u2502\n\u2502    mbse-oosem\n\u2502\n\u2502      Apply a bounded OOSEM-inspired workflow linking stakeholder scenarios, requirements, logical and allocated architectures, alternatives and verification; distinguish the historical method from newer work.\n\u2502\n\u2502    mbse-requirements\n\u2502\n\u2502      Develop or review measurable system requirements, derivation, allocation and traceability independently of a modeling language.\n\u2502\n\u2502    mbse-standards-research\n\u2502\n\u2502      Find and interpret versioned engineering standards and institutional guidance and distinguish normative requirements from examples and implementation behavior.\n\u2502\n\u2502    mbse-sysml-modeling\n\u2502\n\u2502      Author, explain or revise SysML v2 textual models with relevant KerML foundations, typed quantities and explicit engine portability limits.\n\u2502\n\u2502    mbse-traceability\n\u2502\n\u2502      Build requirements-to-evidence traces and assess change impact across needs, assumptions, architecture, model artifacts and verification results.\n\u2502\n\u2502    mbse-verification\n\u2502\n\u2502      Plan and assess verification and validation evidence for requirements or model changes, including test-first checks, independently of engines or modeling languages.\n\u2502\n\u2502    setup-mbse-skills\n\u2502\n\u2502      Configure project conventions for this MBSE skill collection when onboarding a team or changing its modeling, evidence or verification workflow.\n\n\u2502\n\u2514  Use --skill <name> to install specific skills\n\n"
+    },
+    {
+      "argv": [
+        "npx",
+        "--yes",
+        "skills@1.7.0",
+        "add",
+        "DynamicalSystemsGroup/mbse_skills",
+        "--agent",
+        "codex",
+        "--skill",
+        "*",
+        "--copy",
+        "--yes"
+      ],
+      "returncode": 0,
+      "raw_stdout_sha256": "98fa83cbbbac7a1fbcafb019f214193757454f3096ccd8709a7ca8e40f29c52f",
+      "stdout_lines": 140
+    },
+    {
+      "argv": [
+        "npx",
+        "--yes",
+        "skills@1.7.0",
+        "add",
+        "<repository-checkout>",
+        "--agent",
+        "codex",
+        "--skill",
+        "*",
+        "--copy",
+        "--yes"
+      ],
+      "returncode": 0,
+      "raw_stdout_sha256": "b04125dda998170456f7e5d146543d9b34afe50dea2311353ce96ce0ab6e0bd6",
+      "stdout_lines": 140
+    }
+  ],
+  "limits": [
+    "Installer discovery and copying verified; native agent loading, invocation and plugin installation not tested.",
+    "Remote snapshot does not include the newly bundled per-skill LICENSE/NOTICE files; those were verified through a fresh local-source install.",
+    "Latest installer 1.7.2 was blocked by npm release-age policy; policy was preserved and 1.7.0 tested instead.",
+    "No model engines or installed skill instructions were executed."
+  ]
+}

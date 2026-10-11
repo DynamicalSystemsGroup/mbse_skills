@@ -21,7 +21,24 @@ Then invoke `/mbse-skills:setup-mbse-skills` in the target project. It creates p
 
 These commands follow [Claude Code's plugin reference](https://code.claude.com/docs/en/plugins-reference) and [marketplace documentation](https://code.claude.com/docs/en/plugin-marketplaces). The Claude CLI is unavailable in the development environment: native manifest validation, installation and discovery are not yet tested. Before claiming client support, run `claude plugin validate /absolute/path/to/mbse_skills` and verify setup skill invocation in an isolated project.
 
-## Other clients and editable skills
+## Editable skills with npx
+
+From the engineering project where you want the skills, run:
+
+```bash
+npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --list
+npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --agent codex --skill '*' --copy
+```
+
+The second command installs all 16 skills into project-local `.agents/skills` for the Codex target. Omit `--agent codex` to choose a client interactively; other targets have not been tested here. Omit `--skill '*'` to choose individual skills, including `setup-mbse-skills` and the selected workflow's catalog prerequisites. The installer does not interpret `skills/catalog.json` or resolve those prerequisites for you. Choose copied skills or a plugin for a given client to avoid duplicate discovery.
+
+This uses Vercel's [Skills installer](https://github.com/vercel-labs/skills), not an npm package published by this project. Node.js/npm are needed for installation; no repository clone or Python environment is required. There is no packaged `uvx` installer for this collection; uv is for our Python helpers and repository checks. Version 1.7.0 is the tested installer. The newer 1.7.2 was rejected by the development machine's npm release-age policy; that policy was preserved. Unpinned `npx skills@latest` behavior has not been tested.
+
+The [installation receipt](../examples/team-onboarding/evidence/npx-skills-installation.json) records successful discovery and copying from public GitHub, plus a fresh local-source copy test with the bundled Apache license/notices. Remote installation matched 73 source files; the local packaging test matched 105. The new license/notice files reach GitHub when these additions are pushed. Installation/file integrity is verified; native client loading and invocation remain untested. A full repository checkout is still needed for collection-level examples and checks.
+
+After installation, ask the agent to use `setup-mbse-skills` in your project. `--copy` creates editable project files; review local changes before replacing them during an update. Each folder carries its helpers, references, license and notice.
+
+## Other clients and manual copies
 
 Copy selected complete skill folders into the client's documented project-local skills directory. Include `setup-mbse-skills` and any catalog prerequisites needed by your chosen workflow. Helpers and references travel with each folder. Invoke the setup entrypoint using that client's supported syntax, or ask the agent to read it directly.
 

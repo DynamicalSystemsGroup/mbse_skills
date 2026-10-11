@@ -25,6 +25,12 @@ def check(root=ROOT):
         raise ValueError("unexpected marketplace identity or plugin count")
     if entries[0].get("name") != plugin["name"] or entries[0].get("source") != "./":
         raise ValueError("marketplace must resolve this repository root")
+    for entrypoint in (root / "skills").glob("*/SKILL.md"):
+        license_path = entrypoint.parent / "LICENSE"
+        if not license_path.is_file() or license_path.read_bytes() != (root / "LICENSE").read_bytes():
+            raise ValueError("portable skill license differs from repository license")
+        if not (entrypoint.parent / "NOTICE").is_file():
+            raise ValueError("portable skill is missing its notice")
     catalog = json.loads((root / "skills/catalog.json").read_text())
     folders = {p.parent.name for p in (root / "skills").glob("*/SKILL.md")}
     if folders != {s["name"] for s in catalog["skills"]} or "setup-mbse-skills" not in folders:

@@ -16,7 +16,7 @@ class DistributionTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for name in ("pyproject.toml", "CHANGELOG.md"):
+        for name in ("pyproject.toml", "CHANGELOG.md", "LICENSE"):
             shutil.copy(ROOT / name, self.root / name)
         shutil.copytree(ROOT / ".claude-plugin", self.root / ".claude-plugin")
         shutil.copytree(ROOT / "skills", self.root / "skills", ignore=shutil.ignore_patterns("__pycache__"))
@@ -44,3 +44,13 @@ class DistributionTests(unittest.TestCase):
         shutil.rmtree(self.root / "skills/setup-mbse-skills")
         with self.assertRaisesRegex(ValueError, "catalog"):
             module.check(self.root)
+
+    def test_missing_portable_license_or_notice_is_rejected(self):
+        for filename in ("LICENSE", "NOTICE"):
+            with self.subTest(filename=filename):
+                path = self.root / "skills/setup-mbse-skills" / filename
+                original = path.read_bytes()
+                path.unlink()
+                with self.assertRaisesRegex(ValueError, "license|notice"):
+                    module.check(self.root)
+                path.write_bytes(original)
