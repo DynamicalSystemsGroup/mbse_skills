@@ -11,5 +11,7 @@
     "systems-engineering",
     "sysml",
     "openmbee"
-  ]
+  ],
+  "repository": "https://github.com/DynamicalSystemsGroup/mbse_skills",
+  "homepage": "https://github.com/DynamicalSystemsGroup/mbse_skills#readme"
 }

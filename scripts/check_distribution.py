@@ -18,7 +18,7 @@ def check(root=ROOT):
         raise ValueError("plugin identity/version differs from project; run sync-version")
     if plugin.get("license") != "MIT" or not plugin.get("author", {}).get("name"):
         raise ValueError("missing distribution license or author")
-    if set(plugin) - {"name", "version", "description", "author", "license", "keywords"}:
+    if set(plugin) - {"name", "version", "description", "author", "license", "keywords", "repository", "homepage"}:
         raise ValueError("unexpected plugin fields: review component/URL changes explicitly")
     entries = marketplace.get("plugins", [])
     if marketplace.get("name") != "mbse-skills-community" or len(entries) != 1:

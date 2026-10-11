@@ -2,6 +2,12 @@
 
 A portable collection of systems engineering practices with optional methodology, modeling-language and tool extensions. The core can be used with prose, tables or a project's chosen modeling representation; it does not require SysML or an engine.
 
+## About
+
+Hosted by [Dynamical Systems Group](https://github.com/DynamicalSystemsGroup/mbse_skills), this independent project welcomes OpenMBEE and other teams building agent-assisted engineering workflows. Version 0.1.0 is an early draft: coverage and client support are bounded by the documented evidence, and no institutional endorsement or complete SysML conformance is claimed.
+
+For collaboration, start with [contributing](CONTRIBUTING.md), [governance](GOVERNANCE.md), [community conduct](CODE_OF_CONDUCT.md) and [security reporting](SECURITY.md). Use GitHub issues for bugs/proposals and discussions for questions.
+
 ## Core and extensions
 
 | Layer | Skills |
@@ -100,4 +106,4 @@ Reports are written to `.local/rover-demo/`: native CLI results, LSP transcripts
 
 Study clones under `references/repos/` are ignored and inactive. To recreate one, use its recorded upstream/revision after checking context; do not refresh an existing checkout blindly. OpenSysML's study checkout is reused from the nearby standards-research workspace.
 
-This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. MIT covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Public hosting, verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.
+This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. MIT covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.

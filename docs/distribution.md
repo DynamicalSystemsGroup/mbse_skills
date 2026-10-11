@@ -29,7 +29,7 @@ Matt Pocock's packaging is inspiration, not evidence of compatibility with our p
 
 ## Public hosting and releases
 
-No public repository address or OpenMBEE organizational endorsement is assumed. Once maintainers select the hosting owner and repository name, add the confirmed repository/homepage URLs to the manifest and document the actual marketplace source. Do not publish example owner/repository placeholders as working commands.
+The confirmed host is [DynamicalSystemsGroup/mbse_skills](https://github.com/DynamicalSystemsGroup/mbse_skills). It is an independent collection; hosting does not imply OpenMBEE organizational endorsement. The manifest links to this repository. Once the contents are pushed, the GitHub marketplace source is `DynamicalSystemsGroup/mbse_skills`; installation from that source remains untested.
 
 `pyproject.toml` is the authoritative version. For a release:
 
@@ -40,4 +40,4 @@ No public repository address or OpenMBEE organizational endorsement is assumed. 
 
 The dependency-free Python CI runs repository/distribution checks, unit tests and a fresh retained-evidence onboarding acceptance run on pushes and pull requests. It does not install engines, exercise native clients, prove standards conformance or evaluate agent behavior. Changesets is intentionally omitted: this collection has one versioned distribution and no npm package; a changelog and version-sync command cover the present need.
 
-Contributions follow [CONTRIBUTING.md](../CONTRIBUTING.md). Report privately any sensitive findings to the maintainers through the eventual hosting platform's private reporting channel rather than including secrets in public issues. There is no established security response service or support SLA.
+Contributions follow [CONTRIBUTING.md](../CONTRIBUTING.md). Report privately any sensitive findings to the maintainers through [GitHub private vulnerability reporting](../SECURITY.md) rather than including secrets in public issues. There is no established security response service or support SLA.

@@ -1,5 +1,9 @@
 # Contributing
 
+Use [issues](https://github.com/DynamicalSystemsGroup/mbse_skills/issues) for reproducible bugs and scoped proposals, and [discussions](https://github.com/DynamicalSystemsGroup/mbse_skills/discussions) for questions and design exploration. Follow the [conduct policy](CODE_OF_CONDUCT.md), [governance](GOVERNANCE.md) and [security reporting guidance](SECURITY.md).
+
+Fork the repository and open a focused pull request from a topic branch. Explain the problem, resulting behavior, evidence and limitations using the PR template. Prefer clear Conventional Commit titles; keep unrelated changes separate. Contributions are accepted under the repository's MIT license only when you have the right to contribute the material; retain third-party notices and restrictions.
+
 Start with a concrete recurring task or an observed agent failure. Include inputs, expected behavior, actual behavior and why existing skills do not already cover it.
 
 Classify the skill in `skills/catalog.json` as core, methodology, language/tool or visualization and declare composition prerequisites. Core must not require extensions. Research candidates have no discoverable skill entrypoint until implemented.
