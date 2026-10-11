@@ -1,7 +1,7 @@
 ---
 name: mbse-discovery
 description: Clarify system boundaries, stakeholder needs, requirements and vocabulary before authoring or reviewing an engineering model.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Discovery

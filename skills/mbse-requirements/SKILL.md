@@ -1,7 +1,7 @@
 ---
 name: mbse-requirements
 description: Develop or review measurable system requirements, derivation, allocation and traceability independently of a modeling language.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Requirements

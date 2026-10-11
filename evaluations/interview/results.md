@@ -6,6 +6,8 @@ without skills. A separate fresh agent received the same bytes and
 scripted replay and an unrelated spelling correction. No real user questions,
 external operations, model executions or client installations occurred.
 The [inventory](artifact-inventory.json) binds inputs, outputs and skill bytes.
+Its skill entries identify the evaluated Git revision; their original hashes
+are preserved across the subsequent license-metadata change to Apache-2.0.
 
 Reviewed the actual [baseline](baseline.json) and [assisted](assisted.json)
 responses, not just agent completion messages:

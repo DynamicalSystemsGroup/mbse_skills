@@ -1,7 +1,7 @@
 ---
 name: mbse-standards-research
 description: Find and interpret versioned engineering standards and institutional guidance and distinguish normative requirements from examples and implementation behavior.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Standards Research

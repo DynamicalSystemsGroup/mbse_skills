@@ -1,7 +1,7 @@
 ---
 name: mbse-excalidraw
 description: Create or revise editable Excalidraw engineering sketches with stable artifact mapping, meaningful arrows and explicit proposal status; retain the scene and review its exports.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Excalidraw Sketches

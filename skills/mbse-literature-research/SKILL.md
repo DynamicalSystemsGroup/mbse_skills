@@ -1,7 +1,7 @@
 ---
 name: mbse-literature-research
 description: Find and assess MBSE papers, methods and related repositories with verified bibliographic identity, version, applicability and evidence provenance.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Literature Research

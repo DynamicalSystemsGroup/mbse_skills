@@ -1,7 +1,7 @@
 ---
 name: mbse-grill-me
 description: Interview a user adaptively to clarify or stress-test an engineering goal, plan, requirement or modeling decision; start open-ended and narrow to grounded choices. Use when asked to grill the user or work through uncertainty interactively, rather than for an already precise edit or a factual lookup.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Grill Me

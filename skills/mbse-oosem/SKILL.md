@@ -1,7 +1,7 @@
 ---
 name: mbse-oosem
 description: Apply a bounded OOSEM-inspired workflow linking stakeholder scenarios, requirements, logical and allocated architectures, alternatives and verification; distinguish the historical method from newer work.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE OOSEM Workflow

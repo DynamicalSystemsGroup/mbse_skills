@@ -75,8 +75,8 @@ def check(root=ROOT):
         description = metadata.get('description', '')
         if not description or len(description) > 1024:
             errors.append(f'{file}: invalid description')
-        if metadata.get('license') != 'MIT':
-            errors.append(f'{file}: expected original MIT material')
+        if metadata.get('license') != 'Apache-2.0':
+            errors.append(f'{file}: expected original Apache-2.0 material')
         if len(text.splitlines()) >= 500 or re.search(r'\bTODO\b|\[INSERT|\[TODO', text):
             errors.append(f'{file}: excessive length or unfinished scaffold')
         ui = file.parent / 'agents/openai.yaml'

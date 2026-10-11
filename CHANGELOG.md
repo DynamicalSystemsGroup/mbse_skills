@@ -13,4 +13,6 @@
 
 - Confirmed GitHub repository metadata, contribution templates, governance, conduct and private security reporting guidance.
 
+- Changed original collection licensing to Apache-2.0 and added README status badges; third-party terms remain as recorded.
+
 This version has not been published or tagged.

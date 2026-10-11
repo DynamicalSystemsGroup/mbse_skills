@@ -1,7 +1,7 @@
 ---
 name: setup-mbse-skills
 description: Configure project conventions for this MBSE skill collection when onboarding a team or changing its modeling, evidence or verification workflow.
-license: MIT
+license: Apache-2.0
 ---
 
 # Set up MBSE skills for a project

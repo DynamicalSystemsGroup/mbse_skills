@@ -16,11 +16,13 @@
     },
     {
       "path": "skills/mbse-grill-me/SKILL.md",
-      "sha256": "8116dd2308d952fff3393e75bd89cbf62054b38e30bcd83057526f315d06a1c7"
+      "sha256": "8116dd2308d952fff3393e75bd89cbf62054b38e30bcd83057526f315d06a1c7",
+      "source_commit": "082e98a9bce901e4cbfe8927d6c831d8ead733df"
     },
     {
       "path": "skills/mbse-grill-me/references/question-patterns.md",
-      "sha256": "c306b5573a31204cd75bbc3ab3605146e4b965c7afbed6f571e9376d80f983b0"
+      "sha256": "c306b5573a31204cd75bbc3ab3605146e4b965c7afbed6f571e9376d80f983b0",
+      "source_commit": "082e98a9bce901e4cbfe8927d6c831d8ead733df"
     }
   ],
   "limits": [

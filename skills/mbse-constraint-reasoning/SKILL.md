@@ -1,7 +1,7 @@
 ---
 name: mbse-constraint-reasoning
 description: Explain engineering constraints and evaluate feasible design alternatives against explicit objectives, units, bounds and uncertainty.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Constraint Reasoning

@@ -1,7 +1,7 @@
 ---
 name: mbse-engineering-plots
 description: Visualize engineering constraints, finite trade studies, sensitivity or verification data with explicit units, uncertainty and provenance; use reproducible plots rather than decorative charts.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Engineering Plots

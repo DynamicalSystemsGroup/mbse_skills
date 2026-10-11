@@ -16,7 +16,7 @@ def check(root=ROOT):
         raise ValueError("release version must be major.minor.patch")
     if plugin.get("name") != "mbse-skills" or plugin.get("version") != version:
         raise ValueError("plugin identity/version differs from project; run sync-version")
-    if plugin.get("license") != "MIT" or not plugin.get("author", {}).get("name"):
+    if plugin.get("license") != "Apache-2.0" or not plugin.get("author", {}).get("name"):
         raise ValueError("missing distribution license or author")
     if set(plugin) - {"name", "version", "description", "author", "license", "keywords", "repository", "homepage"}:
         raise ValueError("unexpected plugin fields: review component/URL changes explicitly")

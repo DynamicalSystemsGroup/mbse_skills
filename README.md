@@ -1,5 +1,11 @@
 # MBSE agent skills
 
+[![Repository checks](https://github.com/DynamicalSystemsGroup/mbse_skills/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/DynamicalSystemsGroup/mbse_skills/actions/workflows/checks.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache%202.0-2563eb?style=flat)](LICENSE)
+[![Status: early draft](https://img.shields.io/badge/status-early%20draft-f59e0b?style=flat)](docs/share-readiness.md)
+[![Python: 3.11+](https://img.shields.io/badge/python-3.11%2B-3776ab?style=flat&logo=python&logoColor=white)](pyproject.toml)
+[![SysML v2: partial coverage](https://img.shields.io/badge/SysML%20v2-partial%20coverage-0f766e?style=flat)](docs/collection-architecture.md)
+
 A portable collection of systems engineering practices with optional methodology, modeling-language and tool extensions. The core can be used with prose, tables or a project's chosen modeling representation; it does not require SysML or an engine.
 
 ## About
@@ -106,4 +112,4 @@ Reports are written to `.local/rover-demo/`: native CLI results, LSP transcripts
 
 Study clones under `references/repos/` are ignored and inactive. To recreate one, use its recorded upstream/revision after checking context; do not refresh an existing checkout blindly. OpenSysML's study checkout is reused from the nearby standards-research workspace.
 
-This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. MIT covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.
+This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. Apache-2.0 covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.

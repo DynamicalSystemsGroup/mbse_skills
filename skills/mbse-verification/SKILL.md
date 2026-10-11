@@ -1,7 +1,7 @@
 ---
 name: mbse-verification
 description: Plan and assess verification and validation evidence for requirements or model changes, including test-first checks, independently of engines or modeling languages.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Verification and Validation

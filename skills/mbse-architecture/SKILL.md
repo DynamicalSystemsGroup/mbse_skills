@@ -1,7 +1,7 @@
 ---
 name: mbse-architecture
 description: Develop or review logical and allocated system architectures, behavior, interfaces and design rationale without requiring SysML.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Architecture

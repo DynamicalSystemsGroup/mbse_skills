@@ -1,7 +1,7 @@
 ---
 name: mbse-traceability
 description: Build requirements-to-evidence traces and assess change impact across needs, assumptions, architecture, model artifacts and verification results.
-license: MIT
+license: Apache-2.0
 ---
 
 # Requirements to evidence and change impact

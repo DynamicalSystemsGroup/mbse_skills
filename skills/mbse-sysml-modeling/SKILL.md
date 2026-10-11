@@ -1,7 +1,7 @@
 ---
 name: mbse-sysml-modeling
 description: Author, explain or revise SysML v2 textual models with relevant KerML foundations, typed quantities and explicit engine portability limits.
-license: MIT
+license: Apache-2.0
 ---
 
 # SysML v2 Modeling

@@ -1,7 +1,7 @@
 ---
 name: mbse-diagramming
 description: Create or review source-linked engineering architecture, workflow, sequence or state diagrams in Mermaid, Graphviz or an available UML/PlantUML tool skill; preserve semantics and report actual rendering checks.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Diagramming

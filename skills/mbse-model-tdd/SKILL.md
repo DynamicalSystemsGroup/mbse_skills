@@ -1,7 +1,7 @@
 ---
 name: mbse-model-tdd
 description: Develop test-first checks for SysML v2 model changes, collect pinned engine and LSP evidence, and investigate differing or unavailable results.
-license: MIT
+license: Apache-2.0
 ---
 
 # MBSE Model TDD
