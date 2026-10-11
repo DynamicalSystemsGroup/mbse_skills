@@ -29,7 +29,7 @@ Matt Pocock's packaging is inspiration, not evidence of compatibility with our p
 
 ## Public hosting and releases
 
-The confirmed host is [DynamicalSystemsGroup/mbse_skills](https://github.com/DynamicalSystemsGroup/mbse_skills). It is an independent collection; hosting does not imply OpenMBEE organizational endorsement. The manifest links to this repository. Once the contents are pushed, the GitHub marketplace source is `DynamicalSystemsGroup/mbse_skills`; installation from that source remains untested.
+The confirmed host is [DynamicalSystemsGroup/mbse_skills](https://github.com/DynamicalSystemsGroup/mbse_skills). It is an independent collection; hosting does not imply OpenMBEE organizational endorsement. The manifest links to this repository. The repository contents are published on `main`; the GitHub marketplace source is `DynamicalSystemsGroup/mbse_skills`; installation from that source remains untested.
 
 `pyproject.toml` is the authoritative version. For a release:
 

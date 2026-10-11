@@ -1,6 +1,6 @@
 # Sharing readiness
 
-Reviewed 2026-10-11. Version 0.1.0 is suitable for early community review as an independent, unpublished collection. It is not complete SysML v2 coverage or a conformance certification.
+Reviewed 2026-10-11. Version 0.1.0 is suitable for early community review as an independent collection with an untagged 0.1.0 draft. It is not complete SysML v2 coverage or a conformance certification.
 
 | Area | Observed status |
 | --- | --- |
@@ -10,8 +10,8 @@ Reviewed 2026-10-11. Version 0.1.0 is suitable for early community review as an 
 | Interview evaluation | Five inventory hashes verified; one exploratory baseline/assisted pair, with future turns visible in the fixture |
 | Licensing and provenance | MIT for original work, third-party boundaries in [NOTICE](../NOTICE.md); source references and original research summaries retained |
 | Client compatibility | Retained Codex marketplace discovery observation; native installation and skill invocation untested, Claude validation untested |
-| Hosting | Origin connected to the confirmed public GitHub repository, which was empty when inspected; hosted CI, content publication and release tagging have not run |
+| Hosting | Contents pushed to public GitHub; [first hosted CI run](https://github.com/DynamicalSystemsGroup/mbse_skills/actions/runs/38135410447) passed at `efaece502e9210de4e283fc7173cc541abad99bb`; no release tag created |
 
-Before publishing contents, review the configured GitHub metadata and the contribution, governance, conduct and security policies. Before claiming client compatibility, run the native checks described in [distribution](distribution.md). Keep the current limits visible when soliciting feedback from OpenMBEE or other teams; no institutional endorsement is implied.
+Repository metadata and collaboration policies are configured. Before tagging a release, review the contribution, governance, conduct and security policies. Before claiming client compatibility, run the native checks described in [distribution](distribution.md). Keep the current limits visible when soliciting feedback from OpenMBEE or other teams; no institutional endorsement is implied.
 
 The onboarding result checks retained identities, trace coverage and change impact. It does not create fresh engine observations or establish physical adequacy. Broader language coverage, additional methodology implementations and solver integration remain future work.
