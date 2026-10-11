@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Diagramming
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved relationship semantics, source authority or omitted critical behavior when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Create an explanatory view of supplied engineering artifacts, retaining their authority and uncertainty. This extension expresses an architecture or behavior; it does not choose a methodology or establish model validity.
 
 1. Identify the audience, question and view: components/interfaces, workflow, sequence or state transitions. Read the relevant source slice and record its file/revision or byte identity. Distinguish proposed designs from observed implementation; keep unresolved facts visible. Use the [output and fidelity contract](references/view-contract.md) to set destination size/detail and preserve a reconciliation ledger.

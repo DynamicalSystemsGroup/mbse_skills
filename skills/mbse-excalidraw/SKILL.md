@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Excalidraw Sketches
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved boundary ownership, relationship meaning or authoritative source status when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Use an editable sketch for collaborative exploration of system boundaries, responsibilities, interfaces or alternatives. Preserve the difference between a discussion artifact and an authoritative engineering model.
 
 1. Identify the source artifacts, revision, audience and question. Name proposed versus observed content and unresolved decisions before drawing.

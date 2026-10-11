@@ -14,6 +14,8 @@ This installs editable skills in `.agents/skills`; it does not configure the eng
 
 ## 2. Set the project conventions
 
+If the project's practice is unresolved, setup first asks what the team follows and offers supported choices. For this engine-free teaching task, you can choose tailored core practices. Choose the bounded OOSEM adaptation when you specifically want its scenario-to-allocation workflow, or keep your existing process. Setup records missing methodology coverage rather than claiming to supply it. Methodology selection stays separate from the Markdown/tables choice below.
+
 Copy this prompt into your agent in the target project:
 
 ```text

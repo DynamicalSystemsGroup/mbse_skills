@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # Requirements to evidence and change impact
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved dependency meaning, current evidence applicability or change disposition when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Read the project's conventions and authoritative artifacts. Preserve stable IDs and decision status. A trace link records a stated relationship; it is not proof that the design satisfies a requirement.
 
 1. Identify the need, measurable obligation, assumptions, architecture responsibilities, model representation and planned verification. Keep missing acceptance criteria and conflicts open. Core traceability works with prose and tables; SysML is optional.

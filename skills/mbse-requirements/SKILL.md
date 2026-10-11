@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Requirements
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved requirement thresholds, operating conditions or stakeholder authority when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Turn needs into reviewable obligations without deciding an architecture prematurely.
 
 1. Identify the system boundary, stakeholder need, operating scenario and source authority. Label missing stakeholder decisions as open; mark agent-created examples as proposed.

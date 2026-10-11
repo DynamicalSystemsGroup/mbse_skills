@@ -2,6 +2,8 @@
 
 This teaching task connects a proposed need to requirements, architecture, model results and change impact. It uses the repository's actual retained rover CLI observations rather than inventing new tool output. No stakeholder accepted the scenario and no physical rover was tested.
 
+For the methodology-aware setup interview, see [practice-selection acceptance cases](practice-selection-cases.md). The scripted runner below does not conduct that interview or evaluate agent behavior.
+
 From the collection root, choose a fresh ignored destination:
 
 ```bash

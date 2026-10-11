@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Discovery
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved system boundary, stakeholder intent or conflicting sources of authority when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Turn an engineering request into a modeling brief that makes its intended use and open decisions explicit.
 
 1. Read the existing project brief and vocabulary. Ask one broad question if the purpose or system boundary is unclear; resolve observable facts from available artifacts.

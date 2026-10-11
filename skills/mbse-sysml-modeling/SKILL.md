@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # SysML v2 Modeling
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved model semantics, engineering assumptions or portability expectations when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Build the smallest model that answers the user's engineering question.
 
 1. Establish purpose, boundary, requirements, assumptions and vocabulary from the supplied brief. Clarify unresolved choices that change model meaning.

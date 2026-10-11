@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Grill Me
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved acceptance criteria, conflicting constraints or decision authority when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Build a shared understanding through an open-ended engineering conversation.
 There is no total question cap. Ask one main question at a time so the user
 can steer the discussion; depth follows the unresolved engineering decisions,

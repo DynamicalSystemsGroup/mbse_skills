@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Verification and Validation
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved acceptance criteria, observation scope or interpretation of inconclusive results when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Connect a claim to the observation that can actually establish it.
 
 1. Name the requirement or model property, revision, conditions and acceptance criterion. Separate verification of an obligation from validation against intended stakeholder use.

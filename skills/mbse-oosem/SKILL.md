@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE OOSEM Workflow
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved method edition, tailoring or review/decision gates when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Use this methodology extension when the user chooses OOSEM or asks for an OOSEM-oriented review. It is a starter adaptation of the public historical description, not the full tutorial or an implementation of OOSEM v2.
 
 Read [source basis](references/source-basis.md) before making method-specific claims. Agree the edition and tailoring; preserve a requested process rather than silently switching methodologies.

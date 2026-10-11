@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Literature Research
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved source identity, transfer assumptions or applicability to the engineering decision when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Research a bounded MBSE question and preserve what the evidence can support.
 
 1. State the question, system/domain context, language version and intended use of the findings. Read [research evidence](references/research-evidence.md) for authority and publication distinctions.

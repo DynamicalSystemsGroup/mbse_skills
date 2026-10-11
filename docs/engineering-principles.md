@@ -36,6 +36,10 @@ Use [architecture](../skills/mbse-architecture/SKILL.md), [diagramming](../skill
 
 ## Verification, validation and human accountability
 
+Engineers retain responsibility for system decisions and the use of agent-generated artifacts. Favor clarification when missing information could materially affect requirements, behavior, interfaces, thresholds, evidence interpretation or acceptance. Reuse established answers and inspect available sources first. Continue authorized drafting and investigation where possible, while keeping conclusions dependent on unresolved choices pending.
+
+Before adopting a changed requirement, design decision or claim of engineering adequacy, request review by the responsible human authority. Hand off the artifact and revision, the proposed decision, evidence and its limits, unresolved matters, and the reviewer needed. Record who actually accepted what, against which revision and under which conditions. If authority or acceptance is missing, preserve that open status. A tool result, an agent's recommendation, agreement among agents or silence cannot supply human acceptance.
+
 Identify how evidence addresses a stated obligation and separately how intended use will be assessed. Record decisions and acceptance through the project's actual engineering authorities. An agent can draft, calculate, inspect and assemble evidence; generated artifacts remain proposed until the applicable review is recorded.
 
 Review questions: Is this language validation, a modeled engineering check, an implementation test or intended-use validation? What decision can the available evidence support? Who is responsible for that decision, and has it actually been made?

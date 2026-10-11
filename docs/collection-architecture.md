@@ -8,6 +8,14 @@ Keep skill folders flat and self-contained for copying. `skills/catalog.json` is
 
 A user can apply core requirements review to a Markdown document with no language extension. An OOSEM-oriented project composes core practices and optionally SysML. SysML authoring can also support another methodology; selecting SysML does not select OOSEM.
 
+## Profiles and agent roles
+
+A methodology profile is the project's recorded choice of process, source/edition, tailoring, selected practices, artifact mapping and review gates. Today these choices live in project-owned Markdown conventions, not an executable profile schema. A profile composes available skills; methodology extensions supply the method-specific procedure and source basis. Selecting an unsupported method records a gap rather than creating an implementation.
+
+An agent role assigns a bounded task, context, tools, outputs and authority to an agent that can use several skills. Use a role when a distinct responsibility or separate review context earns the additional coordination. Keep repeated engineering procedures in skills so roles do not maintain competing copies. Deterministic operations belong in scripts or deliberately configured tools, with their observations retained for review. A separate agent is not automatically an independent assurance authority.
+
+The collection currently defines skills and UI metadata, not specialist agents or an orchestrator. Setup preserves existing client configuration and can record proposed roles, while actual client-specific agent definitions and behavioral evaluation need their own implementation. The [README philosophy](../README.md#our-philosophy-skills-agents-and-methodology-profiles) explains the selection rule for users.
+
 ## Current coverage
 
 Ten core skills cover project setup, traceability/change impact, discovery, adaptive engineering interviews, requirements, architecture/interfaces, verification and validation, constraint reasoning, standards and literature research. `mbse-grill-me` adds an open-ended conversational mode to discovery; it has no total question cap and does not replace artifact review. Risk, configuration management, lifecycle tailoring, integration, safety and specialty engineering are not yet dedicated core workflows. Model syntax checking and constraint execution are particular evidence paths, not substitutes for those practices.
@@ -39,3 +47,5 @@ The original evaluation concerns the six-skill starter. Visualization and [workf
 ## Distribution and onboarding
 
 `setup-mbse-skills` is a core onboarding skill: it records project-owned conventions without requiring a language, engine or renderer. The single skills-only plugin wraps all portable folders through standard client discovery. Logical extensions remain optional in use; separate installable extension packages are not implemented. See [distribution](distribution.md) for installation and release boundaries.
+
+Setup now includes an authored practice-selection interview: preserve stated choices, ask broadly about unresolved team practices, then offer tailored core practices, the bounded OOSEM adaptation or mapping to an existing process. This core skill can describe optional methodology extensions without requiring them. Project configuration records selection status, source/edition, tailoring, skill/artifact mapping and unavailable capabilities. It does not generate specialist agents, execute a router or establish method compliance. See [the onboarding acceptance cases](../examples/team-onboarding/practice-selection-cases.md) for the behavioral checks still needed.

@@ -36,7 +36,7 @@ This uses Vercel's [Skills installer](https://github.com/vercel-labs/skills), no
 
 The [installation receipt](../examples/team-onboarding/evidence/npx-skills-installation.json) records successful discovery and copying from public GitHub, plus a fresh local-source copy test with the bundled Apache license/notices. Remote installation matched 73 source files; the local packaging test matched 105. The new license/notice files reach GitHub when these additions are pushed. Installation/file integrity is verified; native client loading and invocation remain untested. A full repository checkout is still needed for collection-level examples and checks.
 
-After installation, ask the agent to use `setup-mbse-skills` in your project. `--copy` creates editable project files; review local changes before replacing them during an update. Each folder carries its helpers, references, license and notice.
+After installation, ask the agent to use `setup-mbse-skills` in your project. It asks about unresolved team practices, presents supported methodology paths and records the selected process and tailoring in project conventions. Installing files does not automatically launch setup. The interview is an authored skill procedure; native client invocation remains a separate untested gate. `--copy` creates editable project files; review local changes before replacing them during an update. Each folder carries its helpers, references, license and notice.
 
 ## Other clients and manual copies
 

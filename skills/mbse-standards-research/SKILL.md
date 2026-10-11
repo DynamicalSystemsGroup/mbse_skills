@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Standards Research
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved source edition, applicability or a disputed normative interpretation when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Answer a bounded standards question with a traceable source and an explicit interpretation.
 
 1. Identify the standard or guidance edition, question, scope and project applicability. Check existing source records before retrieving anything new.

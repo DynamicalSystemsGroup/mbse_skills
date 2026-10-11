@@ -6,6 +6,11 @@ license: Apache-2.0
 
 # MBSE Engineering Plots
 
+## Clarification and human review
+
+Engineers retain responsibility for engineering decisions. Clarify unresolved units, data meaning, acceptance boundaries or uncertainty when they could change the result; reuse established answers. Keep dependent conclusions pending while continuing authorized drafting or investigation. Present changed engineering artifacts as proposed or awaiting review, preserving existing source and approval status. Request the responsible human's review before adopting changed obligations, design decisions or adequacy claims. Report the artifact revision, evidence scope, open questions and decision needed; record acceptance only when actually supplied by an identified authority. A passing tool check, silence or agent agreement is not human acceptance.
+
+
 Choose a figure that answers a bounded engineering question and exposes the assumptions behind the data.
 
 1. Identify the decision, source dataset and its byte/revision identity. Separate measured, simulated, analytically derived and illustrative values. Retain missing/undecided outcomes explicitly.
