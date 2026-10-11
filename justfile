@@ -18,3 +18,6 @@ sync-version:
 
 onboarding-demo destination=".local/team-onboarding":
     uv run --locked --offline python scripts/onboarding_demo.py {{quote(destination)}}
+
+ecosystem-map:
+    uv run --locked --offline python scripts/build-ecosystem-map.py

@@ -117,6 +117,16 @@ flowchart LR
 
 This is an illustrative workflow. Use the skills that fit the task; [the task guide](docs/skill-guide.md) explains all 16. Methodology, language/tool and visualization extensions complement the core practices. The [catalog](skills/catalog.json) records their layers and composition prerequisites.
 
+## Explore the skills ecosystem
+
+[Interactive bubble map](docs/diagrams/ecosystem-bubbles.html) · [Full-size SVG](docs/diagrams/ecosystem-bubbles.svg) · [Sources and maintenance](docs/diagrams/README.md)
+
+![MBSE skills ecosystem: human responsibility surrounded by skills, methodology profiles, proposed agent roles and unimplemented method candidates](docs/diagrams/ecosystem-bubbles.svg)
+
+Explore all **16 skills and 14 related concepts**. Select a category to zoom, search by name or purpose, and filter available skills, profile conventions, human responsibility, proposed roles or unimplemented methods. Each entry links to its source and states its limitations. Download the HTML and open it in a browser; GitHub displays HTML source.
+
+The map groups entries for browsing; it does not change catalog layers or define execution dependencies. Circle sizes are decorative. Profiles are project-owned conventions, and the dashed agent/method bubbles represent proposals or gaps rather than shipped implementations.
+
 ## What the outputs look like
 
 The [rover onboarding example](examples/team-onboarding/README.md) connects a proposed need to requirements, logical responsibilities, model checks and change impact. Its generated teaching requirement states:

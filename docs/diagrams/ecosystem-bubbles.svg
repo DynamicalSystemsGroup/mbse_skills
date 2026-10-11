@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ecosystem-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1320" role="img" aria-labelledby="ecosystem-map-title ecosystem-map-desc">
+<title id="ecosystem-map-title">MBSE skills, profiles and human review</title><desc id="ecosystem-map-desc">Sixteen skills and fourteen related concepts in eight groups. Human responsibility is central. Profile conventions, proposed agent roles and unimplemented methodology candidates are distinct from skills.</desc>
+<style>text{font-family:system-ui,sans-serif;fill:#26332f;text-anchor:middle;pointer-events:none}.category-title{font-size:20px;font-weight:650}.category-count{font-size:13px;fill:#596861}.tool-label{font-size:14px;font-weight:550}.tool-circle{fill:#ffffff;fill-opacity:.88;stroke:#ffffff;stroke-width:2}.access-proposed .tool-circle{stroke:#8b7352;stroke-dasharray:4 3}.access-candidate .tool-circle{stroke:#8b7352;stroke-dasharray:2 4}.access-guidance .tool-circle{stroke:#285f49}.access-profile .tool-circle{stroke:#587c66}.category-ring{stroke:#ffffff;stroke-width:2}</style>
+<circle class="ecosystem-boundary" cx="660" cy="660" r="630" fill="#f7f4e8"/>
+<g class="category" data-category="humans" tabindex="0" role="button" aria-label="Explore Human responsibility">
+<circle class="category-ring" cx="660" cy="660" r="176" fill="#deeae5"/>
+<text class="category-title" x="660" y="516">Human responsibility</text><text class="category-count" x="660" y="536">3 entries</text>
+<g class="resource access-guidance" data-resource="review-authority" tabindex="0" role="button" aria-label="Responsible engineer">
+<title>Responsible engineer</title><circle class="tool-circle" cx="660.0" cy="604.0" r="44"/>
+<text class="tool-label" x="660.0" y="609.0">
+<tspan x="660.0" dy="0">Engineer</tspan>
+</text></g>
+<g class="resource access-guidance" data-resource="clarifications" tabindex="0" role="button" aria-label="Clarify material unknowns">
+<title>Clarify material unknowns</title><circle class="tool-circle" cx="729.28" cy="724.0" r="44"/>
+<text class="tool-label" x="729.28" y="721.0">
+<tspan x="729.28" dy="0">Clarify</tspan>
+<tspan x="729.28" dy="16">unknowns</tspan>
+</text></g>
+<g class="resource access-guidance" data-resource="review-record" tabindex="0" role="button" aria-label="Review and decision record">
+<title>Review and decision record</title><circle class="tool-circle" cx="590.72" cy="724.0" r="44"/>
+<text class="tool-label" x="590.72" y="721.0">
+<tspan x="590.72" dy="0">Review</tspan>
+<tspan x="590.72" dy="16">record</tspan>
+</text></g>
+</g>
+<g class="category" data-category="discovery" tabindex="0" role="button" aria-label="Explore Discovery &amp; research">
+<circle class="category-ring" cx="660.0" cy="246.0" r="176" fill="#deebf5"/>
+<text class="category-title" x="660.0" y="102.0">Discovery &amp; research</text><text class="category-count" x="660.0" y="122.0">5 entries</text>
+<g class="resource access-skill" data-resource="setup-mbse-skills" tabindex="0" role="button" aria-label="setup-mbse-skills">
+<title>setup-mbse-skills</title><circle class="tool-circle" cx="660.0" cy="178.0" r="44"/>
+<text class="tool-label" x="660.0" y="175.0">
+<tspan x="660.0" dy="0">Project</tspan>
+<tspan x="660.0" dy="16">setup</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-discovery" tabindex="0" role="button" aria-label="mbse-discovery">
+<title>mbse-discovery</title><circle class="tool-circle" cx="747.5" cy="241.57" r="44"/>
+<text class="tool-label" x="747.5" y="246.57">
+<tspan x="747.5" dy="0">Discovery</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-grill-me" tabindex="0" role="button" aria-label="mbse-grill-me">
+<title>mbse-grill-me</title><circle class="tool-circle" cx="714.08" cy="344.43" r="44"/>
+<text class="tool-label" x="714.08" y="349.43">
+<tspan x="714.08" dy="0">Interview</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-standards-research" tabindex="0" role="button" aria-label="mbse-standards-research">
+<title>mbse-standards-research</title><circle class="tool-circle" cx="605.92" cy="344.43" r="44"/>
+<text class="tool-label" x="605.92" y="349.43">
+<tspan x="605.92" dy="0">Standards</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-literature-research" tabindex="0" role="button" aria-label="mbse-literature-research">
+<title>mbse-literature-research</title><circle class="tool-circle" cx="572.5" cy="241.57" r="44"/>
+<text class="tool-label" x="572.5" y="246.57">
+<tspan x="572.5" dy="0">Literature</tspan>
+</text></g>
+</g>
+<g class="category" data-category="design" tabindex="0" role="button" aria-label="Explore Requirements &amp; design">
+<circle class="category-ring" cx="983.68" cy="401.88" r="176" fill="#f5e4cf"/>
+<text class="category-title" x="983.68" y="257.88">Requirements &amp; design</text><text class="category-count" x="983.68" y="277.88">3 entries</text>
+<g class="resource access-skill" data-resource="mbse-requirements" tabindex="0" role="button" aria-label="mbse-requirements">
+<title>mbse-requirements</title><circle class="tool-circle" cx="983.68" cy="345.88" r="44"/>
+<text class="tool-label" x="983.68" y="350.88">
+<tspan x="983.68" dy="0">Requirements</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-architecture" tabindex="0" role="button" aria-label="mbse-architecture">
+<title>mbse-architecture</title><circle class="tool-circle" cx="1052.96" cy="465.88" r="44"/>
+<text class="tool-label" x="1052.96" y="470.88">
+<tspan x="1052.96" dy="0">Architecture</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-constraint-reasoning" tabindex="0" role="button" aria-label="mbse-constraint-reasoning">
+<title>mbse-constraint-reasoning</title><circle class="tool-circle" cx="914.4" cy="465.88" r="44"/>
+<text class="tool-label" x="914.4" y="462.88">
+<tspan x="914.4" dy="0">Constraint</tspan>
+<tspan x="914.4" dy="16">reasoning</tspan>
+</text></g>
+</g>
+<g class="category" data-category="evidence" tabindex="0" role="button" aria-label="Explore Checks &amp; traceability">
+<circle class="category-ring" cx="1063.62" cy="752.12" r="176" fill="#e4e3f3"/>
+<text class="category-title" x="1063.62" y="608.12">Checks &amp; traceability</text><text class="category-count" x="1063.62" y="628.12">3 entries</text>
+<g class="resource access-skill" data-resource="mbse-verification" tabindex="0" role="button" aria-label="mbse-verification">
+<title>mbse-verification</title><circle class="tool-circle" cx="1063.62" cy="696.12" r="44"/>
+<text class="tool-label" x="1063.62" y="701.12">
+<tspan x="1063.62" dy="0">Verification</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-traceability" tabindex="0" role="button" aria-label="mbse-traceability">
+<title>mbse-traceability</title><circle class="tool-circle" cx="1132.9" cy="816.12" r="44"/>
+<text class="tool-label" x="1132.9" y="821.12">
+<tspan x="1132.9" dy="0">Traceability</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-model-tdd" tabindex="0" role="button" aria-label="mbse-model-tdd">
+<title>mbse-model-tdd</title><circle class="tool-circle" cx="994.34" cy="816.12" r="44"/>
+<text class="tool-label" x="994.34" y="821.12">
+<tspan x="994.34" dy="0">Model TDD</tspan>
+</text></g>
+</g>
+<g class="category" data-category="views" tabindex="0" role="button" aria-label="Explore Models &amp; communication">
+<circle class="category-ring" cx="839.63" cy="1033.0" r="176" fill="#f2dfe3"/>
+<text class="category-title" x="839.63" y="889.0">Models &amp; communication</text><text class="category-count" x="839.63" y="909.0">4 entries</text>
+<g class="resource access-skill" data-resource="mbse-sysml-modeling" tabindex="0" role="button" aria-label="mbse-sysml-modeling">
+<title>mbse-sysml-modeling</title><circle class="tool-circle" cx="839.63" cy="977.0" r="44"/>
+<text class="tool-label" x="839.63" y="974.0">
+<tspan x="839.63" dy="0">SysML</tspan>
+<tspan x="839.63" dy="16">modeling</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-diagramming" tabindex="0" role="button" aria-label="mbse-diagramming">
+<title>mbse-diagramming</title><circle class="tool-circle" cx="919.63" cy="1057.0" r="44"/>
+<text class="tool-label" x="919.63" y="1062.0">
+<tspan x="919.63" dy="0">Diagramming</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-excalidraw" tabindex="0" role="button" aria-label="mbse-excalidraw">
+<title>mbse-excalidraw</title><circle class="tool-circle" cx="839.63" cy="1137.0" r="44"/>
+<text class="tool-label" x="839.63" y="1134.0">
+<tspan x="839.63" dy="0">Editable</tspan>
+<tspan x="839.63" dy="16">sketches</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-engineering-plots" tabindex="0" role="button" aria-label="mbse-engineering-plots">
+<title>mbse-engineering-plots</title><circle class="tool-circle" cx="759.63" cy="1057.0" r="44"/>
+<text class="tool-label" x="759.63" y="1054.0">
+<tspan x="759.63" dy="0">Engineering</tspan>
+<tspan x="759.63" dy="16">plots</tspan>
+</text></g>
+</g>
+<g class="category" data-category="profiles" tabindex="0" role="button" aria-label="Explore Methodology profiles">
+<circle class="category-ring" cx="480.37" cy="1033.0" r="176" fill="#dfedde"/>
+<text class="category-title" x="480.37" y="889.0">Methodology profiles</text><text class="category-count" x="480.37" y="909.0">4 entries</text>
+<g class="resource access-profile" data-resource="profile-core" tabindex="0" role="button" aria-label="Tailored core practices">
+<title>Tailored core practices</title><circle class="tool-circle" cx="480.37" cy="977.0" r="44"/>
+<text class="tool-label" x="480.37" y="974.0">
+<tspan x="480.37" dy="0">Tailored</tspan>
+<tspan x="480.37" dy="16">core</tspan>
+</text></g>
+<g class="resource access-profile" data-resource="profile-oosem" tabindex="0" role="button" aria-label="OOSEM-oriented profile">
+<title>OOSEM-oriented profile</title><circle class="tool-circle" cx="560.37" cy="1057.0" r="44"/>
+<text class="tool-label" x="560.37" y="1054.0">
+<tspan x="560.37" dy="0">OOSEM</tspan>
+<tspan x="560.37" dy="16">profile</tspan>
+</text></g>
+<g class="resource access-profile" data-resource="profile-existing" tabindex="0" role="button" aria-label="Existing team process">
+<title>Existing team process</title><circle class="tool-circle" cx="480.37" cy="1137.0" r="44"/>
+<text class="tool-label" x="480.37" y="1142.0">
+<tspan x="480.37" dy="0">Team process</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-oosem" tabindex="0" role="button" aria-label="mbse-oosem">
+<title>mbse-oosem</title><circle class="tool-circle" cx="400.37" cy="1057.0" r="44"/>
+<text class="tool-label" x="400.37" y="1062.0">
+<tspan x="400.37" dy="0">OOSEM skill</tspan>
+</text></g>
+</g>
+<g class="category" data-category="agents" tabindex="0" role="button" aria-label="Explore Proposed agent roles">
+<circle class="category-ring" cx="256.38" cy="752.12" r="176" fill="#f1e8c9"/>
+<text class="category-title" x="256.38" y="608.12">Proposed agent roles</text><text class="category-count" x="256.38" y="628.12">2 entries</text>
+<g class="resource access-proposed" data-resource="requirements-reviewer" tabindex="0" role="button" aria-label="Requirements-review agent role">
+<title>Requirements-review agent role</title><circle class="tool-circle" cx="196.38" cy="772.12" r="44"/>
+<text class="tool-label" x="196.38" y="777.12">
+<tspan x="196.38" dy="0">Req. review</tspan>
+</text></g>
+<g class="resource access-proposed" data-resource="evidence-reviewer" tabindex="0" role="button" aria-label="Evidence-review agent role">
+<title>Evidence-review agent role</title><circle class="tool-circle" cx="316.38" cy="772.12" r="44"/>
+<text class="tool-label" x="316.38" y="769.12">
+<tspan x="316.38" dy="0">Evidence</tspan>
+<tspan x="316.38" dy="16">review</tspan>
+</text></g>
+</g>
+<g class="category" data-category="candidates" tabindex="0" role="button" aria-label="Explore Method candidates">
+<circle class="category-ring" cx="336.32" cy="401.88" r="176" fill="#dcecef"/>
+<text class="category-title" x="336.32" y="257.88">Method candidates</text><text class="category-count" x="336.32" y="277.88">6 entries</text>
+<g class="resource access-candidate" data-resource="candidate-iconix" tabindex="0" role="button" aria-label="ICONIX">
+<title>ICONIX</title><circle class="tool-circle" cx="336.32" cy="325.88" r="44"/>
+<text class="tool-label" x="336.32" y="330.88">
+<tspan x="336.32" dy="0">ICONIX</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-harmony" tabindex="0" role="button" aria-label="Harmony">
+<title>Harmony</title><circle class="tool-circle" cx="422.92" cy="375.88" r="44"/>
+<text class="tool-label" x="422.92" y="380.88">
+<tspan x="422.92" dy="0">Harmony</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-rup-se" tabindex="0" role="button" aria-label="RUP SE">
+<title>RUP SE</title><circle class="tool-circle" cx="422.92" cy="475.88" r="44"/>
+<text class="tool-label" x="422.92" y="480.88">
+<tspan x="422.92" dy="0">RUP SE</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-state-analysis" tabindex="0" role="button" aria-label="State Analysis">
+<title>State Analysis</title><circle class="tool-circle" cx="336.32" cy="525.88" r="44"/>
+<text class="tool-label" x="336.32" y="522.88">
+<tspan x="336.32" dy="0">State</tspan>
+<tspan x="336.32" dy="16">Analysis</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-vitech-mbse" tabindex="0" role="button" aria-label="Vitech MBSE">
+<title>Vitech MBSE</title><circle class="tool-circle" cx="249.72" cy="475.88" r="44"/>
+<text class="tool-label" x="249.72" y="480.88">
+<tspan x="249.72" dy="0">Vitech</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-opm" tabindex="0" role="button" aria-label="OPM">
+<title>OPM</title><circle class="tool-circle" cx="249.72" cy="375.88" r="44"/>
+<text class="tool-label" x="249.72" y="380.88">
+<tspan x="249.72" dy="0">OPM</tspan>
+</text></g>
+</g>
+</svg>

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "review-authority",
+    "name": "Responsible engineer",
+    "purpose": "Engineers retain responsibility for engineering decisions. Identify the actual reviewer before adoption of changed obligations, design decisions or adequacy claims.",
+    "tasks": "Project convention; human accountability",
+    "interfaces": "Project-owned review gates and decision records",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No appointed reviewer or accepted decision is inferred from this diagram.",
+    "notes": "../engineering-principles.md#verification-validation-and-human-accountability",
+    "access": "guidance"
+  },
+  {
+    "id": "clarifications",
+    "name": "Clarify material unknowns",
+    "purpose": "Ask about unresolved assumptions, criteria or authority when they could change the engineering result. Continue authorized investigation while dependent conclusions remain pending.",
+    "tasks": "Project convention; human accountability",
+    "interfaces": "Project-owned review gates and decision records",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No appointed reviewer or accepted decision is inferred from this diagram.",
+    "notes": "../engineering-principles.md#verification-validation-and-human-accountability",
+    "access": "guidance"
+  },
+  {
+    "id": "review-record",
+    "name": "Review and decision record",
+    "purpose": "Bind an actual human disposition to the artifact revision, evidence scope, open questions and acceptance conditions. Passing checks, agent agreement and silence are not acceptance.",
+    "tasks": "Project convention; human accountability",
+    "interfaces": "Project-owned review gates and decision records",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No appointed reviewer or accepted decision is inferred from this diagram.",
+    "notes": "../engineering-principles.md#verification-validation-and-human-accountability",
+    "access": "guidance"
+  },
+  {
+    "id": "profile-core",
+    "name": "Tailored core practices",
+    "purpose": "Select reusable practices around a concrete engineering task without requiring a named methodology, modeling language or engine.",
+    "tasks": "Methodology profile; project conventions",
+    "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.",
+    "notes": "../collection-architecture.md#profiles-and-agent-roles",
+    "access": "profile"
+  },
+  {
+    "id": "profile-oosem",
+    "name": "OOSEM-oriented profile",
+    "purpose": "Compose the bounded historical OOSEM adaptation with discovery, requirements, architecture, constraint reasoning and verification. Record tailoring and missing prerequisites.",
+    "tasks": "Methodology profile; project conventions",
+    "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.",
+    "notes": "../collection-architecture.md#profiles-and-agent-roles",
+    "access": "profile"
+  },
+  {
+    "id": "profile-existing",
+    "name": "Existing team process",
+    "purpose": "Preserve team artifact names, sequencing and review authorities. Map available core skills to those activities and expose unsupported work.",
+    "tasks": "Methodology profile; project conventions",
+    "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.",
+    "notes": "../collection-architecture.md#profiles-and-agent-roles",
+    "access": "profile"
+  },
+  {
+    "id": "requirements-reviewer",
+    "name": "Requirements-review agent role",
+    "purpose": "Illustrative bounded role: inspect supplied requirements using requirements and traceability practices, then return findings for a responsible engineer to review.",
+    "tasks": "Proposed example; not shipped; specialist agent",
+    "interfaces": "Would need explicit context, allowed tools, outputs, human reviewer and client-specific packaging",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No specialist agents are defined or evaluated in this collection. Separate agent contexts do not establish independent assurance.",
+    "notes": "../../README.md#our-philosophy-skills-agents-and-methodology-profiles",
+    "access": "proposed"
+  },
+  {
+    "id": "evidence-reviewer",
+    "name": "Evidence-review agent role",
+    "purpose": "Illustrative bounded role: inspect check scope, input identities and evidence freshness using verification and traceability practices; report gaps and a proposed disposition.",
+    "tasks": "Proposed example; not shipped; specialist agent",
+    "interfaces": "Would need explicit context, allowed tools, outputs, human reviewer and client-specific packaging",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No specialist agents are defined or evaluated in this collection. Separate agent contexts do not establish independent assurance.",
+    "notes": "../../README.md#our-philosophy-skills-agents-and-methodology-profiles",
+    "access": "proposed"
+  },
+  {
+    "id": "candidate-iconix",
+    "name": "ICONIX",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  },
+  {
+    "id": "candidate-harmony",
+    "name": "Harmony",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  },
+  {
+    "id": "candidate-rup-se",
+    "name": "RUP SE",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  },
+  {
+    "id": "candidate-state-analysis",
+    "name": "State Analysis",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  },
+  {
+    "id": "candidate-vitech-mbse",
+    "name": "Vitech MBSE",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  },
+  {
+    "id": "candidate-opm",
+    "name": "OPM",
+    "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.",
+    "tasks": "Research candidate; methodology gap",
+    "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation",
+    "license": "Original collection guidance; not a qualification or support claim",
+    "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.",
+    "notes": "../../skills/setup-mbse-skills/references/practice-selection.md",
+    "access": "candidate"
+  }
+]

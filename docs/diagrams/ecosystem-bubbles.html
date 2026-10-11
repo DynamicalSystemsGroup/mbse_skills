@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MBSE skills — practices, profiles and human responsibility</title>
+<style>
+:root{color-scheme:light;--paper:#fbfcfa;--ink:#26332f;--muted:#607069;--rule:#dde4df;--accent:#285f49}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,sans-serif}
+button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:var(--accent);text-underline-offset:3px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #285f49;outline-offset:4px}
+.page{max-width:1480px;margin:auto;padding:36px 44px 24px}.masthead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:32px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.masthead a{text-transform:none;letter-spacing:0;font-size:14px}
+.intro{display:flex;gap:40px;justify-content:space-between;align-items:flex-end;margin-bottom:24px}h1{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-.04em;font-weight:700;margin:0 0 14px}.intro p{max-width:650px;color:var(--muted);margin:0;font-size:16px}.edition{white-space:nowrap;font-size:13px;color:var(--muted);padding-bottom:4px}
+.toolbar{display:grid;grid-template-columns:minmax(180px,1fr) 230px auto auto;gap:12px;align-items:end;margin-bottom:22px}.control label{display:block;font-size:12px;font-weight:600;margin-bottom:5px}.control input,.control select{width:100%;height:42px;padding:8px 12px;border:1px solid var(--rule);border-radius:6px;background:white;color:var(--ink)}.action{height:42px;padding:8px 16px;border:1px solid var(--rule);border-radius:6px;background:white;color:var(--ink)}.action:hover{border-color:var(--accent);background:#f0f5f1}
+.workspace{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:32px;align-items:start}.map-column{min-width:0}.map-topline{display:flex;justify-content:space-between;align-items:center;min-height:32px;gap:16px;margin-bottom:6px}.breadcrumbs{font-size:14px}.breadcrumbs button{border:0;padding:0;background:transparent;color:var(--accent);text-decoration:underline;text-underline-offset:3px}.breadcrumbs span{color:var(--muted)}#results-status{font-size:12px;color:var(--muted);text-align:right}
+#ecosystem-map{display:block;width:100%;height:auto;overflow:hidden}.category{cursor:zoom-in}.category.outside-zoom{visibility:hidden}.category:focus-visible,.resource:focus-visible{outline:none}.resource{cursor:pointer}.category:focus-visible .category-ring{stroke:var(--accent);stroke-width:4}.resource:focus-visible .tool-circle,.resource.selected .tool-circle{stroke:var(--accent);stroke-width:4;fill:#fff}.resource:hover .tool-circle{stroke:#405e4f;stroke-width:3;fill:#fff}.resource.is-dimmed{opacity:.13;pointer-events:none}.resource.matched .tool-circle{stroke:var(--accent);stroke-width:3}.map-caption{font-size:12px;color:var(--muted);margin:8px 0 20px;max-width:760px}
+.side{padding-top:38px}.side h2{font-size:19px;line-height:1.3;margin:0 0 12px;letter-spacing:-.02em}.side p{color:var(--muted);margin:0 0 16px;font-size:14px}.side-kicker{font-size:11px;font-weight:650;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.category-nav{display:flex;align-items:center;width:100%;gap:10px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--rule);padding:12px 0;font-size:13px}.category-nav:hover{color:var(--accent)}.category-nav.active{font-weight:700}.swatch{height:12px;width:12px;border:1px solid #26332f22;border-radius:50%;flex-shrink:0}.nav-count{margin-left:auto;color:var(--muted);font-weight:400}
+.details{border-top:1px solid var(--rule);padding-top:22px;margin-top:26px}.details dl{margin:16px 0}.details dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;margin-top:14px}.details dd{font-size:13px;color:var(--muted);margin:4px 0 0;overflow-wrap:anywhere}.detail-links{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:20px}.status-tag{display:inline-block;font-size:11px;border:1px solid var(--rule);padding:3px 8px;border-radius:4px;background:white;margin:4px 0 12px}.legend{display:flex;gap:8px 20px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--rule);font-size:12px;color:var(--muted)}.legend strong{color:var(--ink)}.legend-mark{display:inline-block;width:12px;height:12px;border:1px solid #7b5760;border-radius:50%;margin-right:6px;vertical-align:-2px;background:white}.legend-mark.review{border-color:#8b7352;border-style:dashed}
+details.directory{border-top:1px solid var(--rule);padding:16px 0;margin-top:8px}summary{cursor:pointer;font-size:14px;font-weight:600}.directory ul{columns:3;column-gap:30px;padding-left:18px;font-size:13px}.directory li{break-inside:avoid;margin:8px 0}.directory li[hidden]{display:none}.colophon{display:flex;gap:24px;justify-content:space-between;padding-top:20px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);margin-top:20px}.colophon p{margin:0;max-width:680px}#tooltip{position:fixed;z-index:10;pointer-events:none;padding:9px 12px;background:#26332f;color:white;border-radius:6px;font-size:12px;max-width:280px}#tooltip[hidden]{display:none}.empty-message{margin:12px 0;color:var(--muted);font-size:14px}.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:1000px){.page{padding:28px 24px}.workspace{grid-template-columns:minmax(0,1fr) 240px;gap:20px}.toolbar{grid-template-columns:1fr 210px auto}.toolbar #export{grid-column:3}.toolbar #reset{grid-column:3;grid-row:1}.toolbar #export{display:none}.edition{display:none}}
+@media(max-width:720px){.page{padding:20px 16px}.masthead{margin-bottom:24px}.intro{margin-bottom:20px}.intro p{font-size:14px}.toolbar{grid-template-columns:1fr auto;gap:10px}.control.access-control{grid-column:1;grid-row:2}.toolbar #reset{grid-column:2;grid-row:2}.workspace{grid-template-columns:1fr;gap:8px}.side{padding-top:8px}.category-navigation{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.side .details{margin-top:20px}.directory ul{columns:1}.colophon{display:block}.colophon p+p{margin-top:12px}.map-topline{align-items:flex-start}.legend{gap:10px}}
+@media print{.toolbar,.side,.masthead a,.directory,#tooltip{display:none}.workspace{display:block}.page{padding:0}.intro{margin-bottom:8px}#ecosystem-map{max-height:220mm}.colophon{font-size:10px}.map-caption{font-size:10px}}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><span>MBSE skills / DSG</span><a href="../../README.md">Back to the collection</a></header>
+<section class="intro" aria-label="Introduction"><div><h1>Practices, composed with care.</h1><p>Explore skills, methodology profiles and proposed agent roles, with human responsibility at the center. Zoom into a category, then inspect a practice and its limits.</p></div><div class="edition">16 skills · 14 concepts · 8 areas</div></section>
+<div class="toolbar" aria-label="Explore the map">
+<div class="control"><label for="search">Find a skill, profile or concept</label><input id="search" type="search" placeholder="Try requirements, OOSEM, review or TDD" autocomplete="off"></div>
+<div class="control access-control"><label for="access">Kind and availability</label><select id="access"><option value="all">All entries</option><option value="skill">Available skills</option><option value="profile">Profile conventions</option><option value="guidance">Human responsibility</option><option value="proposed">Proposed roles (not shipped)</option><option value="candidate">Unimplemented methods</option></select></div>
+<button class="action" id="reset" type="button">Reset view</button><button class="action" id="export" type="button">Download SVG</button>
+</div>
+<div class="workspace">
+<section class="map-column" aria-label="Ecosystem visualization">
+<div class="map-topline"><nav class="breadcrumbs" aria-label="Map location"><button id="home" type="button">Ecosystem</button><span id="breadcrumb"></span></nav><span id="results-status" role="status" aria-live="polite">30 entries</span></div>
+<svg id="ecosystem-map" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 1320" role="img" aria-labelledby="ecosystem-map-title ecosystem-map-desc">
+<title id="ecosystem-map-title">MBSE skills, profiles and human review</title><desc id="ecosystem-map-desc">Sixteen skills and fourteen related concepts in eight groups. Human responsibility is central. Profile conventions, proposed agent roles and unimplemented methodology candidates are distinct from skills.</desc>
+<style>text{font-family:system-ui,sans-serif;fill:#26332f;text-anchor:middle;pointer-events:none}.category-title{font-size:20px;font-weight:650}.category-count{font-size:13px;fill:#596861}.tool-label{font-size:14px;font-weight:550}.tool-circle{fill:#ffffff;fill-opacity:.88;stroke:#ffffff;stroke-width:2}.access-proposed .tool-circle{stroke:#8b7352;stroke-dasharray:4 3}.access-candidate .tool-circle{stroke:#8b7352;stroke-dasharray:2 4}.access-guidance .tool-circle{stroke:#285f49}.access-profile .tool-circle{stroke:#587c66}.category-ring{stroke:#ffffff;stroke-width:2}</style>
+<circle class="ecosystem-boundary" cx="660" cy="660" r="630" fill="#f7f4e8"/>
+<g class="category" data-category="humans" tabindex="0" role="button" aria-label="Explore Human responsibility">
+<circle class="category-ring" cx="660" cy="660" r="176" fill="#deeae5"/>
+<text class="category-title" x="660" y="516">Human responsibility</text><text class="category-count" x="660" y="536">3 entries</text>
+<g class="resource access-guidance" data-resource="review-authority" tabindex="0" role="button" aria-label="Responsible engineer">
+<title>Responsible engineer</title><circle class="tool-circle" cx="660.0" cy="604.0" r="44"/>
+<text class="tool-label" x="660.0" y="609.0">
+<tspan x="660.0" dy="0">Engineer</tspan>
+</text></g>
+<g class="resource access-guidance" data-resource="clarifications" tabindex="0" role="button" aria-label="Clarify material unknowns">
+<title>Clarify material unknowns</title><circle class="tool-circle" cx="729.28" cy="724.0" r="44"/>
+<text class="tool-label" x="729.28" y="721.0">
+<tspan x="729.28" dy="0">Clarify</tspan>
+<tspan x="729.28" dy="16">unknowns</tspan>
+</text></g>
+<g class="resource access-guidance" data-resource="review-record" tabindex="0" role="button" aria-label="Review and decision record">
+<title>Review and decision record</title><circle class="tool-circle" cx="590.72" cy="724.0" r="44"/>
+<text class="tool-label" x="590.72" y="721.0">
+<tspan x="590.72" dy="0">Review</tspan>
+<tspan x="590.72" dy="16">record</tspan>
+</text></g>
+</g>
+<g class="category" data-category="discovery" tabindex="0" role="button" aria-label="Explore Discovery &amp; research">
+<circle class="category-ring" cx="660.0" cy="246.0" r="176" fill="#deebf5"/>
+<text class="category-title" x="660.0" y="102.0">Discovery &amp; research</text><text class="category-count" x="660.0" y="122.0">5 entries</text>
+<g class="resource access-skill" data-resource="setup-mbse-skills" tabindex="0" role="button" aria-label="setup-mbse-skills">
+<title>setup-mbse-skills</title><circle class="tool-circle" cx="660.0" cy="178.0" r="44"/>
+<text class="tool-label" x="660.0" y="175.0">
+<tspan x="660.0" dy="0">Project</tspan>
+<tspan x="660.0" dy="16">setup</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-discovery" tabindex="0" role="button" aria-label="mbse-discovery">
+<title>mbse-discovery</title><circle class="tool-circle" cx="747.5" cy="241.57" r="44"/>
+<text class="tool-label" x="747.5" y="246.57">
+<tspan x="747.5" dy="0">Discovery</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-grill-me" tabindex="0" role="button" aria-label="mbse-grill-me">
+<title>mbse-grill-me</title><circle class="tool-circle" cx="714.08" cy="344.43" r="44"/>
+<text class="tool-label" x="714.08" y="349.43">
+<tspan x="714.08" dy="0">Interview</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-standards-research" tabindex="0" role="button" aria-label="mbse-standards-research">
+<title>mbse-standards-research</title><circle class="tool-circle" cx="605.92" cy="344.43" r="44"/>
+<text class="tool-label" x="605.92" y="349.43">
+<tspan x="605.92" dy="0">Standards</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-literature-research" tabindex="0" role="button" aria-label="mbse-literature-research">
+<title>mbse-literature-research</title><circle class="tool-circle" cx="572.5" cy="241.57" r="44"/>
+<text class="tool-label" x="572.5" y="246.57">
+<tspan x="572.5" dy="0">Literature</tspan>
+</text></g>
+</g>
+<g class="category" data-category="design" tabindex="0" role="button" aria-label="Explore Requirements &amp; design">
+<circle class="category-ring" cx="983.68" cy="401.88" r="176" fill="#f5e4cf"/>
+<text class="category-title" x="983.68" y="257.88">Requirements &amp; design</text><text class="category-count" x="983.68" y="277.88">3 entries</text>
+<g class="resource access-skill" data-resource="mbse-requirements" tabindex="0" role="button" aria-label="mbse-requirements">
+<title>mbse-requirements</title><circle class="tool-circle" cx="983.68" cy="345.88" r="44"/>
+<text class="tool-label" x="983.68" y="350.88">
+<tspan x="983.68" dy="0">Requirements</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-architecture" tabindex="0" role="button" aria-label="mbse-architecture">
+<title>mbse-architecture</title><circle class="tool-circle" cx="1052.96" cy="465.88" r="44"/>
+<text class="tool-label" x="1052.96" y="470.88">
+<tspan x="1052.96" dy="0">Architecture</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-constraint-reasoning" tabindex="0" role="button" aria-label="mbse-constraint-reasoning">
+<title>mbse-constraint-reasoning</title><circle class="tool-circle" cx="914.4" cy="465.88" r="44"/>
+<text class="tool-label" x="914.4" y="462.88">
+<tspan x="914.4" dy="0">Constraint</tspan>
+<tspan x="914.4" dy="16">reasoning</tspan>
+</text></g>
+</g>
+<g class="category" data-category="evidence" tabindex="0" role="button" aria-label="Explore Checks &amp; traceability">
+<circle class="category-ring" cx="1063.62" cy="752.12" r="176" fill="#e4e3f3"/>
+<text class="category-title" x="1063.62" y="608.12">Checks &amp; traceability</text><text class="category-count" x="1063.62" y="628.12">3 entries</text>
+<g class="resource access-skill" data-resource="mbse-verification" tabindex="0" role="button" aria-label="mbse-verification">
+<title>mbse-verification</title><circle class="tool-circle" cx="1063.62" cy="696.12" r="44"/>
+<text class="tool-label" x="1063.62" y="701.12">
+<tspan x="1063.62" dy="0">Verification</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-traceability" tabindex="0" role="button" aria-label="mbse-traceability">
+<title>mbse-traceability</title><circle class="tool-circle" cx="1132.9" cy="816.12" r="44"/>
+<text class="tool-label" x="1132.9" y="821.12">
+<tspan x="1132.9" dy="0">Traceability</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-model-tdd" tabindex="0" role="button" aria-label="mbse-model-tdd">
+<title>mbse-model-tdd</title><circle class="tool-circle" cx="994.34" cy="816.12" r="44"/>
+<text class="tool-label" x="994.34" y="821.12">
+<tspan x="994.34" dy="0">Model TDD</tspan>
+</text></g>
+</g>
+<g class="category" data-category="views" tabindex="0" role="button" aria-label="Explore Models &amp; communication">
+<circle class="category-ring" cx="839.63" cy="1033.0" r="176" fill="#f2dfe3"/>
+<text class="category-title" x="839.63" y="889.0">Models &amp; communication</text><text class="category-count" x="839.63" y="909.0">4 entries</text>
+<g class="resource access-skill" data-resource="mbse-sysml-modeling" tabindex="0" role="button" aria-label="mbse-sysml-modeling">
+<title>mbse-sysml-modeling</title><circle class="tool-circle" cx="839.63" cy="977.0" r="44"/>
+<text class="tool-label" x="839.63" y="974.0">
+<tspan x="839.63" dy="0">SysML</tspan>
+<tspan x="839.63" dy="16">modeling</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-diagramming" tabindex="0" role="button" aria-label="mbse-diagramming">
+<title>mbse-diagramming</title><circle class="tool-circle" cx="919.63" cy="1057.0" r="44"/>
+<text class="tool-label" x="919.63" y="1062.0">
+<tspan x="919.63" dy="0">Diagramming</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-excalidraw" tabindex="0" role="button" aria-label="mbse-excalidraw">
+<title>mbse-excalidraw</title><circle class="tool-circle" cx="839.63" cy="1137.0" r="44"/>
+<text class="tool-label" x="839.63" y="1134.0">
+<tspan x="839.63" dy="0">Editable</tspan>
+<tspan x="839.63" dy="16">sketches</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-engineering-plots" tabindex="0" role="button" aria-label="mbse-engineering-plots">
+<title>mbse-engineering-plots</title><circle class="tool-circle" cx="759.63" cy="1057.0" r="44"/>
+<text class="tool-label" x="759.63" y="1054.0">
+<tspan x="759.63" dy="0">Engineering</tspan>
+<tspan x="759.63" dy="16">plots</tspan>
+</text></g>
+</g>
+<g class="category" data-category="profiles" tabindex="0" role="button" aria-label="Explore Methodology profiles">
+<circle class="category-ring" cx="480.37" cy="1033.0" r="176" fill="#dfedde"/>
+<text class="category-title" x="480.37" y="889.0">Methodology profiles</text><text class="category-count" x="480.37" y="909.0">4 entries</text>
+<g class="resource access-profile" data-resource="profile-core" tabindex="0" role="button" aria-label="Tailored core practices">
+<title>Tailored core practices</title><circle class="tool-circle" cx="480.37" cy="977.0" r="44"/>
+<text class="tool-label" x="480.37" y="974.0">
+<tspan x="480.37" dy="0">Tailored</tspan>
+<tspan x="480.37" dy="16">core</tspan>
+</text></g>
+<g class="resource access-profile" data-resource="profile-oosem" tabindex="0" role="button" aria-label="OOSEM-oriented profile">
+<title>OOSEM-oriented profile</title><circle class="tool-circle" cx="560.37" cy="1057.0" r="44"/>
+<text class="tool-label" x="560.37" y="1054.0">
+<tspan x="560.37" dy="0">OOSEM</tspan>
+<tspan x="560.37" dy="16">profile</tspan>
+</text></g>
+<g class="resource access-profile" data-resource="profile-existing" tabindex="0" role="button" aria-label="Existing team process">
+<title>Existing team process</title><circle class="tool-circle" cx="480.37" cy="1137.0" r="44"/>
+<text class="tool-label" x="480.37" y="1142.0">
+<tspan x="480.37" dy="0">Team process</tspan>
+</text></g>
+<g class="resource access-skill" data-resource="mbse-oosem" tabindex="0" role="button" aria-label="mbse-oosem">
+<title>mbse-oosem</title><circle class="tool-circle" cx="400.37" cy="1057.0" r="44"/>
+<text class="tool-label" x="400.37" y="1062.0">
+<tspan x="400.37" dy="0">OOSEM skill</tspan>
+</text></g>
+</g>
+<g class="category" data-category="agents" tabindex="0" role="button" aria-label="Explore Proposed agent roles">
+<circle class="category-ring" cx="256.38" cy="752.12" r="176" fill="#f1e8c9"/>
+<text class="category-title" x="256.38" y="608.12">Proposed agent roles</text><text class="category-count" x="256.38" y="628.12">2 entries</text>
+<g class="resource access-proposed" data-resource="requirements-reviewer" tabindex="0" role="button" aria-label="Requirements-review agent role">
+<title>Requirements-review agent role</title><circle class="tool-circle" cx="196.38" cy="772.12" r="44"/>
+<text class="tool-label" x="196.38" y="777.12">
+<tspan x="196.38" dy="0">Req. review</tspan>
+</text></g>
+<g class="resource access-proposed" data-resource="evidence-reviewer" tabindex="0" role="button" aria-label="Evidence-review agent role">
+<title>Evidence-review agent role</title><circle class="tool-circle" cx="316.38" cy="772.12" r="44"/>
+<text class="tool-label" x="316.38" y="769.12">
+<tspan x="316.38" dy="0">Evidence</tspan>
+<tspan x="316.38" dy="16">review</tspan>
+</text></g>
+</g>
+<g class="category" data-category="candidates" tabindex="0" role="button" aria-label="Explore Method candidates">
+<circle class="category-ring" cx="336.32" cy="401.88" r="176" fill="#dcecef"/>
+<text class="category-title" x="336.32" y="257.88">Method candidates</text><text class="category-count" x="336.32" y="277.88">6 entries</text>
+<g class="resource access-candidate" data-resource="candidate-iconix" tabindex="0" role="button" aria-label="ICONIX">
+<title>ICONIX</title><circle class="tool-circle" cx="336.32" cy="325.88" r="44"/>
+<text class="tool-label" x="336.32" y="330.88">
+<tspan x="336.32" dy="0">ICONIX</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-harmony" tabindex="0" role="button" aria-label="Harmony">
+<title>Harmony</title><circle class="tool-circle" cx="422.92" cy="375.88" r="44"/>
+<text class="tool-label" x="422.92" y="380.88">
+<tspan x="422.92" dy="0">Harmony</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-rup-se" tabindex="0" role="button" aria-label="RUP SE">
+<title>RUP SE</title><circle class="tool-circle" cx="422.92" cy="475.88" r="44"/>
+<text class="tool-label" x="422.92" y="480.88">
+<tspan x="422.92" dy="0">RUP SE</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-state-analysis" tabindex="0" role="button" aria-label="State Analysis">
+<title>State Analysis</title><circle class="tool-circle" cx="336.32" cy="525.88" r="44"/>
+<text class="tool-label" x="336.32" y="522.88">
+<tspan x="336.32" dy="0">State</tspan>
+<tspan x="336.32" dy="16">Analysis</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-vitech-mbse" tabindex="0" role="button" aria-label="Vitech MBSE">
+<title>Vitech MBSE</title><circle class="tool-circle" cx="249.72" cy="475.88" r="44"/>
+<text class="tool-label" x="249.72" y="480.88">
+<tspan x="249.72" dy="0">Vitech</tspan>
+</text></g>
+<g class="resource access-candidate" data-resource="candidate-opm" tabindex="0" role="button" aria-label="OPM">
+<title>OPM</title><circle class="tool-circle" cx="249.72" cy="375.88" r="44"/>
+<text class="tool-label" x="249.72" y="380.88">
+<tspan x="249.72" dy="0">OPM</tspan>
+</text></g>
+</g>
+</svg>
+<p class="empty-message" id="empty" hidden>No matching entries. Try a broader search or change the availability filter.</p>
+<p class="map-caption">Placement is for browsing; catalog layers remain authoritative. Circle size is decorative. Dashed outlines identify proposed roles and unimplemented methods. Use the list below for an accessible text view.</p>
+</section>
+<aside class="side" aria-label="Categories and entry details">
+<div class="side-kicker">Explore by role</div><h2>The ecosystem</h2><p>Responsible engineers sit at the center. Reusable skills support profiles and bounded roles; none can supply human acceptance.</p>
+<nav class="category-navigation" aria-label="Resource categories"><button class="category-nav" data-group="humans"><span class="swatch" style="background:#deeae5"></span><span>Human responsibility</span><span class="nav-count">3</span></button><button class="category-nav" data-group="discovery"><span class="swatch" style="background:#deebf5"></span><span>Discovery &amp; research</span><span class="nav-count">5</span></button><button class="category-nav" data-group="design"><span class="swatch" style="background:#f5e4cf"></span><span>Requirements &amp; design</span><span class="nav-count">3</span></button><button class="category-nav" data-group="evidence"><span class="swatch" style="background:#e4e3f3"></span><span>Checks &amp; traceability</span><span class="nav-count">3</span></button><button class="category-nav" data-group="views"><span class="swatch" style="background:#f2dfe3"></span><span>Models &amp; communication</span><span class="nav-count">4</span></button><button class="category-nav" data-group="profiles"><span class="swatch" style="background:#dfedde"></span><span>Methodology profiles</span><span class="nav-count">4</span></button><button class="category-nav" data-group="agents"><span class="swatch" style="background:#f1e8c9"></span><span>Proposed agent roles</span><span class="nav-count">2</span></button><button class="category-nav" data-group="candidates"><span class="swatch" style="background:#dcecef"></span><span>Method candidates</span><span class="nav-count">6</span></button></nav>
+<section class="details" id="details" aria-live="polite"><div class="side-kicker">Practice notes</div><h2>Select an entry</h2><p>Select a skill or concept to inspect its purpose, availability, composition and limitations.</p><p>Profiles are recorded project choices. Specialist agents are illustrative roles, not installed components.</p></section>
+</aside>
+</div>
+<div class="legend"><strong>Availability</strong><span>Solid: skills and project conventions</span><span><span class="legend-mark review"></span>Dashed: proposed roles / unimplemented methods</span></div>
+<details class="directory"><summary>Browse all 30 entries as a list</summary><ul id="resource-list"><li data-list-resource="clarifications"><a href="../engineering-principles.md#verification-validation-and-human-accountability" data-resource-link="clarifications">Clarify material unknowns</a></li><li data-list-resource="evidence-reviewer"><a href="../../README.md#our-philosophy-skills-agents-and-methodology-profiles" data-resource-link="evidence-reviewer">Evidence-review agent role</a></li><li data-list-resource="profile-existing"><a href="../collection-architecture.md#profiles-and-agent-roles" data-resource-link="profile-existing">Existing team process</a></li><li data-list-resource="candidate-harmony"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-harmony">Harmony</a></li><li data-list-resource="candidate-iconix"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-iconix">ICONIX</a></li><li data-list-resource="mbse-architecture"><a href="../../skills/mbse-architecture/SKILL.md" data-resource-link="mbse-architecture">mbse-architecture</a></li><li data-list-resource="mbse-constraint-reasoning"><a href="../../skills/mbse-constraint-reasoning/SKILL.md" data-resource-link="mbse-constraint-reasoning">mbse-constraint-reasoning</a></li><li data-list-resource="mbse-diagramming"><a href="../../skills/mbse-diagramming/SKILL.md" data-resource-link="mbse-diagramming">mbse-diagramming</a></li><li data-list-resource="mbse-discovery"><a href="../../skills/mbse-discovery/SKILL.md" data-resource-link="mbse-discovery">mbse-discovery</a></li><li data-list-resource="mbse-engineering-plots"><a href="../../skills/mbse-engineering-plots/SKILL.md" data-resource-link="mbse-engineering-plots">mbse-engineering-plots</a></li><li data-list-resource="mbse-excalidraw"><a href="../../skills/mbse-excalidraw/SKILL.md" data-resource-link="mbse-excalidraw">mbse-excalidraw</a></li><li data-list-resource="mbse-grill-me"><a href="../../skills/mbse-grill-me/SKILL.md" data-resource-link="mbse-grill-me">mbse-grill-me</a></li><li data-list-resource="mbse-literature-research"><a href="../../skills/mbse-literature-research/SKILL.md" data-resource-link="mbse-literature-research">mbse-literature-research</a></li><li data-list-resource="mbse-model-tdd"><a href="../../skills/mbse-model-tdd/SKILL.md" data-resource-link="mbse-model-tdd">mbse-model-tdd</a></li><li data-list-resource="mbse-oosem"><a href="../../skills/mbse-oosem/SKILL.md" data-resource-link="mbse-oosem">mbse-oosem</a></li><li data-list-resource="mbse-requirements"><a href="../../skills/mbse-requirements/SKILL.md" data-resource-link="mbse-requirements">mbse-requirements</a></li><li data-list-resource="mbse-standards-research"><a href="../../skills/mbse-standards-research/SKILL.md" data-resource-link="mbse-standards-research">mbse-standards-research</a></li><li data-list-resource="mbse-sysml-modeling"><a href="../../skills/mbse-sysml-modeling/SKILL.md" data-resource-link="mbse-sysml-modeling">mbse-sysml-modeling</a></li><li data-list-resource="mbse-traceability"><a href="../../skills/mbse-traceability/SKILL.md" data-resource-link="mbse-traceability">mbse-traceability</a></li><li data-list-resource="mbse-verification"><a href="../../skills/mbse-verification/SKILL.md" data-resource-link="mbse-verification">mbse-verification</a></li><li data-list-resource="profile-oosem"><a href="../collection-architecture.md#profiles-and-agent-roles" data-resource-link="profile-oosem">OOSEM-oriented profile</a></li><li data-list-resource="candidate-opm"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-opm">OPM</a></li><li data-list-resource="requirements-reviewer"><a href="../../README.md#our-philosophy-skills-agents-and-methodology-profiles" data-resource-link="requirements-reviewer">Requirements-review agent role</a></li><li data-list-resource="review-authority"><a href="../engineering-principles.md#verification-validation-and-human-accountability" data-resource-link="review-authority">Responsible engineer</a></li><li data-list-resource="review-record"><a href="../engineering-principles.md#verification-validation-and-human-accountability" data-resource-link="review-record">Review and decision record</a></li><li data-list-resource="candidate-rup-se"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-rup-se">RUP SE</a></li><li data-list-resource="setup-mbse-skills"><a href="../../skills/setup-mbse-skills/SKILL.md" data-resource-link="setup-mbse-skills">setup-mbse-skills</a></li><li data-list-resource="candidate-state-analysis"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-state-analysis">State Analysis</a></li><li data-list-resource="profile-core"><a href="../collection-architecture.md#profiles-and-agent-roles" data-resource-link="profile-core">Tailored core practices</a></li><li data-list-resource="candidate-vitech-mbse"><a href="../../skills/setup-mbse-skills/references/practice-selection.md" data-resource-link="candidate-vitech-mbse">Vitech MBSE</a></li></ul></details>
+<footer class="colophon"><p>Engineers retain responsibility. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review. Map interaction checks do not validate agent behavior.</p><p><a href="README.md">Map sources and maintenance</a> · <a href="../collection-architecture.md">Coverage and boundaries</a></p></footer>
+<noscript><p>JavaScript is disabled. The full diagram and entry links above remain available; zoom, search and selection need JavaScript.</p></noscript>
+</main>
+<div id="tooltip" role="tooltip" hidden></div>
+<script type="application/json" id="ecosystem-data">{"groups": [{"id": "humans", "name": "Human responsibility", "color": "#deeae5", "x": 660, "y": 660, "r": 176, "count": 3}, {"id": "discovery", "name": "Discovery & research", "color": "#deebf5", "x": 660.0, "y": 246.0, "r": 176, "count": 5}, {"id": "design", "name": "Requirements & design", "color": "#f5e4cf", "x": 983.68, "y": 401.88, "r": 176, "count": 3}, {"id": "evidence", "name": "Checks & traceability", "color": "#e4e3f3", "x": 1063.62, "y": 752.12, "r": 176, "count": 3}, {"id": "views", "name": "Models & communication", "color": "#f2dfe3", "x": 839.63, "y": 1033.0, "r": 176, "count": 4}, {"id": "profiles", "name": "Methodology profiles", "color": "#dfedde", "x": 480.37, "y": 1033.0, "r": 176, "count": 4}, {"id": "agents", "name": "Proposed agent roles", "color": "#f1e8c9", "x": 256.38, "y": 752.12, "r": 176, "count": 2}, {"id": "candidates", "name": "Method candidates", "color": "#dcecef", "x": 336.32, "y": 401.88, "r": 176, "count": 6}], "resources": [{"id": "review-authority", "name": "Responsible engineer", "purpose": "Engineers retain responsibility for engineering decisions. Identify the actual reviewer before adoption of changed obligations, design decisions or adequacy claims.", "tasks": "Project convention; human accountability", "interfaces": "Project-owned review gates and decision records", "license": "Original collection guidance; not a qualification or support claim", "limits": "No appointed reviewer or accepted decision is inferred from this diagram.", "notes": "../engineering-principles.md#verification-validation-and-human-accountability", "access": "guidance", "upstream": "", "group": "humans", "short": "Engineer", "x": 660.0, "y": 604.0, "r": 44}, {"id": "clarifications", "name": "Clarify material unknowns", "purpose": "Ask about unresolved assumptions, criteria or authority when they could change the engineering result. Continue authorized investigation while dependent conclusions remain pending.", "tasks": "Project convention; human accountability", "interfaces": "Project-owned review gates and decision records", "license": "Original collection guidance; not a qualification or support claim", "limits": "No appointed reviewer or accepted decision is inferred from this diagram.", "notes": "../engineering-principles.md#verification-validation-and-human-accountability", "access": "guidance", "upstream": "", "group": "humans", "short": "Clarify unknowns", "x": 729.28, "y": 724.0, "r": 44}, {"id": "review-record", "name": "Review and decision record", "purpose": "Bind an actual human disposition to the artifact revision, evidence scope, open questions and acceptance conditions. Passing checks, agent agreement and silence are not acceptance.", "tasks": "Project convention; human accountability", "interfaces": "Project-owned review gates and decision records", "license": "Original collection guidance; not a qualification or support claim", "limits": "No appointed reviewer or accepted decision is inferred from this diagram.", "notes": "../engineering-principles.md#verification-validation-and-human-accountability", "access": "guidance", "upstream": "", "group": "humans", "short": "Review record", "x": 590.72, "y": 724.0, "r": 44}, {"id": "setup-mbse-skills", "name": "setup-mbse-skills", "purpose": "Configure project conventions for this MBSE skill collection when onboarding a team or changing its modeling, evidence or verification workflow.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/setup-mbse-skills/SKILL.md", "upstream": "", "access": "skill", "group": "discovery", "short": "Project setup", "x": 660.0, "y": 178.0, "r": 44}, {"id": "mbse-discovery", "name": "mbse-discovery", "purpose": "Clarify system boundaries, stakeholder needs, requirements and vocabulary before authoring or reviewing an engineering model.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-discovery/SKILL.md", "upstream": "", "access": "skill", "group": "discovery", "short": "Discovery", "x": 747.5, "y": 241.57, "r": 44}, {"id": "mbse-grill-me", "name": "mbse-grill-me", "purpose": "Interview a user adaptively to clarify or stress-test an engineering goal, plan, requirement or modeling decision; start open-ended and narrow to grounded choices. Use when asked to grill the user or work through uncertainty interactively, rather than for an already precise edit or a factual lookup.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-grill-me/SKILL.md", "upstream": "", "access": "skill", "group": "discovery", "short": "Interview", "x": 714.08, "y": 344.43, "r": 44}, {"id": "mbse-standards-research", "name": "mbse-standards-research", "purpose": "Find and interpret versioned engineering standards and institutional guidance and distinguish normative requirements from examples and implementation behavior.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-standards-research/SKILL.md", "upstream": "", "access": "skill", "group": "discovery", "short": "Standards", "x": 605.92, "y": 344.43, "r": 44}, {"id": "mbse-literature-research", "name": "mbse-literature-research", "purpose": "Find and assess MBSE papers, methods and related repositories with verified bibliographic identity, version, applicability and evidence provenance.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-literature-research/SKILL.md", "upstream": "", "access": "skill", "group": "discovery", "short": "Literature", "x": 572.5, "y": 241.57, "r": 44}, {"id": "mbse-requirements", "name": "mbse-requirements", "purpose": "Develop or review measurable system requirements, derivation, allocation and traceability independently of a modeling language.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-requirements/SKILL.md", "upstream": "", "access": "skill", "group": "design", "short": "Requirements", "x": 983.68, "y": 345.88, "r": 44}, {"id": "mbse-architecture", "name": "mbse-architecture", "purpose": "Develop or review logical and allocated system architectures, behavior, interfaces and design rationale without requiring SysML.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-architecture/SKILL.md", "upstream": "", "access": "skill", "group": "design", "short": "Architecture", "x": 1052.96, "y": 465.88, "r": 44}, {"id": "mbse-constraint-reasoning", "name": "mbse-constraint-reasoning", "purpose": "Explain engineering constraints and evaluate feasible design alternatives against explicit objectives, units, bounds and uncertainty.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-constraint-reasoning/SKILL.md", "upstream": "", "access": "skill", "group": "design", "short": "Constraint reasoning", "x": 914.4, "y": 465.88, "r": 44}, {"id": "mbse-verification", "name": "mbse-verification", "purpose": "Plan and assess verification and validation evidence for requirements or model changes, including test-first checks, independently of engines or modeling languages.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-verification/SKILL.md", "upstream": "", "access": "skill", "group": "evidence", "short": "Verification", "x": 1063.62, "y": 696.12, "r": 44}, {"id": "mbse-traceability", "name": "mbse-traceability", "purpose": "Build requirements-to-evidence traces and assess change impact across needs, assumptions, architecture, model artifacts and verification results.", "tasks": "Skill; catalog layer: core", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-traceability/SKILL.md", "upstream": "", "access": "skill", "group": "evidence", "short": "Traceability", "x": 1132.9, "y": 816.12, "r": 44}, {"id": "mbse-model-tdd", "name": "mbse-model-tdd", "purpose": "Develop test-first checks for SysML v2 model changes, collect pinned engine and LSP evidence, and investigate differing or unavailable results.", "tasks": "Skill; catalog layer: language-tool", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-model-tdd/SKILL.md", "upstream": "", "access": "skill", "group": "evidence", "short": "Model TDD", "x": 994.34, "y": 816.12, "r": 44}, {"id": "mbse-sysml-modeling", "name": "mbse-sysml-modeling", "purpose": "Author, explain or revise SysML v2 textual models with relevant KerML foundations, typed quantities and explicit engine portability limits.", "tasks": "Skill; catalog layer: language-tool", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-sysml-modeling/SKILL.md", "upstream": "", "access": "skill", "group": "views", "short": "SysML modeling", "x": 839.63, "y": 977.0, "r": 44}, {"id": "mbse-diagramming", "name": "mbse-diagramming", "purpose": "Create or review source-linked engineering architecture, workflow, sequence or state diagrams in Mermaid, Graphviz or an available UML/PlantUML tool skill; preserve semantics and report actual rendering checks.", "tasks": "Skill; catalog layer: visualization", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-diagramming/SKILL.md", "upstream": "", "access": "skill", "group": "views", "short": "Diagramming", "x": 919.63, "y": 1057.0, "r": 44}, {"id": "mbse-excalidraw", "name": "mbse-excalidraw", "purpose": "Create or revise editable Excalidraw engineering sketches with stable artifact mapping, meaningful arrows and explicit proposal status; retain the scene and review its exports.", "tasks": "Skill; catalog layer: visualization", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-excalidraw/SKILL.md", "upstream": "", "access": "skill", "group": "views", "short": "Editable sketches", "x": 839.63, "y": 1137.0, "r": 44}, {"id": "mbse-engineering-plots", "name": "mbse-engineering-plots", "purpose": "Visualize engineering constraints, finite trade studies, sensitivity or verification data with explicit units, uncertainty and provenance; use reproducible plots rather than decorative charts.", "tasks": "Skill; catalog layer: visualization", "interfaces": "Composition prerequisites: none declared", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-engineering-plots/SKILL.md", "upstream": "", "access": "skill", "group": "views", "short": "Engineering plots", "x": 759.63, "y": 1057.0, "r": 44}, {"id": "profile-core", "name": "Tailored core practices", "purpose": "Select reusable practices around a concrete engineering task without requiring a named methodology, modeling language or engine.", "tasks": "Methodology profile; project conventions", "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices", "license": "Original collection guidance; not a qualification or support claim", "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.", "notes": "../collection-architecture.md#profiles-and-agent-roles", "access": "profile", "upstream": "", "group": "profiles", "short": "Tailored core", "x": 480.37, "y": 977.0, "r": 44}, {"id": "profile-oosem", "name": "OOSEM-oriented profile", "purpose": "Compose the bounded historical OOSEM adaptation with discovery, requirements, architecture, constraint reasoning and verification. Record tailoring and missing prerequisites.", "tasks": "Methodology profile; project conventions", "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices", "license": "Original collection guidance; not a qualification or support claim", "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.", "notes": "../collection-architecture.md#profiles-and-agent-roles", "access": "profile", "upstream": "", "group": "profiles", "short": "OOSEM profile", "x": 560.37, "y": 1057.0, "r": 44}, {"id": "profile-existing", "name": "Existing team process", "purpose": "Preserve team artifact names, sequencing and review authorities. Map available core skills to those activities and expose unsupported work.", "tasks": "Methodology profile; project conventions", "interfaces": "Recorded in docs/mbse-project.md; representation and tools are separate choices", "license": "Original collection guidance; not a qualification or support claim", "limits": "Markdown choices, not an executable profile schema. Selecting a method name does not implement it.", "notes": "../collection-architecture.md#profiles-and-agent-roles", "access": "profile", "upstream": "", "group": "profiles", "short": "Team process", "x": 480.37, "y": 1137.0, "r": 44}, {"id": "mbse-oosem", "name": "mbse-oosem", "purpose": "Apply a bounded OOSEM-inspired workflow linking stakeholder scenarios, requirements, logical and allocated architectures, alternatives and verification; distinguish the historical method from newer work.", "tasks": "Skill; catalog layer: methodology", "interfaces": "Composition prerequisites: mbse-discovery, mbse-requirements, mbse-architecture, mbse-constraint-reasoning, mbse-verification", "license": "Apache-2.0; native agent invocation remains unevaluated", "limits": "Authored practice, not engineering approval. Material unknowns need clarification; changed obligations, decisions and adequacy claims need responsible human review.", "notes": "../../skills/mbse-oosem/SKILL.md", "upstream": "", "access": "skill", "group": "profiles", "short": "OOSEM skill", "x": 400.37, "y": 1057.0, "r": 44}, {"id": "requirements-reviewer", "name": "Requirements-review agent role", "purpose": "Illustrative bounded role: inspect supplied requirements using requirements and traceability practices, then return findings for a responsible engineer to review.", "tasks": "Proposed example; not shipped; specialist agent", "interfaces": "Would need explicit context, allowed tools, outputs, human reviewer and client-specific packaging", "license": "Original collection guidance; not a qualification or support claim", "limits": "No specialist agents are defined or evaluated in this collection. Separate agent contexts do not establish independent assurance.", "notes": "../../README.md#our-philosophy-skills-agents-and-methodology-profiles", "access": "proposed", "upstream": "", "group": "agents", "short": "Req. review", "x": 196.38, "y": 772.12, "r": 44}, {"id": "evidence-reviewer", "name": "Evidence-review agent role", "purpose": "Illustrative bounded role: inspect check scope, input identities and evidence freshness using verification and traceability practices; report gaps and a proposed disposition.", "tasks": "Proposed example; not shipped; specialist agent", "interfaces": "Would need explicit context, allowed tools, outputs, human reviewer and client-specific packaging", "license": "Original collection guidance; not a qualification or support claim", "limits": "No specialist agents are defined or evaluated in this collection. Separate agent contexts do not establish independent assurance.", "notes": "../../README.md#our-philosophy-skills-agents-and-methodology-profiles", "access": "proposed", "upstream": "", "group": "agents", "short": "Evidence review", "x": 316.38, "y": 772.12, "r": 44}, {"id": "candidate-iconix", "name": "ICONIX", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "ICONIX", "x": 336.32, "y": 325.88, "r": 44}, {"id": "candidate-harmony", "name": "Harmony", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "Harmony", "x": 422.92, "y": 375.88, "r": 44}, {"id": "candidate-rup-se", "name": "RUP SE", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "RUP SE", "x": 422.92, "y": 475.88, "r": 44}, {"id": "candidate-state-analysis", "name": "State Analysis", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "State Analysis", "x": 336.32, "y": 525.88, "r": 44}, {"id": "candidate-vitech-mbse", "name": "Vitech MBSE", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "Vitech", "x": 249.72, "y": 475.88, "r": 44}, {"id": "candidate-opm", "name": "OPM", "purpose": "Unimplemented methodology candidate. Selecting this name records a coverage gap; it does not supply a methodology skill.", "tasks": "Research candidate; methodology gap", "interfaces": "Needs source/edition review, explicit tailoring, concrete artifacts and behavioral evaluation", "license": "Original collection guidance; not a qualification or support claim", "limits": "No implemented method skill. Generic core practices can support limited tailoring only when the team selects it.", "notes": "../../skills/setup-mbse-skills/references/practice-selection.md", "access": "candidate", "upstream": "", "group": "candidates", "short": "OPM", "x": 249.72, "y": 375.88, "r": 44}]}</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('ecosystem-data').textContent);
+const resources=new Map(data.resources.map(r=>[r.id,r]));
+const groups=new Map(data.groups.map(g=>[g.id,g]));
+const svg=document.getElementById('ecosystem-map');
+const search=document.getElementById('search'),access=document.getElementById('access');
+const details=document.getElementById('details'),tip=document.getElementById('tooltip');
+const accessLabels={skill:'Available skill — behavior not certified',profile:'Profile convention — recorded in Markdown',guidance:'Human review convention',proposed:'Proposed role — not shipped',candidate:'Unimplemented methodology'};
+let currentGroup=null,selected=null;
+function el(tag,text,className){const n=document.createElement(tag);if(text)n.textContent=text;if(className)n.className=className;return n;}
+function matching(r){const query=search.value.trim().toLowerCase();return (access.value==='all'||r.access===access.value)&&(!query||[r.name,r.purpose,r.tasks,r.interfaces,r.license].join(' ').toLowerCase().includes(query));}
+function applyFilters(){
+ let count=0;const query=search.value.trim();
+ for(const r of data.resources){const match=matching(r);if(match)count++;
+  const node=svg.querySelector(`[data-resource="${r.id}"]`);node.classList.toggle('is-dimmed',!match);node.classList.toggle('matched',!!query&&match);node.setAttribute('tabindex',match?'0':'-1');
+  document.querySelector(`[data-list-resource="${r.id}"]`).hidden=!match;
+ }
+ document.getElementById('results-status').textContent=count===data.resources.length?`${count} entries`:`${count} of ${data.resources.length} match`;
+ document.getElementById('empty').hidden=count!==0;
+ for(const g of data.groups){const button=document.querySelector(`[data-group="${g.id}"]`);button.querySelector('.nav-count').textContent=data.resources.filter(r=>r.group===g.id&&matching(r)).length;}
+ if(selected&&!matching(resources.get(selected)))clearSelection();
+}
+function zoom(gid){
+ currentGroup=gid;const g=groups.get(gid);
+ svg.setAttribute('viewBox',g?`${g.x-210} ${g.y-210} 420 420`:'0 0 1320 1320');
+ document.getElementById('breadcrumb').textContent=g?' / '+g.name:'';
+ document.querySelectorAll('[data-group]').forEach(b=>b.classList.toggle('active',b.dataset.group===gid));
+ tip.hidden=true;
+ // Keep the selected category readable without cropped neighboring labels.
+ svg.querySelectorAll('.category').forEach(n=>{n.classList.toggle('outside-zoom',Boolean(gid&&n.dataset.category!==gid));n.setAttribute('tabindex',!gid||n.dataset.category===gid?'0':'-1');});
+ svg.querySelectorAll('.resource').forEach(n=>n.setAttribute('tabindex',(!gid||resources.get(n.dataset.resource).group===gid)&&matching(resources.get(n.dataset.resource))?'0':'-1'));
+}
+function clearSelection(){selected=null;svg.querySelectorAll('.resource').forEach(n=>n.classList.remove('selected'));details.replaceChildren(el('div','Practice notes','side-kicker'),el('h2','Select an entry'),el('p','Choose an entry in the map or the entry list to inspect its purpose, availability and sources.'));}
+function selectResource(id){
+ const r=resources.get(id);if(!r)return;selected=id;zoom(r.group);
+ svg.querySelectorAll('.resource').forEach(n=>n.classList.toggle('selected',n.dataset.resource===id));
+ const dl=el('dl');for(const [label,value] of [['Primary area',groups.get(r.group).name],['Kind and catalog layer',r.tasks],['Composition',r.interfaces],['Evidence / authority',r.license],['Limits',r.limits]])dl.append(el('dt',label),el('dd',value));
+ const links=el('div',null,'detail-links');const notes=el('a','Read source');notes.href=r.notes;links.append(notes);
+ if(r.upstream){const upstream=el('a','Upstream project');upstream.href=r.upstream;upstream.target='_blank';upstream.rel='noopener noreferrer';links.append(upstream);}
+ details.replaceChildren(el('div','Selected entry','side-kicker'),el('h2',r.name),el('span',accessLabels[r.access],'status-tag'),el('p',r.purpose),dl,links);
+ if(matchMedia('(max-width:720px)').matches)details.scrollIntoView({block:'start',behavior:'instant'});
+}
+svg.addEventListener('click',event=>{const tool=event.target.closest('[data-resource]');if(tool){if(matching(resources.get(tool.dataset.resource)))selectResource(tool.dataset.resource);return;}const category=event.target.closest('[data-category]');zoom(category?category.dataset.category:null);});
+svg.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){const node=event.target.closest('[data-resource],[data-category]');if(node){event.preventDefault();node.dispatchEvent(new MouseEvent('click',{bubbles:true}));}}});
+document.querySelectorAll('[data-group]').forEach(button=>button.addEventListener('click',()=>{clearSelection();zoom(button.dataset.group);}));
+document.querySelectorAll('[data-resource-link]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();selectResource(link.dataset.resourceLink);}));
+search.addEventListener('input',()=>{applyFilters();zoom(currentGroup);});access.addEventListener('change',()=>{applyFilters();zoom(currentGroup);});
+function reset(){search.value='';access.value='all';clearSelection();applyFilters();zoom(null);}
+document.getElementById('reset').addEventListener('click',reset);document.getElementById('home').addEventListener('click',()=>{clearSelection();zoom(null);});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){clearSelection();zoom(null);tip.hidden=true;}});
+svg.addEventListener('pointermove',event=>{const tool=event.target.closest('[data-resource]');if(!tool||!matching(resources.get(tool.dataset.resource))){tip.hidden=true;return;}const r=resources.get(tool.dataset.resource);tip.textContent=r.name+' · '+accessLabels[r.access];tip.hidden=false;const rect=tip.getBoundingClientRect();tip.style.left=Math.min(event.clientX+16,innerWidth-rect.width-12)+'px';tip.style.top=Math.min(event.clientY+16,innerHeight-rect.height-12)+'px';});
+svg.addEventListener('pointerleave',()=>{tip.hidden=true;});
+document.getElementById('export').addEventListener('click',()=>{
+ const clone=svg.cloneNode(true);clone.setAttribute('viewBox','0 0 1320 1320');
+ clone.querySelectorAll('[tabindex]').forEach(n=>{n.removeAttribute('tabindex');n.removeAttribute('role');});
+ clone.querySelectorAll('.category').forEach(n=>n.classList.remove('outside-zoom'));
+ clone.querySelectorAll('.resource').forEach(n=>n.classList.remove('selected','matched','is-dimmed'));
+ const text='<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(clone);
+ const url=URL.createObjectURL(new Blob([text],{type:'image/svg+xml'}));const link=el('a');link.href=url;link.download='mbse-skills-ecosystem.svg';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script>
+</body>
+</html>
