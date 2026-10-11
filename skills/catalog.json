@@ -12,6 +12,11 @@
       "requires": []
     },
     {
+      "name": "mbse-grill-me",
+      "layer": "core",
+      "requires": []
+    },
+    {
       "name": "mbse-requirements",
       "layer": "core",
       "requires": []

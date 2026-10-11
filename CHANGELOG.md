@@ -9,5 +9,6 @@
 - Portable team starter, expanded shared vocabulary, requirements-to-evidence/change-impact skill and normalized engine-report contract.
 - Clean-project acceptance run with retained observations and optional fresh changed-model checks; diagram-family coverage documented.
 - Diagram output/fidelity contract, semantic patterns, behavior examples and optional project styles; bounded Mermaid/Draw.io extraction and static SVG accessibility checks.
+- Adaptive `mbse-grill-me` engineering interview skill, with open-ended discovery, optional later answer choices and no total question cap.
 
 This version has not been published or tagged.

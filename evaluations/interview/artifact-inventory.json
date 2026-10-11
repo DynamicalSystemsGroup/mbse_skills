@@ -1,0 +1,31 @@
+{
+  "recorded_on": "2026-10-11",
+  "method": "one independent baseline and one skill-assisted scripted replay with identical raw user-turn fixture",
+  "artifacts": [
+    {
+      "path": "evaluations/interview/request.json",
+      "sha256": "86b557b656488f8acd43f52658c54b192054ca46d8a9cd5126788ceaa8696fa1"
+    },
+    {
+      "path": "evaluations/interview/baseline.json",
+      "sha256": "76581e93809b3ec77051b0ab1e2baa7512f8bf203f0c990bb111563ccafda34b"
+    },
+    {
+      "path": "evaluations/interview/assisted.json",
+      "sha256": "73520c678ec360b47fef112b7a84985c90485a4a0c18e768c72ad1d26c3910da"
+    },
+    {
+      "path": "skills/mbse-grill-me/SKILL.md",
+      "sha256": "8116dd2308d952fff3393e75bd89cbf62054b38e30bcd83057526f315d06a1c7"
+    },
+    {
+      "path": "skills/mbse-grill-me/references/question-patterns.md",
+      "sha256": "c306b5573a31204cd75bbc3ab3605146e4b965c7afbed6f571e9376d80f983b0"
+    }
+  ],
+  "limits": [
+    "all user turns visible in a single fixture; no live turn-by-turn isolation",
+    "not a benchmark, causal estimate or native client routing test",
+    "no total-cap or long-dialogue behavior test"
+  ]
+}

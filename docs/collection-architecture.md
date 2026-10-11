@@ -10,7 +10,7 @@ A user can apply core requirements review to a Markdown document with no languag
 
 ## Current coverage
 
-Nine core skills cover project setup, traceability/change impact, discovery, requirements, architecture/interfaces, verification and validation, constraint reasoning, standards and literature research. Risk, configuration management, lifecycle tailoring, integration, safety and specialty engineering are not yet dedicated core workflows. Model syntax checking and constraint execution are particular evidence paths, not substitutes for those practices.
+Ten core skills cover project setup, traceability/change impact, discovery, adaptive engineering interviews, requirements, architecture/interfaces, verification and validation, constraint reasoning, standards and literature research. `mbse-grill-me` adds an open-ended conversational mode to discovery; it has no total question cap and does not replace artifact review. Risk, configuration management, lifecycle tailoring, integration, safety and specialty engineering are not yet dedicated core workflows. Model syntax checking and constraint execution are particular evidence paths, not substitutes for those practices.
 
 The OOSEM skill is a bounded adaptation of the public historical survey with original artifact conventions. It does not reproduce the detailed tutorial or implement newer OOSEM v2 work. Its first walkthrough assesses only a rover energy-budget slice.
 

@@ -1,0 +1,88 @@
+{
+  "accessed_on": "2026-10-11",
+  "purpose": "Primary-source inspiration for an adaptive MBSE discovery interview",
+  "synthesis": "docs/research/adaptive-discovery-interviews.md",
+  "retrieval": "Web reader inspection; no complete page bytes retained or hashed",
+  "sources": [
+    {
+      "title": "Using in-depth interviews",
+      "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+      "authority": "GOV.UK User research community, first-party practice guidance",
+      "published_on": "2017-02-21",
+      "sections_inspected": [
+        "Design the interview",
+        "Do the interview",
+        "After the interview"
+      ],
+      "claims": [
+        "General initial questions, neutral prompts, flexible discussion guides and concrete examples"
+      ],
+      "license_observed": "Page footer states Open Government Licence v3.0 except where otherwise stated",
+      "retrieved_content_sha256": null
+    },
+    {
+      "title": "The Five Whys",
+      "url": "https://www.designkit.org/methods/the-five-whys.html",
+      "authority": "IDEO.org Design Kit, first-party method description",
+      "published_on": null,
+      "sections_inspected": [
+        "Method description",
+        "Steps"
+      ],
+      "claims": [
+        "Successive why probes explore motivations and assumptions following a broad behavioral question"
+      ],
+      "license_observed": "Unknown; license terms not reviewed",
+      "retrieved_content_sha256": null
+    },
+    {
+      "title": "Writing Survey Questions",
+      "url": "https://www.pewresearch.org/writing-survey-questions/",
+      "authority": "Pew Research Center, first-party survey methodology guidance",
+      "published_on": null,
+      "sections_inspected": [
+        "Open- and closed-ended questions",
+        "Question wording",
+        "Question order"
+      ],
+      "claims": [
+        "Wording and offered options affect responses",
+        "Earlier choices can prime later open-ended answers",
+        "Single-concept clear questions and complete non-overlapping alternatives"
+      ],
+      "license_observed": "Unknown; license terms not reviewed",
+      "retrieved_content_sha256": null
+    },
+    {
+      "title": "4.1 Stakeholder Expectations Definition",
+      "url": "https://www.nasa.gov/reference/4-1-stakeholder-expectations-definition/",
+      "authority": "NASA, first-party systems engineering process guidance",
+      "published_on": null,
+      "page_last_updated_on": "2023-07-26",
+      "sections_inspected": [
+        "4.1.1.2.1\u20134.1.1.2.4",
+        "4.1.1.2.6\u20134.1.1.2.10"
+      ],
+      "claims": [
+        "Identify stakeholders and decision authority",
+        "Elicit expectations, assumptions, constraints and operating scenarios",
+        "Capture success measures, sources, decisions and rationale"
+      ],
+      "license_observed": "Unknown; license terms not reviewed",
+      "retrieved_content_sha256": null
+    }
+  ],
+  "local_comparison": {
+    "path": "/home/rohan/.agents/skills/grilling/SKILL.md",
+    "upstream_identity": "Unknown",
+    "license": "Unknown; no code or text copied",
+    "useful_concept": "Dependency-aware decision frontier",
+    "not_adopted": [
+      "Mandatory exhaustive questioning until every branch is settled",
+      "Whole-frontier batches",
+      "Recommendation before open elicitation",
+      "Blanket confirmation gate"
+    ]
+  },
+  "conversation_policy_origin": "User preference: open-ended interview without a total question cap, superseding initial6\u201310 preference"
+}

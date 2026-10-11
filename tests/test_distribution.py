@@ -22,7 +22,7 @@ class DistributionTests(unittest.TestCase):
         shutil.copytree(ROOT / "skills", self.root / "skills", ignore=shutil.ignore_patterns("__pycache__"))
 
     def test_current_distribution(self):
-        self.assertEqual(module.check(self.root)["skills"], 15)
+        self.assertEqual(module.check(self.root)["skills"], 16)
 
     def test_version_drift_is_rejected(self):
         path = self.root / ".claude-plugin/plugin.json"

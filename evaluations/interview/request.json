@@ -1,0 +1,13 @@
+{
+  "task": "Replay the user turns as a simulated interview. For each, write the assistant response using only context available up to that turn. Do not perform external actions or ask the real user questions. Responses are evaluated as a scripted exercise, not live interviewing.",
+  "user_turns": [
+    "Grill me on our rover requirements idea. I want a model that helps us decide whether the mission is achievable. We need healthy battery reserve, but that term is not defined yet.",
+    "The operator wants a 3 km mission at 1 m/s. We assume a constant 100 W load. The procurement team says usable battery capacity cannot exceed 270 kJ.",
+    "I do not know the required reserve threshold. The mission lead owns that decision, and I cannot answer for them.",
+    "The mission lead has now specified at least 20 percent of initial usable energy remaining. None of the distance, speed, load or capacity limits is approved for change.",
+    "Actually, shift focus: I will query source documents to supply context for our requirements skill. Ask me for the domain knowledge we need, not preferences about skill packaging.",
+    "I can supply the requirement subject and assume/require clauses. I do not yet have the derivation library rules or verification case rules.",
+    "Pause here and summarize the useful conclusions and unknowns."
+  ],
+  "negative_request": "Correct the spelling of requirments to requirements in this supplied sentence: Our model tracks requirments."
+}

@@ -6,7 +6,7 @@ A portable collection of systems engineering practices with optional methodology
 
 | Layer | Skills |
 | --- | --- |
-| Core | [Project setup](skills/setup-mbse-skills/SKILL.md), [Discovery](skills/mbse-discovery/SKILL.md), [requirements](skills/mbse-requirements/SKILL.md), [architecture](skills/mbse-architecture/SKILL.md), [verification and validation](skills/mbse-verification/SKILL.md), [traceability/change impact](skills/mbse-traceability/SKILL.md), [constraint reasoning](skills/mbse-constraint-reasoning/SKILL.md), [standards research](skills/mbse-standards-research/SKILL.md), [literature research](skills/mbse-literature-research/SKILL.md) |
+| Core | [Project setup](skills/setup-mbse-skills/SKILL.md), [Discovery](skills/mbse-discovery/SKILL.md), [Grill me](skills/mbse-grill-me/SKILL.md), [requirements](skills/mbse-requirements/SKILL.md), [architecture](skills/mbse-architecture/SKILL.md), [verification and validation](skills/mbse-verification/SKILL.md), [traceability/change impact](skills/mbse-traceability/SKILL.md), [constraint reasoning](skills/mbse-constraint-reasoning/SKILL.md), [standards research](skills/mbse-standards-research/SKILL.md), [literature research](skills/mbse-literature-research/SKILL.md) |
 | Methodology | [OOSEM starter adaptation](skills/mbse-oosem/SKILL.md) |
 | Language/tool | [SysML v2/KerML modeling](skills/mbse-sysml-modeling/SKILL.md), [SysML engine-backed model TDD](skills/mbse-model-tdd/SKILL.md) |
 | Visualization | [Diagramming](skills/mbse-diagramming/SKILL.md), [Excalidraw sketches](skills/mbse-excalidraw/SKILL.md), [engineering plots](skills/mbse-engineering-plots/SKILL.md) |
@@ -14,6 +14,8 @@ A portable collection of systems engineering practices with optional methodology
 The checked [catalog](skills/catalog.json) records layer membership and composition prerequisites. Flat skill folders preserve portable client discovery and existing helper paths; layer membership does not require nested installation folders. The catalog is metadata, not a runtime router or installer. Its `requires` entries name core practices needed for the composed workflow; read those entrypoints when applying that workflow, or explicitly identify unavailable practices. No downloads are implied.
 
 Harmony, RUP SE, State Analysis, Vitech MBSE and OPM are **research candidates**, not implemented skills. Read [collection architecture](docs/collection-architecture.md) for boundaries, current coverage and extension acceptance criteria.
+
+Use `mbse-grill-me` when you want an interactive engineering interview or plan stress-test. It starts open-ended, adapts one main question at a time, and offers potential answers later when useful. There is no total question cap; it stops at a useful brief or when you pause. Precise edits and factual lookups do not need an interview. See the [technique comparison](docs/research/adaptive-discovery-interviews.md) for sources and transfer limits.
 
 Each folder has a standard `SKILL.md`, focused references where needed and UI metadata. Engine/LSP helpers remain bundled with the SysML model-TDD extension. Plugin packaging is available; no router, hook, MCP server or tool installation runs automatically.
 
@@ -91,9 +93,11 @@ Reports are written to `.local/rover-demo/`: native CLI results, LSP transcripts
 - [Mechanism principles](docs/research/skill-collection-principles.md): skills, scripts, hooks, LSP, MCP and plugins.
 - [MBSE source map](docs/research/mbse-source-map.md): OMG, INCOSE, NASA, SEBoK and implementation evidence.
 - [Diagram-design review](docs/research/diagram-design-review.md): visualization gaps, adoption priorities and observed helper limitations.
+- [SysML v2 views, features and requirements](docs/research/sysml-v2-features-diagrams-requirements.md): clause-linked inventory, requirements semantics, limitations and reviewed NotebookLM findings.
+- [Adaptive interview techniques](docs/research/adaptive-discovery-interviews.md): open-to-specific questioning, choice bias and stakeholder elicitation.
 - [Starter specifications](docs/starter-specifications.md): triggers, outputs and controls.
 - [Source revisions and licenses](references/sources.json).
 
 Study clones under `references/repos/` are ignored and inactive. To recreate one, use its recorded upstream/revision after checking context; do not refresh an existing checkout blindly. OpenSysML's study checkout is reused from the nearby standards-research workspace.
 
-This is an independent local Git repository named `mbse-skills` in the existing `mbse_skills` directory. No commit, remote, publication or deployment is implied. MIT covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Public hosting, verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.
+This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. MIT covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Public hosting, verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.

@@ -20,3 +20,7 @@ The actual run request, synthetic inputs, rubric and result are retained here. N
 This is one exploratory pair, not a benchmark or a causal estimate. Candidate context differs because one is given the skills; all local inputs and engines are shared. No claim about six individual skill effects follows from an integrated task. A broader evaluation needs varied tasks, repeated runs, source-lookup cases with full documents, and multiple agent clients.
 
 The later [team-workflow evaluation](workflow/results.md) covers onboarding, ambiguity, conflicting constraints, unsupported/inconclusive observations, model change impact and an unrelated greeting with frozen skill/input identities.
+
+The [adaptive interview replay](interview/results.md) examines open discovery,
+unknown thresholds, conflicting constraints, stakeholder authority, user
+redirection and pausing. It is a scripted pair, not a live interview benchmark.

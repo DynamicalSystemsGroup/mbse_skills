@@ -15,3 +15,8 @@ Turn an engineering request into a modeling brief that makes its intended use an
 5. Deliver a concise brief with settled facts, alternatives, assumptions, and open questions. Do not turn an unresolved preference into a requirement. For a model change, name the property to check and how its result affects a decision.
 
 A useful brief lets the next modeler identify inputs, outputs, expected properties, and decisions that still belong to stakeholders. It does not imply stakeholder approval.
+
+When the user wants an interactive interview or a plan stress-test, compose
+with `mbse-grill-me`. It adapts from open questions to specific choices without
+a total question cap; ordinary artifact-based discovery need not become an
+interview.
