@@ -1,4 +1,8 @@
-# MBSE agent skills
+<div align="center">
+
+<h1>MBSE agent skills</h1>
+
+<p>Systems engineering skills guided by a mission-critical engineering ethos.<br>Explicit assumptions. Traceable decisions. Reviewable evidence.</p>
 
 [![Repository checks](https://github.com/DynamicalSystemsGroup/mbse_skills/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/DynamicalSystemsGroup/mbse_skills/actions/workflows/checks.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache%202.0-2563eb?style=flat)](LICENSE)
@@ -6,132 +10,130 @@
 [![Python: 3.11+](https://img.shields.io/badge/python-3.11%2B-3776ab?style=flat&logo=python&logoColor=white)](pyproject.toml)
 [![SysML v2: partial coverage](https://img.shields.io/badge/SysML%20v2-partial%20coverage-0f766e?style=flat)](docs/collection-architecture.md)
 
-A portable collection of systems engineering practices with optional methodology, modeling-language and tool extensions. The core can be used with prose, tables or a project's chosen modeling representation; it does not require SysML or an engine.
+<p><a href="docs/first-task.md">First task</a> &middot; <a href="docs/skill-guide.md">Choose a skill</a> &middot; <a href="docs/distribution.md">Installation &amp; support</a> &middot; <a href="CONTRIBUTING.md">Contribute</a></p>
 
-## Install
+</div>
 
-Requires Node.js/npm for `npx`. From the engineering project where you want the skills, run:
+Develop engineering artifacts with **reliability, traceability, auditability and clear communication** as explicit goals. This collection helps your chosen agent turn engineering questions into reviewable requirements, architecture, verification plans and change-impact reports.
+
+**16 skills** cover core systems engineering practices, with optional OOSEM, SysML v2/KerML and visualization extensions. The core works with prose and tables; SysML and an engine are optional.
+
+## Engineering principles
+
+The collection takes its direction from the discipline required for mission-critical systems: make obligations explicit, expose uncertainty, preserve evidence and keep engineering decisions accountable.
+
+| Principle | What it means in the artifacts |
+| --- | --- |
+| Reliability and assurance | Measurable obligations, explicit operating assumptions, bounded checks and visible failure or inconclusive outcomes |
+| Traceability | Stable identities and relationships from needs and assumptions through requirements, architecture, checks and evidence |
+| Auditability | Source references, decision status, native observations and artifact identities that a reviewer can inspect |
+| Reproducibility and configuration control | Recorded model/tool versions, preserved inputs and explicit review of stale evidence after changes |
+| Clear engineering communication | Audience-appropriate views, units, system boundaries and an explanation of what each result establishes |
+| Verification and validation | Separate evidence that a stated obligation is met from evidence that the system serves its intended use |
+| Human accountability | Proposed agent outputs remain distinct from decisions made by identified engineering authorities |
+
+Read [the engineering principles and review questions](docs/engineering-principles.md). This early-draft collection supports these practices; it is not a qualified toolchain, safety case or evidence that a system is ready for mission-critical use.
+
+## Start here
+
+| You want to… | Start with |
+| --- | --- |
+| Complete your first engineering task | [Engine-free walkthrough](docs/first-task.md) |
+| Find the right skill for existing work | [Task-based skill guide](docs/skill-guide.md) |
+| Inspect an end-to-end example | [Rover project and retained evidence](examples/team-onboarding/README.md) |
+| Configure local model checks | [Engine setup and development](docs/development.md#configure-and-run-engines) |
+| Find engines, editors or model services | [Awesome SysML v2 & MBSE](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse) |
+
+## Install and try a first task
+
+Onboarding has three steps: **copy the skills into your project, ask the setup skill to record your conventions, then choose one engineering task**. Start with Markdown and tables; add a modeling language or engine when the task needs it. Setup adapts an established project's conventions and can use the editable starter for a new project.
+
+Requires Node.js/npm for installation. From your target engineering project:
 
 ```bash
 npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --agent codex --skill '*' --copy
 ```
 
-This copies all 16 skills into project-local `.agents/skills` for Codex. Then open your agent in that project and ask:
+This copies all 16 skills into project-local `.agents/skills`. Version 1.7.0 is the tested installer. No repository clone or Python environment is needed for installation. Then ask your agent:
 
-> Use setup-mbse-skills to configure this project's MBSE conventions and help me choose a first engineering task.
+> Use setup-mbse-skills to configure this project for an illustrative rover energy-budget task. Use Markdown and tables, with tools unconfigured. Record the system boundary, assumptions, requirements and evidence conventions, then identify one requirement to develop with mbse-requirements. Keep all engineering choices proposed until reviewed.
 
-To choose your agent and skills interactively:
+Follow [the first-task walkthrough](docs/first-task.md) for the inputs, next prompt, expected files and completion checks. Selective installation, plugin and manual-copy alternatives are in [distribution and onboarding](docs/distribution.md).
 
-```bash
-npx skills@1.7.0 add DynamicalSystemsGroup/mbse_skills --copy
-```
+## Customize for your team
 
-Version 1.7.0 is the tested installer. Installation and file integrity have been checked; native agent loading and invocation remain untested. See [installation evidence and limits](docs/distribution.md#editable-skills-with-npx). Each portable folder includes its license and notice.
+The copied skills are ordinary editable files. Choose the practices you need and adapt them to your project; you can begin with a single task without adopting the entire workflow.
 
-No repository clone or Python environment is needed to install the skills. There is no packaged `uvx` installer for this collection; `uv` is used for Python helpers and development checks.
-
-### Plugin and manual alternatives
-
-For plugin use, load this reviewed checkout in Claude Code with `claude --plugin-dir /absolute/path/to/mbse_skills`, then invoke `/mbse-skills:setup-mbse-skills` in your engineering project. The setup skill records project conventions and an actionable first task. See [installation and releases](docs/distribution.md) for local marketplace installation, editable skills, compatibility limits and the publication checklist. Codex CLI marketplace discovery has passed; installation and skill invocation remain untested.
-
-
-Point the agent to the relevant entrypoint, for example: “Use `skills/mbse-model-tdd/SKILL.md` to establish a failing check, revise my model and retain the evidence.” For discovery through your client's normal skill mechanism, copy or symlink the selected complete skill folders into that client's project-local skills directory. Keep an existing installation intact and avoid installing the same skill twice. Check the client's current discovery conventions; compatibility across all clients has not been tested.
-
-A full repository checkout is needed for the included example and development checks; individual skill folders supply their own reasoning references and required helpers. Standards and engines remain separately accessed resources. The collection does not bundle standards PDFs or engine binaries.
-
-## About
-
-Hosted by [Dynamical Systems Group](https://github.com/DynamicalSystemsGroup/mbse_skills), this independent project welcomes OpenMBEE and other teams building agent-assisted engineering workflows. Version 0.1.0 is an early draft: coverage and client support are bounded by the documented evidence, and no institutional endorsement or complete SysML conformance is claimed.
-
-For collaboration, start with [contributing](CONTRIBUTING.md), [governance](GOVERNANCE.md), [community conduct](CODE_OF_CONDUCT.md) and [security reporting](SECURITY.md). Use GitHub issues for bugs/proposals and discussions for questions.
-
-## Core and extensions
-
-| Layer | Skills |
+| Customize | Where to make the choice |
 | --- | --- |
-| Core | [Project setup](skills/setup-mbse-skills/SKILL.md), [Discovery](skills/mbse-discovery/SKILL.md), [Grill me](skills/mbse-grill-me/SKILL.md), [requirements](skills/mbse-requirements/SKILL.md), [architecture](skills/mbse-architecture/SKILL.md), [verification and validation](skills/mbse-verification/SKILL.md), [traceability/change impact](skills/mbse-traceability/SKILL.md), [constraint reasoning](skills/mbse-constraint-reasoning/SKILL.md), [standards research](skills/mbse-standards-research/SKILL.md), [literature research](skills/mbse-literature-research/SKILL.md) |
-| Methodology | [OOSEM starter adaptation](skills/mbse-oosem/SKILL.md) |
-| Language/tool | [SysML v2/KerML modeling](skills/mbse-sysml-modeling/SKILL.md), [SysML engine-backed model TDD](skills/mbse-model-tdd/SKILL.md) |
-| Visualization | [Diagramming](skills/mbse-diagramming/SKILL.md), [Excalidraw sketches](skills/mbse-excalidraw/SKILL.md), [engineering plots](skills/mbse-engineering-plots/SKILL.md) |
+| Document locations, IDs, vocabulary and review responsibilities | Project-owned conventions, normally `docs/mbse-project.md` |
+| Methodology and model representation | Select core practices and optional extensions in the [task guide](docs/skill-guide.md); prose and tables remain valid |
+| Evidence storage, verification expectations and existing tools | Project conventions, with local tool identities and confidential captures managed separately |
+| Skill procedures, references and helpers | The complete copied skill folder under `.agents/skills`, retaining its license and notices |
 
-The checked [catalog](skills/catalog.json) records layer membership and composition prerequisites. Flat skill folders preserve portable client discovery and existing helper paths; layer membership does not require nested installation folders. The catalog is metadata, not a runtime router or installer. Its `requires` entries name core practices needed for the composed workflow; read those entrypoints when applying that workflow, or explicitly identify unavailable practices. No downloads are implied.
+For selective installation, omit `--skill '*'` and choose skills interactively. Include `setup-mbse-skills` and any composition prerequisites listed in [the catalog](skills/catalog.json); the installer does not resolve those prerequisites. Omit `--agent codex` to select another client, whose support needs its own checks.
 
-Harmony, RUP SE, State Analysis, Vitech MBSE and OPM are **research candidates**, not implemented skills. Read [collection architecture](docs/collection-architecture.md) for boundaries, current coverage and extension acceptance criteria.
+Prefer recording project-specific choices in your conventions before changing shared procedures. If you tailor a procedure, keep its inputs, completion criteria, evidence provenance and engineering review responsibilities explicit. Review copied files before replacing them during an update, and reconcile project conventions when the team's workflow changes.
 
-Use `mbse-grill-me` when you want an interactive engineering interview or plan stress-test. It starts open-ended, adapts one main question at a time, and offers potential answers later when useful. There is no total question cap; it stops at a useful brief or when you pause. Precise edits and factual lookups do not need an interview. See the [technique comparison](docs/research/adaptive-discovery-interviews.md) for sources and transfer limits.
+## How the skills fit together
 
-Each folder has a standard `SKILL.md`, focused references where needed and UI metadata. Engine/LSP helpers remain bundled with the SysML model-TDD extension. Plugin packaging is available; no router, hook, MCP server or tool installation runs automatically.
-
-The [OOSEM-oriented rover walkthrough](examples/rover/oosem-walkthrough.md) connects a proposed need to requirements, logical responsibilities, allocation and existing SysML evidence. It is a bounded teaching example, not a complete OOSEM implementation, conformance certification or physically validated rover design.
-
-## Start a team project
-
-The setup skill carries an editable starter with needs, requirements, architecture, decisions, glossary and evidence conventions. For a fresh project, use its bundled `scripts/init_project.py`; established projects keep their own conventions. Read the [clean-project acceptance example](examples/team-onboarding/README.md) to exercise the complete flow:
-
-```bash
-just onboarding-demo .local/team-onboarding
+```mermaid
+flowchart LR
+    S[Set project conventions] --> D[Clarify needs and assumptions]
+    D --> R[Develop requirements and architecture]
+    R --> V[Plan checks and retain evidence]
+    V --> T[Trace results and assess changes]
+    T --> R
 ```
 
-This builds a project from the starter, verifies retained model/evidence identities, checks requirement trace coverage and reports change impact. An optional existing engine profile exercises the changed model; the default run makes no new engine observations. The [shared vocabulary](skills/mbse-discovery/references/vocabulary.md), [trace graph contract](skills/mbse-traceability/references/graph-contract.md) and [model verification report contract](skills/mbse-model-tdd/references/verification-contract.md) define their boundaries.
+This is an illustrative workflow. Use the skills that fit the task; [the task guide](docs/skill-guide.md) explains all 16. Methodology, language/tool and visualization extensions complement the core practices. The [catalog](skills/catalog.json) records their layers and composition prerequisites.
 
-## Development and checks
+## What the outputs look like
 
-Requires Python 3.11+ and [uv](https://docs.astral.sh/uv/); [just](https://just.systems/) supplies shortcuts. There are no Python package dependencies. From this repository root:
+The [rover onboarding example](examples/team-onboarding/README.md) connects a proposed need to requirements, logical responsibilities, model checks and change impact. Its generated teaching requirement states:
+
+> R-01: Under A-01, the rover shall complete the 2000 m traverse with remaining usable energy >=20% of initial usable battery capacity.
+
+The [runner](scripts/onboarding_demo.py) marks this requirement proposed, leaves the stakeholder owner unresolved and records modeled analysis separately from intended-use validation.
+
+| Artifact | What to inspect |
+| --- | --- |
+| Requirements and traceability | [Onboarding example](examples/team-onboarding/README.md): generate editable requirements and a hash-bound trace graph from the retained scenario |
+| Verification report | [Retained changed-model report](examples/team-onboarding/evidence/changed-model-report.json): both engines accepted model validation and reported the reserve check violated for the 3 km mission |
+| Engineering view | [Visualization example](examples/visualization/README.md): source mappings, review records and an energy-budget plot |
+
+![Rover energy-budget teaching plot based on retained example evidence](examples/visualization/rover-energy-accessible.svg)
+
+These are teaching artifacts with retained observations, not physical rover testing or stakeholder acceptance. Replaying the default onboarding example creates no fresh engine observations.
+
+## Installation and client support
+
+| Route | Recorded evidence | Remaining check |
+| --- | --- | --- |
+| npx Skills 1.7.0 → Codex project files | Discovery, copy installation and file integrity verified | Native client loading and skill invocation |
+| Codex CLI marketplace | Native discovery recorded with local source overrides | Plugin installation and skill invocation |
+| Claude Code plugin | Local packaging and documented commands | Native validation, installation and invocation |
+| Other clients / manual copies | Portable skill folders and instructions | Client-specific discovery and invocation |
+
+See [installation evidence](docs/distribution.md) for versions and receipts. Installation success and repository checks do not establish agent behavior or complete language conformance.
+
+## About and contribute
+
+Hosted by [Dynamical Systems Group](https://github.com/DynamicalSystemsGroup), this independent project welcomes OpenMBEE and other teams building agent-assisted engineering workflows. Version 0.1.0 is a public early draft with no release tag. Original material is Apache-2.0; [notices](NOTICE.md) explain third-party boundaries. No institutional endorsement is implied.
+
+[Propose a skill or improvement](https://github.com/DynamicalSystemsGroup/mbse_skills/issues/new?template=skill_proposal.md) · [Report a bug](https://github.com/DynamicalSystemsGroup/mbse_skills/issues/new?template=bug_report.md) · [Contribution guide](CONTRIBUTING.md)
+
+For tools and utilities, browse [Awesome SysML v2 & MBSE](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse); this repository owns the skills and their installation guidance. Read [governance](GOVERNANCE.md), [community conduct](CODE_OF_CONDUCT.md) and [security reporting](SECURITY.md) for collaboration policies.
+
+## Development and evidence
+
+From a full checkout, with Python 3.11+, uv and just available:
 
 ```bash
 uv sync --locked --offline
 just check
 ```
 
-Without just, run the three commands in its `check` recipe: `uv run --locked --offline python scripts/check_repository.py`, `uv run --locked --offline python scripts/check_distribution.py`, and `uv run --locked --offline python -m unittest discover -s tests -v`.
+[Development guide](docs/development.md) covers checks, visualization helpers and calibrated engines. [Sharing readiness](docs/share-readiness.md) records publication and compatibility limits. [Collection architecture](docs/collection-architecture.md) records coverage and extension criteria; [evaluations](evaluations/README.md) describe bounded artifact comparisons.
 
-The repository check validates the simple metadata format used here, UI description bounds, resources and local links. It is not a general YAML parser or an agent-behavior test. See [contributing](CONTRIBUTING.md) for baseline/assisted artifact evaluation and source review.
-
-## Visualization tools
-
-The visualization extensions reuse available tools or external skills while keeping engineering source mapping and evidence in this collection. See the [existing-skill search](docs/research/visualization-skill-discovery.md) for Mermaid, UML/PlantUML, Excalidraw and Archify candidates; none was installed or vendored. [Archify-inspired principles](docs/research/visualization-inspiration.md) explain our view and review contracts.
-
-The [output contract](skills/mbse-diagramming/references/view-contract.md) adds destination sizing, fidelity ledgers, geometry review and optional project styles. [Semantic patterns](skills/mbse-diagramming/references/semantic-patterns.md) and [behavior examples](skills/mbse-diagramming/references/behavior-examples.md) support authoring. The [import contract](skills/mbse-diagramming/references/import-contract.md) documents a bounded Mermaid-flowchart/uncompressed-Draw.io extractor; unsupported constructs fail explicitly. The static SVG checker validates accessibility markup, not geometry or model semantics:
-
-```bash
-python3 skills/mbse-diagramming/scripts/import_view.py examples/visualization/rover-energy.mmd --format mermaid
-python3 skills/mbse-diagramming/scripts/svg_check.py examples/visualization/rover-energy-accessible.svg
-```
-
-The [diagram-family coverage](skills/mbse-diagramming/references/diagram-families.md) distinguishes authoring criteria from formal notation and tested exports. The [visualization example](examples/visualization/README.md) contains Mermaid/DOT sources, a native Excalidraw scene and a reviewed SVG trade-study plot. Native Mermaid/Graphviz rendering and Excalidraw editor import/export have not been exercised here. Matplotlib and Vega-Lite are optional existing-environment branches, not dependencies. The limited plot helper and scene structural checker use only Python's stdlib:
-
-```bash
-just visual-demo .local/visualization-demo/energy.svg
-```
-
-Choose a fresh output path for a rerun; the plot helper preserves existing exports and receipts. The generated plot does not execute engines or validate a physical rover.
-
-## Configure and run engines
-
-Use existing, deliberately selected local executables and a library directory. Configuration records byte hashes; it does not download or certify tools. Follow your team's context and dependency policies before dependency or remote operations; inspect Git status and use `ctxcheck` if your environment provides it. No global installs are needed.
-
-```bash
-just configure /path/to/sysml /path/to/sysmlv2 /path/to/sysml-lsp /path/to/sysml.library
-just demo .local/engines.json
-```
-
-The equivalent commands are `uv run --locked --offline python scripts/configure_engines.py` with its four named path arguments, and `uv run --locked --offline python scripts/rover_demo.py --profile .local/engines.json`. Inspect `--help` for options.
-
-The tested contracts are OpenSysML source revision `714c459fe5dcce1affb62fd98309b63626dfa311` and Toolkit 0.10.0. Other versions need calibration before their output is interpreted. OpenSysML uses bundled libraries; Toolkit uses the explicit external library. Commands run without a shell and exclude ambient model/library settings and credentials. Hash mismatches stop execution rather than silently replacing a tool.
-
-Reports are written to `.local/rover-demo/`: native CLI results, LSP transcripts and the finite comparison summary. The LSP transcript contains the model text. Keep confidential project captures in an appropriate local location. See the [rover example](examples/rover/README.md), [verification record](docs/verification.md), and [evaluation method](evaluations/README.md).
-
-## Research and scope
-
-- [Inspiration comparison](docs/research/inspiration-comparison.md): seven sources, mechanisms, dependencies and adoption decisions.
-- [Mechanism principles](docs/research/skill-collection-principles.md): skills, scripts, hooks, LSP, MCP and plugins.
-- [MBSE source map](docs/research/mbse-source-map.md): OMG, INCOSE, NASA, SEBoK and implementation evidence.
-- [Diagram-design review](docs/research/diagram-design-review.md): visualization gaps, adoption priorities and observed helper limitations.
-- [SysML v2 views, features and requirements](docs/research/sysml-v2-features-diagrams-requirements.md): clause-linked inventory, requirements semantics, limitations and reviewed NotebookLM findings.
-- [Adaptive interview techniques](docs/research/adaptive-discovery-interviews.md): open-to-specific questioning, choice bias and stakeholder elicitation.
-- [Starter specifications](docs/starter-specifications.md): triggers, outputs and controls.
-- [Source revisions and licenses](references/sources.json).
-
-Study clones under `references/repos/` are ignored and inactive. To recreate one, use its recorded upstream/revision after checking context; do not refresh an existing checkout blindly. OpenSysML's study checkout is reused from the nearby standards-research workspace.
-
-This is an independent Git repository named `mbse-skills` in the existing `mbse_skills` directory. Version 0.1.0 is an unpublished draft suitable for early community review; see the [sharing readiness record](docs/share-readiness.md) for checks and remaining limits. Apache-2.0 covers original material; [notices](NOTICE.md) explain third-party boundaries. The skills-only plugin is packaged locally. Verified client compatibility, automatic hooks, MCP integrations, additional engines and solver integration remain future work.
+Risk, safety and several lifecycle practices remain uncovered; additional methodologies and solver integration are future work. Read the documented scope before applying a skill to an engineering decision.
